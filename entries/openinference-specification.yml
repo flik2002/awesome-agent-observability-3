@@ -14,10 +14,10 @@ conventions:
   - openinference
 otel_evidence: https://arize-ai.github.io/openinference/spec/
 body: Arize AI
-stars: 1271
+stars: 1272
 archived: false
-pushed_at: 2026-10-19T23:21:36Z
+pushed_at: 2026-10-20T18:27:28Z
 last_release:
   tag: python-openinference-instrumentation-google-genai-v1.4.13
   published_at: 2026-10-10T06:22:04Z
-last_checked: 2026-10-19
+last_checked: 2026-10-20

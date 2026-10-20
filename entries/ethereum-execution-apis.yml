@@ -12,8 +12,8 @@ license: CC0-1.0
 body: Ethereum
 chains:
   - ethereum
-stars: 1140
+stars: 1141
 archived: false
 pushed_at: 2026-10-19T15:42:46Z
 last_release: null
-last_checked: 2026-10-19
+last_checked: 2026-10-20

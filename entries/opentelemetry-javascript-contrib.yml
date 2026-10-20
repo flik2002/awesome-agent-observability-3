@@ -15,8 +15,8 @@ otlp:
 otel_evidence: https://github.com/open-telemetry/opentelemetry-js-contrib
 stars: 936
 archived: false
-pushed_at: 2026-10-19T15:33:10Z
+pushed_at: 2026-10-20T20:55:20Z
 last_release:
-  tag: instrumentation-winston-v0.68.1
-  published_at: 2026-10-16T20:12:43Z
-last_checked: 2026-10-19
+  tag: instrumentation-browser-navigation-v0.17.0
+  published_at: 2026-10-20T20:53:29Z
+last_checked: 2026-10-20

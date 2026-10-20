@@ -13,8 +13,8 @@ languages:
   - typescript
 stars: 1063
 archived: false
-pushed_at: 2026-10-08T13:49:13Z
+pushed_at: 2026-10-20T19:34:57Z
 last_release:
   tag: py-0.4.0
   published_at: 2026-10-07T22:25:57Z
-last_checked: 2026-10-19
+last_checked: 2026-10-20

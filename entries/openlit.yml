@@ -18,10 +18,10 @@ otlp:
 conventions:
   - genai-semconv
 otel_evidence: https://github.com/openlit/openlit
-stars: 2860
+stars: 2865
 archived: false
-pushed_at: 2026-10-19T17:12:23Z
+pushed_at: 2026-10-20T12:01:25Z
 last_release:
   tag: otel-gpu-collector-1.0.0
   published_at: 2026-10-13T14:43:07Z
-last_checked: 2026-10-19
+last_checked: 2026-10-20

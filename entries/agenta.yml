@@ -13,10 +13,10 @@ tags:
 license: MIT
 license_note: Directories named ee/ use a separate license.
 hosting: self-hosted
-stars: 4845
+stars: 4848
 archived: false
-pushed_at: 2026-10-19T22:56:06Z
+pushed_at: 2026-10-20T20:31:57Z
 last_release:
-  tag: v0.122.8
-  published_at: 2026-10-18T10:45:49Z
-last_checked: 2026-10-19
+  tag: v0.122.9
+  published_at: 2026-10-20T13:32:21Z
+last_checked: 2026-10-20

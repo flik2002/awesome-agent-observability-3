@@ -16,8 +16,8 @@ hosting: saas
 otlp: unknown
 stars: 29
 archived: false
-pushed_at: 2026-10-19T21:54:51Z
+pushed_at: 2026-10-20T20:10:32Z
 last_release:
   tag: "@braintrust/otel@1.1.0"
   published_at: 2026-10-19T18:44:12Z
-last_checked: 2026-10-19
+last_checked: 2026-10-20

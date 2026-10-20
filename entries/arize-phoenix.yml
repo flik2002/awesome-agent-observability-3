@@ -16,10 +16,10 @@ otlp:
 conventions:
   - openinference
 otel_evidence: https://github.com/Arize-ai/phoenix
-stars: 11911
+stars: 11927
 archived: false
-pushed_at: 2026-10-19T22:49:38Z
+pushed_at: 2026-10-20T20:47:32Z
 last_release:
   tag: arize-phoenix-sqlean-v0.2.1
   published_at: 2026-10-19T16:42:17Z
-last_checked: 2026-10-19
+last_checked: 2026-10-20

@@ -16,8 +16,8 @@ chains:
   - evm
 stars: 233
 archived: false
-pushed_at: 2026-10-19T17:26:30Z
+pushed_at: 2026-10-20T16:04:09Z
 last_release:
   tag: "@pimlico/alto@0.0.19"
   published_at: 2025-07-14T16:26:14Z
-last_checked: 2026-10-19
+last_checked: 2026-10-20
