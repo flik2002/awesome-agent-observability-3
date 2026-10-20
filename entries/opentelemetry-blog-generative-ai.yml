@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "OpenTelemetry blog: generative AI"
+url: https://opentelemetry.io/blog/2024/otel-generative-ai/
+description: OpenTelemetry blog post introducing the generative AI work.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20

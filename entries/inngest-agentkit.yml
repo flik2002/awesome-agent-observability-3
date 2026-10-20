@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Inngest AgentKit
+url: https://github.com/inngest/agent-kit
+description: TypeScript toolkit for agent networks with durable execution.
+type: framework
+category: frameworks
+added: 2026-10-20
+license: Apache-2.0
+languages:
+  - typescript
+telemetry: unknown
+stars: 949
+archived: false
+pushed_at: 2026-04-29T18:37:00Z
+last_release:
+  tag: "@inngest/agent-kit@0.13.2"
+  published_at: 2025-11-13T15:27:01Z
+last_checked: 2026-10-19

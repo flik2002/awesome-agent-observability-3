@@ -1,0 +1,717 @@
+# Awesome Agent Observability [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+> A neutral list of resources for observing AI agents in development and production: standards, instrumentation, frameworks, platforms, gateways, evaluation, cost, safety signals, and on-chain agents and payments, with an OpenTelemetry focus.
+
+The list covers every kind of agent, from coding and customer support agents to enterprise workflows, research and agents that make payments, and every place they run, from cloud providers and enterprise vendors to open source projects. It holds 435 entries.
+
+Open source and commercial entries are listed side by side, in alphabetical order inside each section, never by preference or payment. There is no sponsored placement. Inclusion says nothing about quality, and the list takes no side between competing projects. Disclosure: the maintainer of this list also builds [hashspan](https://github.com/selimaytac/hashspan), which is listed under On-chain agents and payments like any other entry, and reported some of the issues listed under Findings. Entries submitted by people who work on the project carry a `vendor_affiliation` field in their data file.
+
+## Legend
+
+Short tags after an entry:
+
+- `OTel` - sends or receives OpenTelemetry data (OTLP), or emits telemetry through the OpenTelemetry API, according to the linked evidence.
+- `GenAI semconv`, `OpenInference` - follows these semantic conventions.
+- `OSS` - the license of the repository root is OSI-approved. `Open-core` - also shown when the repository has a source-available or enterprise directory such as `ee/`. `Source-available` - the root license is not OSI-approved (for example ELv2, BSL or SSPL). `Proprietary` - closed source or a hosted product.
+- `Self-hosted`, `SaaS` - can run on your own infrastructure, or is offered as a hosted service.
+- `Open`, `Fixed in X` - state of a finding.
+
+A missing tag means the point was not confirmed, not that the answer is no. Every entry is a data file in [entries/](entries/) with more fields: the evidence link for OTel support, the license, the kinds of agents it is specific to (`agent_types`), and repository metadata refreshed by a script (stars, archived, last push, last release). The same data is in [entries.json](entries.json) and [llms.txt](llms.txt) for programs and agents.
+
+## Contents
+
+- [Standards and specifications](#standards-and-specifications)
+- [Instrumentation](#instrumentation)
+- [Agent frameworks](#agent-frameworks)
+- [Agent protocols and tool servers](#agent-protocols-and-tool-servers)
+- [Collectors and pipelines](#collectors-and-pipelines)
+- [Platforms](#platforms)
+  - [LLM and agent observability platforms](#llm-and-agent-observability-platforms)
+  - [General APM with GenAI support](#general-apm-with-genai-support)
+  - [Trace backends and UIs](#trace-backends-and-uis)
+  - [Cloud provider offerings](#cloud-provider-offerings)
+  - [Model serving](#model-serving)
+- [Gateways and proxies](#gateways-and-proxies)
+- [Evaluation and testing](#evaluation-and-testing)
+- [Cost and usage](#cost-and-usage)
+- [Safety signals](#safety-signals)
+- [On-chain agents and payments](#on-chain-agents-and-payments)
+  - [Transaction tracing](#transaction-tracing)
+  - [Payment protocols](#payment-protocols)
+  - [RPC and node observability](#rpc-and-node-observability)
+  - [Wallets and smart accounts](#wallets-and-smart-accounts)
+  - [Local and test chains](#local-and-test-chains)
+- [Findings](#findings)
+- [Benchmarks and datasets](#benchmarks-and-datasets)
+- [Learning](#learning)
+  - [Articles and guides](#articles-and-guides)
+  - [Books](#books)
+  - [Talks and videos](#talks-and-videos)
+  - [Papers](#papers)
+  - [Courses](#courses)
+  - [Case studies](#case-studies)
+  - [Newsletters and podcasts](#newsletters-and-podcasts)
+- [Community](#community)
+- [Related lists](#related-lists)
+- [Archived and historical](#archived-and-historical)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Standards and specifications
+
+Semantic conventions, wire protocols and context propagation standards that agent telemetry is built on.
+
+- [A2A distributed tracing proposal](https://github.com/a2aproject/A2A/issues/2103) - Open proposal in the A2A repository for semantic conventions and W3C Trace Context propagation between delegating agents.
+- [A2A Protocol](https://github.com/a2aproject/A2A) - Specification of the Agent2Agent protocol for communication between agents, relevant to propagating context between them. `OSS`
+- [A2A protocol documentation](https://a2a-protocol.org/latest/) - Documentation site of the Agent2Agent protocol.
+- [GenAI semantic conventions for agentic systems (issue 35)](https://github.com/open-telemetry/semantic-conventions-genai/issues/35) - Tracking issue for agentic system conventions in OpenTelemetry GenAI.
+- [MCP specification release candidate 2026-07-28](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) - Announcement of the MCP release candidate, which includes trace context propagation (SEP-414) and OpenTelemetry-compatible telemetry.
+- [Model Context Protocol specification](https://modelcontextprotocol.io/specification/) - Specification of the protocol that connects agents to tools and data sources.
+- [OpenInference specification](https://arize-ai.github.io/openinference/spec/) - Semantic conventions for tracing LLM, retriever, tool and agent steps on top of OpenTelemetry. ([Source](https://github.com/Arize-ai/openinference)) `OpenInference` `OSS`
+- [OpenTelemetry GenAI agent spans](https://opentelemetry.io/docs/specs/semconv/gen-ai/gen-ai-agent-spans/) - Semantic conventions for spans that describe agent creation and invocation.
+- [OpenTelemetry GenAI Anthropic conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/anthropic/) - Provider-specific attributes for Anthropic calls within the GenAI conventions.
+- [OpenTelemetry GenAI attribute registry](https://opentelemetry.io/docs/specs/semconv/registry/attributes/gen-ai/) - Reference list of the `gen_ai.*` attribute names and their types.
+- [OpenTelemetry GenAI events](https://opentelemetry.io/docs/specs/semconv/gen-ai/gen-ai-events/) - Semantic conventions for events that carry prompts and completions.
+- [OpenTelemetry GenAI MCP conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/mcp/) - Semantic conventions for Model Context Protocol operations.
+- [OpenTelemetry GenAI metrics](https://opentelemetry.io/docs/specs/semconv/gen-ai/gen-ai-metrics/) - Semantic conventions for token usage and operation duration metrics.
+- [OpenTelemetry GenAI OpenAI conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/openai/) - Provider-specific attributes for OpenAI calls within the GenAI conventions.
+- [OpenTelemetry GenAI semantic conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/) - Entry page of the conventions for generative AI spans, metrics and events.
+- [OpenTelemetry GenAI spans](https://opentelemetry.io/docs/specs/semconv/gen-ai/gen-ai-spans/) - Semantic conventions for spans that describe model calls.
+- [OpenTelemetry JSON-RPC conventions](https://opentelemetry.io/docs/specs/semconv/rpc/json-rpc/) - Semantic conventions for JSON-RPC calls, the transport of MCP and of blockchain nodes.
+- [OpenTelemetry Protocol (OTLP)](https://opentelemetry.io/docs/specs/otlp/) - Specification of the wire protocol for traces, metrics and logs. `OTel`
+- [OpenTelemetry semantic conventions repository](https://github.com/open-telemetry/semantic-conventions) - Source repository of all semantic conventions, including the GenAI ones. `OSS`
+- [OpenTelemetry semantic-conventions-genai repository](https://github.com/open-telemetry/semantic-conventions-genai) - Repository of the OpenTelemetry semantic conventions for generative AI: spans, metrics, events, MCP and provider conventions.
+- [OpenTelemetry Weaver](https://github.com/open-telemetry/weaver) - Tool for defining, validating and evolving telemetry schemas built on semantic conventions, with a live check of OTLP data. `OSS`
+- [SEP-414: OpenTelemetry trace context in MCP](https://modelcontextprotocol.io/seps/414-request-meta) - MCP proposal that defines traceparent, tracestate and baggage keys in the request metadata for W3C Trace Context propagation.
+- [W3C Baggage](https://www.w3.org/TR/baggage/) - Specification for propagating application key-value pairs across service boundaries.
+- [W3C Trace Context](https://www.w3.org/TR/trace-context/) - Specification of the `traceparent` and `tracestate` headers used to correlate distributed traces.
+- [W3C Trace Context Level 2](https://www.w3.org/TR/trace-context-2/) - Newer level of the Trace Context specification.
+
+**[Back to top](#contents)**
+
+<a id="instrumentation-libraries-and-sdks"></a>
+## Instrumentation
+
+Libraries and SDKs that produce telemetry from LLM clients, agent frameworks and services.
+
+- [Arize OTel Python helper](https://github.com/Arize-ai/arize-otel-python) - Python helper that registers OpenTelemetry export to Arize with OpenInference. `OTel` `OpenInference` `OSS`
+- [AWS Distro for OpenTelemetry Python instrumentation](https://github.com/aws-observability/aws-otel-python-instrumentation) - Python auto-instrumentation distribution from AWS with generative AI instrumentation. `OTel` `GenAI semconv` `OSS`
+- [Axiom AI SDK](https://github.com/axiomhq/ai) - TypeScript SDK from Axiom for instrumenting and evaluating AI applications. `OSS`
+- [Elastic Distribution of OpenTelemetry Python](https://github.com/elastic/elastic-otel-python) - Python distribution of OpenTelemetry maintained by Elastic. `OTel` `OSS`
+- [Galileo Python SDK](https://github.com/rungalileo/galileo-python) - Python package that sends traces of LLM applications and agents to a Galileo log stream. `OSS`
+- [HoneyHive Python SDK](https://github.com/honeyhiveai/python-sdk) - Python SDK for HoneyHive tracing built on OpenTelemetry. `OTel` `OpenInference`
+- [Langfuse JS/TS SDK](https://github.com/langfuse/langfuse-js) - JavaScript client for sending traces to Langfuse, built on OpenTelemetry. `OTel` `OSS`
+- [Langfuse Python SDK](https://github.com/langfuse/langfuse-python) - Python client and decorators for sending traces to Langfuse, built on OpenTelemetry. `OTel` `OSS`
+- [Logfire](https://github.com/pydantic/logfire) - SDK that sends OpenTelemetry traces and metrics, with integrations for LLM clients and agent frameworks. `OTel` `OSS`
+- [Maxim Python SDK](https://github.com/maximhq/maxim-py) - Python SDK for Maxim tracing and evaluation. `OSS`
+- [Microsoft.Extensions.AI libraries](https://learn.microsoft.com/en-us/dotnet/ai/microsoft-extensions-ai) - Documents .NET AI abstractions that include OpenTelemetry middleware for chat clients. ([Source](https://github.com/dotnet/extensions)) `OTel` `OSS`
+- [New Relic OpenTelemetry examples](https://github.com/newrelic/newrelic-opentelemetry-examples) - Examples for sending OpenTelemetry data to New Relic. `OTel` `OSS`
+- [OpenInference](https://github.com/Arize-ai/openinference) - Instrumentation packages for LLM clients and agent frameworks that follow the OpenInference conventions. `OTel` `OpenInference` `OSS`
+- [OpenLIT](https://github.com/openlit/openlit) - SDK and tooling that instruments LLM calls and agents and exports OpenTelemetry data. `OTel` `GenAI semconv` `OSS`
+- [OpenLLMetry](https://github.com/traceloop/openllmetry) - Python instrumentation for LLM clients, vector databases and frameworks on top of OpenTelemetry. `OTel` `OSS`
+- [OpenLLMetry for Go](https://github.com/traceloop/go-openllmetry) - Go counterpart of OpenLLMetry. `OTel` `OSS`
+- [OpenLLMetry for JavaScript](https://github.com/traceloop/openllmetry-js) - JavaScript and TypeScript counterpart of OpenLLMetry. `OTel` `OSS`
+- [OpenLLMetry Ruby](https://github.com/traceloop/openllmetry-ruby) - Ruby sibling of OpenLLMetry for tracing LLM applications. `OTel` `OSS`
+- [OpenTelemetry .NET](https://github.com/open-telemetry/opentelemetry-dotnet) - OpenTelemetry SDK and API for .NET. `OTel` `OSS`
+- [OpenTelemetry contrib GenAI utilities for JavaScript](https://github.com/open-telemetry/opentelemetry-js-contrib/tree/main/packages/genai-util) - Shared helpers for GenAI instrumentations in the JavaScript contrib repository. `OTel` `GenAI semconv` `OSS`
+- [OpenTelemetry contrib OpenAI instrumentation for JavaScript](https://github.com/open-telemetry/opentelemetry-js-contrib/tree/main/packages/instrumentation-openai) - Instrumentation of the OpenAI client library for Node.js. `OTel` `GenAI semconv` `OSS`
+- [OpenTelemetry eBPF instrumentation](https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation) - Zero-code instrumentation of HTTP and gRPC services through eBPF. `OTel` `OSS`
+- [OpenTelemetry GenAI OpenAI Agents instrumentation for Python](https://github.com/open-telemetry/opentelemetry-python-genai/tree/main/instrumentation/opentelemetry-instrumentation-genai-openai-agents) - Instrumentation of the OpenAI Agents SDK following the GenAI conventions; replaces the deprecated contrib package openai-agents-v2. `OTel` `GenAI semconv` `OSS`
+- [OpenTelemetry GenAI OpenAI instrumentation for Python](https://github.com/open-telemetry/opentelemetry-python-genai/tree/main/instrumentation/opentelemetry-instrumentation-genai-openai) - Instrumentation of the OpenAI client library following the GenAI conventions; replaces the deprecated contrib package openai-v2. `OTel` `GenAI semconv` `OSS`
+- [OpenTelemetry Go](https://github.com/open-telemetry/opentelemetry-go) - OpenTelemetry SDK and API for Go. `OTel` `OSS`
+- [OpenTelemetry Java](https://github.com/open-telemetry/opentelemetry-java) - OpenTelemetry SDK and API for Java. `OTel` `OSS`
+- [OpenTelemetry Java instrumentation](https://github.com/open-telemetry/opentelemetry-java-instrumentation) - Java agent and libraries that instrument applications without code changes. `OTel` `OSS`
+- [OpenTelemetry Java instrumentation: OpenAI](https://github.com/open-telemetry/opentelemetry-java-instrumentation/tree/main/instrumentation/openai) - Java instrumentation folder for OpenAI client libraries. `OSS`
+- [OpenTelemetry JavaScript](https://github.com/open-telemetry/opentelemetry-js) - OpenTelemetry SDK and API for JavaScript and TypeScript. `OTel` `OSS`
+- [OpenTelemetry JavaScript contrib](https://github.com/open-telemetry/opentelemetry-js-contrib) - Community instrumentations for the JavaScript SDK. `OTel` `OSS`
+- [OpenTelemetry Python](https://github.com/open-telemetry/opentelemetry-python) - OpenTelemetry SDK and API for Python. `OTel` `OSS`
+- [OpenTelemetry Python contrib](https://github.com/open-telemetry/opentelemetry-python-contrib) - Community instrumentations for the Python SDK, including a GenAI directory. `OTel` `OSS`
+- [OpenTelemetry Python GenAI instrumentations](https://github.com/open-telemetry/opentelemetry-python-genai) - Repository of the OpenTelemetry instrumentation packages for generative AI client libraries and agent frameworks in Python. `GenAI semconv` `OSS`
+- [OpenTelemetry Python GenAI utilities](https://github.com/open-telemetry/opentelemetry-python-genai/tree/main/util/opentelemetry-util-genai) - Shared utilities for Python GenAI instrumentations. `OSS`
+- [opentelemetry-hooks](https://github.com/o11y-dev/opentelemetry-hooks) - Hooks that record activity of several coding agents as OpenTelemetry data. `OTel` `GenAI semconv`
+- [Splunk OpenTelemetry Python distribution](https://github.com/signalfx/splunk-otel-python) - Splunk distribution of OpenTelemetry Python, used to instrument agent applications for Splunk Observability Cloud. `OTel` `OSS`
+
+**[Back to top](#contents)**
+
+<a id="agent-frameworks-with-built-in-tracing"></a>
+## Agent frameworks
+
+Frameworks for building agents, with a note on how each one emits telemetry.
+
+- [AG2](https://github.com/ag2ai/ag2) - Multi-agent framework whose classic API derives from AutoGen, with OpenTelemetry tracing that follows the GenAI agent span conventions. ([Telemetry](https://docs.ag2.ai/latest/docs/user-guide/tracing/opentelemetry/)) `OTel` `GenAI semconv` `OSS`
+- [AgentScope](https://github.com/agentscope-ai/agentscope) - Multi-agent framework in Python with OpenTelemetry-based tracing sent to a collector or compatible backend. ([Telemetry](https://doc.agentscope.io/tutorial/task_tracing.html)) `OTel` `OSS`
+- [Agno](https://github.com/agno-agi/agno) - Python framework for agents and multi-agent teams that traces runs with OpenTelemetry through the OpenInference instrumentation. ([Telemetry](https://docs.agno.com/tracing/overview)) `OTel` `OpenInference` `OSS`
+- [AutoGen](https://github.com/microsoft/autogen) - Microsoft multi-agent framework whose tracing is built on OpenTelemetry and follows its semantic conventions for agents and tools. ([Telemetry](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/tracing.html)) `OTel` `GenAI semconv` `OSS`
+- [BeeAI Framework](https://github.com/i-am-bee/beeai-framework) - Framework for building agents in Python and TypeScript, traced in Python through an OpenInference instrumentor. ([Docs](https://framework.beeai.dev/modules/observability)) `OTel` `OpenInference` `OSS`
+- [Claude Code monitoring](https://code.claude.com/docs/en/monitoring-usage) - Documentation of the OpenTelemetry metrics and events that the Claude Code terminal agent exports. `OTel` `Proprietary`
+- [Cline](https://github.com/cline/cline) - Open source coding agent for the editor, with telemetry and OpenTelemetry export documented for enterprise setups. ([Docs](https://docs.cline.bot/more-info/telemetry)) `OTel` `OSS`
+- [CrewAI](https://github.com/crewAIInc/crewAI) - Multi-agent framework in Python whose built-in tracing exports OpenTelemetry spans, with integrations for other tracing tools. ([Telemetry](https://docs.crewai.com/en/observability/tracing)) `OTel` `OSS`
+- [Dify](https://github.com/langgenius/dify) - Platform for agentic workflows with integrations to tracing backends such as Opik, Langfuse and Arize Phoenix. `Source-available` `Self-hosted`
+- [Embabel](https://github.com/embabel/embabel-agent) - JVM agent framework whose user guide documents observation of its services through Micrometer. ([Docs](https://docs.embabel.com/)) `OSS`
+- [Gemini CLI telemetry](https://geminicli.com/docs/cli/telemetry/) - Documentation of the OpenTelemetry traces, metrics and logs of the Gemini CLI terminal agent, with GenAI conventions. ([Source](https://github.com/google-gemini/gemini-cli)) `OTel` `GenAI semconv` `OSS`
+- [Genkit](https://github.com/genkit-ai/genkit) - Framework for AI-powered applications that collects traces and metrics through OpenTelemetry instrumentation. ([Telemetry](https://genkit.dev/docs/js/observability/advanced-configuration/)) `OTel` `OSS`
+- [GitHub Copilot OpenTelemetry monitoring](https://docs.github.com/en/copilot/concepts/enterprise/opentelemetry) - GitHub documentation on sending OpenTelemetry data from Copilot clients to an OTLP-compatible backend. `OTel` `Proprietary`
+- [Google Agent Development Kit for JavaScript](https://github.com/google/adk-js) - Agent framework for JavaScript and TypeScript with an OpenTelemetry telemetry setup in its core package. ([Telemetry](https://github.com/google/adk-js/blob/main/core/src/telemetry/setup.ts)) `OTel` `OSS`
+- [Google Agent Development Kit for Python](https://github.com/google/adk-python) - Agent framework in Python whose traces implement the OpenTelemetry semantic conventions for GenAI. ([Telemetry](https://google.github.io/adk-docs/observability/traces/)) `OTel` `GenAI semconv` `OSS`
+- [GPT Researcher](https://github.com/assafelovic/gpt-researcher) - Autonomous research agent whose README documents tracing of its workflows with LangSmith. `OSS`
+- [Haystack](https://github.com/deepset-ai/haystack) - Framework for pipelines and agents with tracing through OpenTelemetry, Datadog, Langfuse and other backends. ([Docs](https://docs.haystack.deepset.ai/docs/tracing)) `OTel` `OSS`
+- [Inngest AgentKit](https://github.com/inngest/agent-kit) - TypeScript toolkit for agent networks with durable execution. `OSS`
+- [kagent](https://github.com/kagent-dev/kagent) - Kubernetes-native framework for running agents, with OpenTelemetry tracing of agent, model and tool execution. ([Telemetry](https://kagent.dev/docs/kagent/1.x/observability/tracing/)) `OTel` `OSS`
+- [LangChain](https://github.com/langchain-ai/langchain) - Framework for LLM applications whose callbacks send traces to LangSmith and other tools. ([Telemetry](https://docs.langchain.com/oss/python/langchain/observability)) `OSS`
+- [LangChain.js](https://github.com/langchain-ai/langchainjs) - JavaScript and TypeScript version of LangChain. ([Telemetry](https://docs.langchain.com/oss/javascript/langchain/observability)) `OSS`
+- [LangChain4j](https://github.com/langchain4j/langchain4j) - Java library for LLM applications with observability listeners that follow the GenAI conventions, and Micrometer metrics. ([Docs](https://docs.langchain4j.dev/tutorials/observability/)) `GenAI semconv` `OSS`
+- [LangGraph](https://github.com/langchain-ai/langgraph) - Library for stateful agent graphs; traces go to LangSmith. ([Telemetry](https://docs.langchain.com/oss/python/langgraph/observability)) `OSS`
+- [LiveKit Agents](https://docs.livekit.io/testing/observability/tracing/) - Framework for voice agents whose documentation describes OpenTelemetry traces per session, exportable to any OTLP backend. ([Source](https://github.com/livekit/agents)) `OTel` `OSS`
+- [LlamaIndex](https://github.com/run-llama/llama_index) - Data and agent framework with its own instrumentation module and integrations that include OpenTelemetry. ([Telemetry](https://developers.llamaindex.ai/python/framework/module_guides/observability/)) `OSS`
+- [Mastra](https://github.com/mastra-ai/mastra) - TypeScript agent framework with its own tracing and exporters for Langfuse, Datadog and OpenTelemetry-compatible platforms. ([Telemetry](https://mastra.ai/docs/observability/tracing/overview)) `OTel` `OSS` `Open-core`
+- [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) - Microsoft framework for building agents in .NET and Python that emits traces, logs and metrics per the OpenTelemetry GenAI conventions. ([Telemetry](https://learn.microsoft.com/en-us/agent-framework/user-guide/agents/agent-observability)) `OTel` `GenAI semconv` `OSS`
+- [NVIDIA NeMo Agent Toolkit](https://github.com/NVIDIA/NeMo-Agent-Toolkit) - Open source library for connecting and profiling teams of agents, with OpenTelemetry-based observability. ([Docs](https://docs.nvidia.com/nemo/agent-toolkit/latest/)) `OTel` `OSS`
+- [Open WebUI](https://github.com/open-webui/open-webui) - Self-hosted chat interface for language models with documented OpenTelemetry trace and metric export over OTLP. ([Docs](https://docs.openwebui.com/reference/monitoring/otel/)) `OTel` `Source-available` `Self-hosted`
+- [OpenAI Agents SDK for JavaScript](https://github.com/openai/openai-agents-js) - OpenAI agent SDK for TypeScript with built-in tracing in its own trace format and processors for other destinations. ([Telemetry](https://openai.github.io/openai-agents-js/guides/tracing/)) `OSS`
+- [OpenAI Agents SDK for Python](https://github.com/openai/openai-agents-python) - OpenAI agent SDK; tracing uses its own trace format, with processors that can export elsewhere. ([Telemetry](https://openai.github.io/openai-agents-python/tracing/)) `OSS`
+- [OpenAI Codex telemetry](https://developers.openai.com/codex/config-advanced) - Documentation of the opt-in OpenTelemetry log export of the Codex terminal coding agent. ([Source](https://github.com/openai/codex)) `OTel` `OSS`
+- [OpenClaw](https://github.com/openclaw/openclaw) - Personal AI assistant whose Gateway exports metrics, traces and logs over OTLP/HTTP through a diagnostics plugin. ([Docs](https://github.com/openclaw/openclaw/blob/main/docs/gateway/opentelemetry.md)) `OTel` `OSS`
+- [Pipecat](https://github.com/pipecat-ai/pipecat) - Framework for voice and multimodal agents with OpenTelemetry tracing of conversational pipelines. ([Docs](https://docs.pipecat.ai/api-reference/server/utilities/opentelemetry)) `OTel` `OSS`
+- [Pydantic AI](https://github.com/pydantic/pydantic-ai) - Python agent framework that emits OpenTelemetry data per the GenAI conventions and documents Logfire as one backend. ([Telemetry](https://ai.pydantic.dev/logfire/)) `OTel` `GenAI semconv` `OSS`
+- [Quarkus LangChain4j](https://github.com/quarkiverse/quarkus-langchain4j) - Quarkus extension for LangChain4j, with an observability guide that covers tracing and metrics. ([Docs](https://docs.quarkiverse.io/quarkus-langchain4j/dev/observability.html)) `OTel` `GenAI semconv` `OSS`
+- [Rasa](https://github.com/RasaHQ/rasa) - Framework for text and voice assistants whose documentation covers OpenTelemetry tracing of messages, actions and LLM calls. ([Docs](https://rasa.com/docs/pro/improve/tracing)) `OTel` `OSS`
+- [Rig](https://github.com/0xPlaygrounds/rig) - Rust library for LLM applications with tracing that is compatible with OpenTelemetry. `OTel` `GenAI semconv` `OSS`
+- [Semantic Kernel](https://github.com/microsoft/semantic-kernel) - Microsoft SDK for agents that emits logs, metrics and traces following the OpenTelemetry semantic conventions. ([Telemetry](https://learn.microsoft.com/en-us/semantic-kernel/concepts/enterprise-readiness/observability/)) `OTel` `GenAI semconv` `OSS`
+- [smolagents](https://github.com/huggingface/smolagents) - Hugging Face library for code-writing agents, traced with OpenTelemetry through the OpenInference instrumentation. ([Telemetry](https://huggingface.co/docs/smolagents/tutorials/inspect_runs)) `OTel` `OpenInference` `OSS`
+- [Spring AI](https://github.com/spring-projects/spring-ai) - Spring framework for AI applications, with Micrometer observations that follow the GenAI conventions. ([Docs](https://docs.spring.io/spring-ai/reference/observability/index.html)) `GenAI semconv` `OSS`
+- [Strands Agents SDK](https://github.com/strands-agents/harness-sdk) - Agent SDK from AWS for Python and TypeScript whose traces use OpenTelemetry and the GenAI attribute names. ([Telemetry](https://strandsagents.com/docs/user-guide/sdk/observability-evaluation/traces/)) `OTel` `GenAI semconv` `OSS`
+- [Temporal Python SDK](https://github.com/temporalio/sdk-python) - Python SDK for durable workflows, with OpenTelemetry tracing for workflows that often run long-lived agents. ([Docs](https://docs.temporal.io/develop/python/platform/observability)) `OTel` `OSS`
+- [Temporal TypeScript SDK](https://github.com/temporalio/sdk-typescript) - TypeScript SDK for durable workflows, with OpenTelemetry interceptors for tracing. `OTel` `OSS`
+- [Vercel AI SDK](https://github.com/vercel/ai) - TypeScript toolkit whose telemetry option emits OpenTelemetry spans with GenAI attributes. ([Telemetry](https://ai-sdk.dev/docs/ai-sdk-core/telemetry)) `OTel` `GenAI semconv` `OSS`
+- [VoltAgent](https://github.com/VoltAgent/voltagent) - TypeScript agent framework with tracing in its own VoltOps observability platform. ([Telemetry](https://voltagent.dev/observability-docs/)) `OSS`
+
+**[Back to top](#contents)**
+
+## Agent protocols and tool servers
+
+SDKs and servers for agent protocols such as MCP and A2A, and how they carry traces.
+
+- [A2A enterprise features](https://a2a-protocol.org/latest/topics/enterprise-ready/) - Page of the A2A documentation that covers tracing, monitoring and auditing for agents that use the protocol.
+- [A2A Java SDK](https://github.com/a2aproject/a2a-java) - Official Java SDK for the A2A protocol, with an OpenTelemetry module for tracing and context propagation in servers and clients. `OTel` `OSS`
+- [A2A Python SDK](https://github.com/a2aproject/a2a-python) - Python library for building A2A clients and servers, with optional OpenTelemetry tracing. `OTel` `OSS`
+- [Datadog MCP server](https://docs.datadoghq.com/mcp_server/) - Managed MCP server that lets agents query logs, metrics, traces and incidents in Datadog. ([Source](https://github.com/datadog-labs/mcp-server)) `OSS` `SaaS`
+- [FastMCP](https://github.com/PrefectHQ/fastmcp) - Python framework for MCP servers and clients with documented OpenTelemetry tracing. ([Docs](https://gofastmcp.com/servers/telemetry)) `OTel` `OSS`
+- [Last9 MCP server](https://github.com/last9/last9-mcp-server) - MCP server that lets agents query Last9 telemetry such as logs, traces and metrics. `OSS`
+- [mcp-grafana](https://github.com/grafana/mcp-grafana) - MCP server that gives agents access to Grafana dashboards, data sources and alerts. `OSS`
+- [mcp-otel](https://github.com/studiomeyer-io/mcp-otel) - Library that reads W3C Trace Context from the MCP request metadata and emits OpenTelemetry spans for MCP servers. `OTel` `OSS`
+- [Model Context Protocol C# SDK](https://github.com/modelcontextprotocol/csharp-sdk) - Official C# SDK for MCP clients and servers, with a sample that configures OpenTelemetry for MCP operations. `OTel` `OSS`
+- [Model Context Protocol Python SDK](https://github.com/modelcontextprotocol/python-sdk) - Python SDK for MCP servers and clients. `OSS`
+- [Model Context Protocol TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) - TypeScript SDK for MCP servers and clients. `OSS`
+- [OpenTelemetry MCP server (Traceloop)](https://github.com/traceloop/opentelemetry-mcp-server) - MCP server that lets agents search and read traces stored in Jaeger, Tempo or Traceloop. `OSS`
+- [SigNoz MCP server](https://github.com/SigNoz/signoz-mcp-server) - MCP server that lets agents query SigNoz telemetry. `OSS`
+
+**[Back to top](#contents)**
+
+## Collectors and pipelines
+
+Collector distributions and components that receive, process, redact and route agent telemetry.
+
+- [Bindplane OpenTelemetry Collector](https://github.com/observIQ/bindplane-otel-collector) - Bindplane build of the OpenTelemetry Collector that can be managed remotely through the OpAMP protocol. `OTel` `OSS`
+- [Dynatrace OpenTelemetry Collector](https://github.com/Dynatrace/dynatrace-otel-collector) - Collector distribution for sending OpenTelemetry data to Dynatrace. `OTel` `OSS` `Self-hosted`
+- [Fluent Bit](https://github.com/fluent/fluent-bit) - Telemetry agent that collects and routes logs, metrics and traces, with plugins that read and write OpenTelemetry data. `OTel` `OSS`
+- [Grafana Alloy](https://github.com/grafana/alloy) - Grafana distribution of the OpenTelemetry Collector that also runs Prometheus-style pipelines for metrics, logs, traces and profiles. `OTel` `OSS`
+- [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector) - Vendor-neutral agent for receiving, processing and exporting telemetry. `OTel` `OSS` `Self-hosted`
+- [OpenTelemetry Collector Contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib) - Community receivers, processors and exporters for the Collector. `OTel` `OSS` `Self-hosted`
+- [OpenTelemetry Operations for Python (Google Cloud exporters)](https://github.com/GoogleCloudPlatform/opentelemetry-operations-python) - OpenTelemetry Python exporters for Cloud Monitoring and Cloud Trace. `OTel` `OSS`
+- [OpenTelemetry redaction processor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/redactionprocessor) - Collector processor that removes attributes not on an allowed list and masks values that match a blocked list. `OSS`
+- [OpenTelemetry span metrics connector](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/connector/spanmetricsconnector) - Collector connector that aggregates spans into request, error and duration metrics. `OSS`
+- [OpenTelemetry tail sampling processor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/tailsamplingprocessor) - Collector processor that decides which traces to keep after seeing whole traces, by policies such as errors or latency. `OSS`
+- [OpenTelemetry transform processor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/transformprocessor) - Collector processor that modifies telemetry with OpenTelemetry Transformation Language statements. `OSS`
+- [Refinery](https://github.com/honeycombio/refinery) - Sampling proxy that buffers all spans of a trace and then keeps or drops the trace as a whole. `OSS`
+- [Vector](https://github.com/vectordotdev/vector) - Observability data pipeline for logs, metrics and traces, with an OpenTelemetry source and sink. `OTel` `OSS`
+
+**[Back to top](#contents)**
+
+<a id="observability-and-llm-platforms"></a>
+## Platforms
+
+Products and backends that store, query and visualize agent telemetry.
+
+### LLM and agent observability platforms
+
+Platforms built for tracing, evaluating and monitoring LLM applications and agents.
+
+- [Agenta](https://github.com/Agenta-AI/agenta) - Workspace for building, evaluating and observing LLM applications. `OSS` `Open-core` `Self-hosted`
+- [AgentOps](https://github.com/AgentOps-AI/agentops) - Python SDK and platform for session replay, cost and tracing of agents. `OTel` `OSS`
+- [Arize AX](https://docs.arize.com/ax) - Hosted platform from Arize for tracing and evaluating LLM applications. `OTel` `OpenInference` `Proprietary` `SaaS`
+- [Arize Phoenix](https://github.com/Arize-ai/phoenix) - Self-hostable tracing and evaluation tool that ingests OpenInference traces over OTLP. `OTel` `OpenInference` `Source-available` `Self-hosted` `SaaS`
+- [Braintrust](https://www.braintrust.dev/docs/guides/traces) - Hosted platform for logging traces, evaluating and monitoring LLM applications, with an open source JavaScript SDK. ([Source](https://github.com/braintrustdata/braintrust-sdk-javascript)) `Proprietary` `SaaS`
+- [Databricks: MLflow tracing overview](https://docs.databricks.com/aws/en/mlflow3/genai/tracing/) - Documents MLflow tracing on Databricks for generative AI applications and agents. `OTel` `Proprietary` `SaaS`
+- [Fiddler documentation](https://docs.fiddler.ai/) - Documentation of Fiddler, a platform for monitoring and governing agents and models. `Proprietary` `SaaS`
+- [Galileo documentation](https://docs.galileo.ai/) - Documentation of Galileo, a platform for evaluating and monitoring agents, with OpenTelemetry ingest. `OTel` `Proprietary` `SaaS`
+- [Helicone](https://github.com/Helicone/helicone) - Platform for logging requests, cost and sessions of LLM applications. `OSS` `Self-hosted` `SaaS`
+- [HoneyHive documentation](https://docs.honeyhive.ai/) - Documentation of HoneyHive, a platform for tracing and evaluating agents with OpenTelemetry support. `OTel` `Proprietary` `SaaS`
+- [Laminar](https://github.com/lmnr-ai/lmnr) - Self-hostable agent observability platform with an OpenTelemetry-native SDK that instruments common LLM frameworks. `OTel` `OSS` `Self-hosted` `SaaS`
+- [Langfuse](https://github.com/langfuse/langfuse) - Self-hostable platform for traces, prompts and evaluations, with an OpenTelemetry endpoint. `OTel` `OSS` `Open-core` `Self-hosted` `SaaS`
+- [LangSmith](https://docs.langchain.com/langsmith/home) - Hosted platform from LangChain for tracing and evaluating LLM applications, with OpenTelemetry trace ingestion. `OTel` `Proprietary` `SaaS`
+- [Langtrace](https://github.com/Scale3-Labs/langtrace) - Tool that records OpenTelemetry traces of LLM calls, vector database queries and framework operations in LLM applications. ([Docs](https://docs.langtrace.ai/)) `OTel` `OSS` `Self-hosted` `SaaS`
+- [LangWatch](https://github.com/langwatch/langwatch) - Platform for tracing, evaluating and simulating agents. `OTel` `OSS` `Open-core` `Self-hosted` `SaaS`
+- [Latitude](https://github.com/latitude-dev/latitude-llm) - Agent observability platform that groups failing traces into tracked signals and replays fixes against them. `OTel` `OSS` `Self-hosted`
+- [Lunary](https://lunary.ai/docs) - Hosted platform documentation for monitoring LLM applications, with a JavaScript SDK. ([Source](https://github.com/lunary-ai/lunary-js)) `SaaS`
+- [Maxim documentation](https://www.getmaxim.ai/docs) - Documentation of Maxim, a platform for evaluating and observing agents. `Proprietary` `SaaS`
+- [MLflow Tracing](https://mlflow.org/docs/latest/genai/tracing/) - Tracing feature of MLflow for LLM applications and agents, compatible with OpenTelemetry and the GenAI conventions. ([Source](https://github.com/mlflow/mlflow)) `OTel` `GenAI semconv` `OSS` `Self-hosted` `SaaS`
+- [Opik](https://github.com/comet-ml/opik) - Platform for tracing, evaluating and monitoring LLM applications and agents. `OTel` `OSS` `Self-hosted` `SaaS`
+- [Snowflake AI Observability with Cortex](https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-observability) - Documents Snowflake tracing and evaluation of generative AI applications. `Proprietary` `SaaS`
+- [Traceloop](https://www.traceloop.com/docs) - Hosted platform from the OpenLLMetry maintainers for monitoring LLM applications. `OTel` `Proprietary` `SaaS`
+- [Weights & Biases Weave](https://github.com/wandb/weave) - Toolkit for tracing and evaluating LLM applications. `OSS`
+
+### General APM with GenAI support
+
+Application performance monitoring products with features for LLM and agent workloads.
+
+- [Axiom LLM observability](https://axiom.co/docs/use-cases/llm-observability) - Documents Axiom tracing of LLM and agent applications with OpenTelemetry. `OTel` `GenAI semconv` `Proprietary` `SaaS`
+- [Coralogix AI observability](https://coralogix.com/platform/ai-observability/) - Product page for Coralogix monitoring of AI applications and agents. ([Docs](https://coralogix.com/docs/user-guides/ai/getting_started/)) `OTel` `GenAI semconv` `Proprietary` `SaaS`
+- [Datadog LLM Observability](https://docs.datadoghq.com/llm_observability/) - Hosted product for tracing and monitoring LLM applications and agents, which also accepts OpenTelemetry GenAI instrumentation. `OTel` `GenAI semconv` `OpenInference` `Proprietary` `SaaS`
+- [Dynatrace AI observability](https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability) - Hosted product documentation for observing AI workloads, with OpenTelemetry ingestion through OpenInference or GenAI conventions. `OTel` `OpenInference` `GenAI semconv` `Proprietary` `SaaS`
+- [Elastic LLM observability](https://www.elastic.co/observability/llm-monitoring) - Elastic Observability features for monitoring LLM applications, with OpenTelemetry support through the Elastic distributions (EDOT). `OTel` `Self-hosted` `SaaS`
+- [GenAI Observability for Splunk](https://splunkbase.splunk.com/app/8308) - Splunkbase app with dashboards for tokens, latency, cost and errors of generative AI workloads. `Proprietary` `Self-hosted` `SaaS`
+- [Grafana Cloud AI Observability](https://grafana.com/docs/grafana-cloud/monitor-applications/ai-observability/) - Documents Grafana Cloud AI observability dashboards built on OpenLIT instrumentation and OpenTelemetry data. `OTel` `Proprietary` `SaaS`
+- [Grafana Cloud Claude Code integration](https://grafana.com/docs/grafana-cloud/monitor-infrastructure/integrations/integration-reference/integration-claude-code) - Documents the prebuilt Grafana Cloud integration that receives coding agent telemetry over OTLP. `OTel` `Proprietary` `SaaS`
+- [Honeycomb](https://docs.honeycomb.io/send-data/opentelemetry/) - Hosted observability product that ingests OpenTelemetry data. `OTel` `Proprietary` `SaaS`
+- [Honeycomb AI and LLM observability](https://www.honeycomb.io/use-cases/ai-llm-observability) - Product page for Honeycomb tracing of LLM applications and agents. ([Docs](https://docs.honeycomb.io/send-data/agents)) `OTel` `GenAI semconv` `Proprietary` `SaaS`
+- [IBM Instana Observability](https://www.ibm.com/products/instana) - Product page of IBM Instana, an APM platform with OpenTelemetry ingest and generative AI monitoring. `OTel` `Proprietary` `Self-hosted` `SaaS`
+- [Last9 documentation](https://last9.io/docs/) - Documentation of Last9, an observability platform that ingests OpenTelemetry data. `OTel` `Proprietary` `SaaS`
+- [New Relic AI monitoring](https://docs.newrelic.com/docs/ai-monitoring/intro-to-ai-monitoring/) - Hosted product documentation for monitoring AI applications. `Proprietary` `SaaS`
+- [Salesforce Agentforce Observability](https://www.salesforce.com/agentforce/observability/) - Product page for observability of Agentforce agents. `Proprietary` `SaaS`
+- [Sentry AI agent monitoring](https://docs.sentry.io/product/insights/ai/agents/) - Hosted product documentation for monitoring agent runs and tool calls. `Proprietary` `SaaS`
+- [SigNoz](https://github.com/SigNoz/signoz) - OpenTelemetry-native observability platform with guides for monitoring LLM applications. `OTel` `OSS` `Open-core` `Self-hosted` `SaaS`
+- [Splunk AI Agent Monitoring](https://help.splunk.com/en/splunk-observability-cloud/observability-for-ai/splunk-ai-agent-monitoring) - Documents Splunk Observability Cloud views for AI agents, built on OpenTelemetry GenAI data. `OTel` `GenAI semconv` `Proprietary` `SaaS`
+
+### Trace backends and UIs
+
+General backends and front ends for traces, metrics and logs that accept agent telemetry.
+
+- [Claude Code Grafana dashboard (Application Insights)](https://grafana.com/grafana/dashboards/25052-claude-code/) - Community Grafana dashboard that reads coding agent telemetry from Azure Application Insights. `OTel`
+- [Claude Code Metrics (Prometheus) Grafana dashboard](https://grafana.com/grafana/dashboards/25255-claude-code-metrics-prometheus/) - Community Grafana dashboard for coding agent usage metrics on Prometheus-compatible backends. `OTel`
+- [claude-code-metrics-prometheus](https://github.com/rockdarko/claude-code-metrics-prometheus) - Grafana dashboard that reads OpenTelemetry metrics of a coding agent from Prometheus-compatible stores. `OTel` `OSS`
+- [claude-otel](https://github.com/li0nel/claude-otel) - Configuration for sending a coding agent's OpenTelemetry metrics to Grafana Cloud, with a dashboard of cost and tokens per session. `OTel`
+- [Grafana](https://github.com/grafana/grafana) - Dashboard and query front end used with Tempo, Prometheus and Loki. `OSS` `Self-hosted` `SaaS`
+- [Grafana Tempo](https://grafana.com/docs/tempo/latest/) - Distributed tracing backend that accepts OTLP. ([Source](https://github.com/grafana/tempo)) `OTel` `OSS` `Self-hosted` `SaaS`
+- [Jaeger](https://github.com/jaegertracing/jaeger) - Open source distributed tracing backend that accepts OTLP. `OTel` `OSS` `Self-hosted`
+- [OpenObserve](https://github.com/openobserve/openobserve) - Self-hostable backend that stores and queries logs, metrics and traces, with native OTLP ingestion. `OTel` `OSS` `Self-hosted` `SaaS`
+- [Prometheus](https://github.com/prometheus/prometheus) - Metrics database commonly used for GenAI metrics. `OSS` `Self-hosted`
+- [Uptrace](https://github.com/uptrace/uptrace) - Self-hostable APM that collects data with OpenTelemetry and keeps traces, metrics and logs in ClickHouse. `OTel` `OSS` `Self-hosted`
+
+### Cloud provider offerings
+
+Observability features of the agent runtimes and AI platforms of cloud providers.
+
+- [Amazon Bedrock AgentCore observability](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability.html) - Observability of agents run on Amazon Bedrock AgentCore, with telemetry in an OpenTelemetry-compatible format. `Proprietary` `SaaS`
+- [Amazon Bedrock AgentCore Observability, configure](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-configure.html) - Describes how to configure observability for AgentCore runtimes and for agents hosted outside AgentCore. `OTel` `Proprietary` `SaaS`
+- [Amazon Bedrock AgentCore Observability, get started](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-get-started.html) - Explains how to enable AgentCore observability for agents and send their telemetry to CloudWatch. `OTel` `Proprietary` `SaaS`
+- [Amazon CloudWatch generative AI observability](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/GenAI-observability.html) - Documents CloudWatch views for latency, usage and errors, and prompt tracing across models and agents. `Proprietary` `SaaS`
+- [AWS Distro for OpenTelemetry](https://aws-otel.github.io/docs/introduction/) - AWS-supported distribution of OpenTelemetry components that sends traces and metrics to AWS services and other backends. ([Source](https://github.com/aws-observability/aws-otel-collector)) `OTel` `OSS`
+- [Azure Monitor: enable OpenTelemetry in Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable) - Explains the Azure Monitor OpenTelemetry distro that sends application telemetry to Application Insights. `OTel` `Proprietary` `SaaS`
+- [Azure Monitor: monitor AI agents with Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/agents-view) - Describes the Application Insights agents view for performance, token usage and errors of agents. `OTel` `Proprietary` `SaaS`
+- [Google Cloud Observability for AI agent developers](https://docs.cloud.google.com/stackdriver/docs/instrumentation/ai-agent-overview) - Overview of instrumenting agents built with frameworks such as ADK and LangGraph and viewing them in Cloud Observability. `OTel` `Proprietary` `SaaS`
+- [Google Cloud Trace overview](https://docs.cloud.google.com/trace/docs/overview) - Describes Cloud Trace, the distributed tracing backend that accepts OpenTelemetry data from agents on Google Cloud. `OTel` `Proprietary` `SaaS`
+- [Google Cloud: trace an agent (Agent Engine runtime)](https://docs.cloud.google.com/agent-builder/agent-engine/manage/tracing) - Explains how to enable Cloud Trace on deployed agents and read traces of tool calls and model requests. `OTel` `Proprietary` `SaaS`
+- [Microsoft Copilot Studio analytics overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-overview) - Documents analytics and monitoring views for agents built in Copilot Studio. `Proprietary` `SaaS`
+- [Microsoft Foundry tracing](https://learn.microsoft.com/en-us/azure/foundry/observability/concepts/trace-agent-concept) - Tracing of agents and applications in Microsoft Foundry (formerly Azure AI Foundry), built on OpenTelemetry. `Proprietary` `SaaS`
+
+### Model serving
+
+Inference and serving engines and the telemetry they expose, such as Prometheus metrics.
+
+- [BentoML](https://github.com/bentoml/BentoML) - Python framework for serving models and AI services, with documented OpenTelemetry tracing and OTLP export. ([Docs](https://docs.bentoml.com/en/latest/build-with-bentoml/observability/tracing.html)) `OTel` `OSS`
+- [KServe](https://github.com/kserve/kserve) - Kubernetes inference platform with a Prometheus monitoring guide and an OpenTelemetry-based JSON log profile. ([Docs](https://github.com/kserve/kserve/blob/master/docs/samples/metrics-and-monitoring/README.md)) `OSS`
+- [llama.cpp server](https://github.com/ggml-org/llama.cpp/tree/master/tools/server) - HTTP server of llama.cpp with an optional Prometheus-compatible metrics endpoint enabled by a command-line flag. ([Source](https://github.com/ggml-org/llama.cpp)) `OSS`
+- [llm-d](https://github.com/llm-d/llm-d) - Kubernetes inference stack whose operations guide covers Prometheus metrics, Grafana dashboards and OpenTelemetry distributed tracing. ([Docs](https://github.com/llm-d/llm-d/tree/main/docs/operations/observability)) `OSS`
+- [LMDeploy](https://github.com/InternLM/lmdeploy) - Toolkit for deploying and serving language models that exposes Prometheus metrics, with a bundled Grafana setup. ([Docs](https://github.com/InternLM/lmdeploy/blob/main/docs/en/advance/metrics.md)) `OSS`
+- [NVIDIA Dynamo](https://github.com/ai-dynamo/dynamo) - Distributed inference serving framework whose Kubernetes guide covers Prometheus metrics and an OTLP collector endpoint for traces. ([Docs](https://github.com/ai-dynamo/dynamo/blob/main/docs/fern/pages/kubernetes/operations/observability.mdx)) `OTel` `OSS`
+- [SGLang](https://github.com/sgl-project/sglang) - Serving framework for language models, with Prometheus production metrics documented. ([Docs](https://docs.sglang.io/docs/references/production_metrics)) `OSS`
+- [Triton Inference Server](https://github.com/triton-inference-server/server) - Inference server that exposes Prometheus metrics and can emit request traces through OpenTelemetry. ([Docs](https://github.com/triton-inference-server/server/blob/main/docs/user_guide/trace.md)) `OTel` `OSS`
+- [vLLM](https://github.com/vllm-project/vllm) - Inference and serving engine for language models, with Prometheus production metrics documented. ([Docs](https://docs.vllm.ai/en/latest/usage/metrics/)) `OSS`
+
+**[Back to top](#contents)**
+
+<a id="gateways-and-proxies-with-telemetry"></a>
+## Gateways and proxies
+
+Gateways and proxies for model and agent traffic that record or export telemetry.
+
+- [Agent Router](https://github.com/theagentrouter/agent-router) - Control plane for AI and agent traffic built on Envoy Gateway, formerly named Envoy AI Gateway. ([Docs](https://theagentrouter.ai/)) `GenAI semconv` `OpenInference` `OSS` `Self-hosted`
+- [agentgateway](https://github.com/agentgateway/agentgateway) - Proxy for agent, MCP and LLM traffic, with tracing and metrics documented. ([Docs](https://agentgateway.dev/docs/standalone/latest/observability/)) `OTel` `OSS`
+- [Azure API Management AI gateway capabilities](https://learn.microsoft.com/en-us/azure/api-management/genai-gateway-capabilities) - Lists API Management features for LLM endpoints, including token metrics, logging and monitoring. `Proprietary` `SaaS`
+- [Bifrost](https://github.com/maximhq/bifrost) - AI gateway that also works as an MCP gateway, with Prometheus metrics, distributed tracing and logging. `OSS`
+- [Cloudflare AI Gateway](https://developers.cloudflare.com/ai-gateway/observability/) - Hosted gateway whose documentation covers request logging, analytics, costs and an OpenTelemetry integration. `Proprietary` `SaaS`
+- [Databricks AI Gateway](https://docs.databricks.com/aws/en/ai-gateway/) - Documents the Databricks gateway for governing model, MCP and coding agent traffic. `Proprietary` `SaaS`
+- [Envoy Gateway](https://github.com/envoyproxy/gateway) - Gateway project that the Envoy AI Gateway builds on. `OSS` `Self-hosted`
+- [Helicone AI Gateway](https://github.com/Helicone/ai-gateway) - Open source gateway for routing LLM requests, with OpenTelemetry support for logs, metrics and traces. `OTel` `OSS` `Self-hosted` `SaaS`
+- [IBM ContextForge](https://github.com/IBM/mcp-context-forge) - Gateway that fronts MCP, A2A and REST tools, with documented tracing and metrics. ([Docs](https://ibm.github.io/mcp-context-forge/manage/observability/)) `OTel` `OSS` `Self-hosted`
+- [Kong AI Gateway](https://docs.konghq.com/gateway/latest/ai-gateway/) - AI traffic features of Kong Gateway, with the AI Proxy plugin documented separately. ([Docs](https://docs.konghq.com/hub/kong-inc/ai-proxy/)) `Self-hosted` `SaaS`
+- [LiteLLM](https://docs.litellm.ai/docs/observability/opentelemetry_integration) - Python SDK and proxy server with one API for many model providers, including an OpenTelemetry callback for traces. ([Source](https://github.com/BerriAI/litellm)) `OTel` `OSS` `Open-core` `Self-hosted` `SaaS`
+- [OpenRouter broadcast](https://openrouter.ai/docs/guides/features/broadcast) - Hosted router that can forward traces of requests to observability tools, including an OpenTelemetry Collector. `OTel` `Proprietary` `SaaS`
+- [Portkey AI Gateway](https://github.com/Portkey-AI/gateway) - Gateway that routes requests to many providers, with request logging in the hosted product. ([Docs](https://portkey.ai/docs)) `OSS` `Self-hosted` `SaaS`
+- [Traceloop Hub](https://github.com/traceloop/hub) - Rust gateway in front of LLM providers that emits OpenTelemetry traces and Prometheus metrics for each request. `OTel` `OSS`
+- [Vercel AI Gateway](https://vercel.com/docs/ai-gateway) - Hosted gateway for model access with usage and cost reporting. `Proprietary` `SaaS`
+
+**[Back to top](#contents)**
+
+<a id="evaluation-and-testing-of-agents"></a>
+## Evaluation and testing
+
+Evaluation, testing and simulation tools with a documented link to traces or observability.
+
+- [Braintrust autoevals](https://github.com/braintrustdata/autoevals) - Library of evaluation scorers that works with Braintrust logging. `OSS`
+- [DeepEval](https://github.com/confident-ai/deepeval) - Evaluation framework with tracing of LLM applications and an OpenTelemetry integration. ([Docs](https://docs.confident-ai.com/)) `OSS`
+- [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai) - Evaluation framework for models and agents, with trace logging for debugging evaluation runs. ([Docs](https://inspect.aisi.org.uk/tracing.html)) `OSS`
+- [Opik evaluation](https://www.comet.com/docs/opik/) - Documentation of the evaluation features that run on traced data in Opik.
+- [promptfoo](https://github.com/promptfoo/promptfoo) - Test and red-team tool for prompts and agents that reads OpenTelemetry (OTLP) traces of the application under test. ([Docs](https://www.promptfoo.dev/docs/tracing/)) `OTel` `OSS`
+- [TruLens](https://github.com/truera/trulens) - Library for evaluating and tracking LLM applications with instrumented traces, described as OpenTelemetry-native. ([Docs](https://www.trulens.org/)) `OSS`
+
+**[Back to top](#contents)**
+
+## Cost and usage
+
+Token accounting, budgets and cost attribution for agents.
+
+- [Azure API Management llm-emit-token-metric policy](https://learn.microsoft.com/en-us/azure/api-management/llm-emit-token-metric-policy) - Policy reference for emitting token usage metrics of LLM calls passing through API Management.
+- [ccusage](https://github.com/ccusage/ccusage) - Command-line tool that reports token usage and cost of coding agents from local data. `OSS`
+- [FinOps for AI overview](https://www.finops.org/wg/finops-for-ai-overview/) - FinOps Foundation guide to managing token costs and resource usage of language models and generative AI.
+- [genai-prices](https://github.com/pydantic/genai-prices) - Library and price data to calculate the price of calls to LLM inference APIs. `OSS`
+- [Helicone cost tracking](https://docs.helicone.ai/guides/cookbooks/cost-tracking) - Guide to monitoring LLM spend and unit economics with Helicone.
+- [Langfuse token and cost tracking](https://langfuse.com/docs/observability/features/token-and-cost-tracking) - Documentation of how Langfuse records usage and cost of generations, with model prices that can be overridden.
+- [LangSmith cost tracking](https://docs.langchain.com/langsmith/cost-tracking) - Documentation of token and cost tracking on LangSmith traces.
+- [LiteLLM budgets and rate limits](https://docs.litellm.ai/docs/proxy/users) - Documentation of budgets and rate limits per user, key and team in the LiteLLM proxy.
+- [LiteLLM Prometheus metrics](https://docs.litellm.ai/docs/proxy/prometheus) - Documents Prometheus metrics for spend, tokens and latency exposed by the LiteLLM proxy.
+- [LiteLLM spend tracking](https://docs.litellm.ai/docs/proxy/cost_tracking) - Documentation of spend tracking by key, user and team in the LiteLLM proxy.
+- [OpenLIT LLM cost tracking](https://docs.openlit.io/latest/openlit/costs/overview) - Documentation of spend per model, user and agent run in OpenLIT, with managed model pricing and backfill of missing costs.
+- [OpenMeter](https://github.com/openmeterio/openmeter) - Metering and usage-based billing infrastructure that aggregates usage events for AI, API and DevOps products. `OSS` `Self-hosted` `SaaS`
+- [Phoenix cost tracking](https://arize.com/docs/phoenix/tracing/how-to-tracing/cost-tracking) - Documentation of cost tracking on traces in Arize Phoenix.
+- [Tokscale](https://github.com/junhoyeo/tokscale) - Command-line tool and dashboard that track token usage and cost across several coding agents. `OSS`
+
+**[Back to top](#contents)**
+
+## Safety signals
+
+Guardrails and runtime monitoring that emit telemetry, limited to their observability side.
+
+- [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit) - Policy enforcement and trust scoring for agents that emits spans and metrics for policy evaluations and violations. `OTel` `OSS`
+- [Amazon Bedrock Guardrails CloudWatch metrics](https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-guardrails-cw-metrics.html) - Documentation of CloudWatch metrics for guardrail invocations, interventions, latency and errors.
+- [Arthur Engine](https://github.com/arthur-ai/arthur-engine) - Monitoring and governance engine that ingests OpenInference traces, runs evaluations on live traces and enforces guardrails. `OTel` `OpenInference` `OSS` `Self-hosted`
+- [Google Cloud Model Armor](https://docs.cloud.google.com/model-armor/overview) - Google Cloud service that screens prompts and responses of AI applications, with a monitoring dashboard. `Proprietary` `SaaS`
+- [Guardrails AI](https://github.com/guardrails-ai/guardrails) - Python framework for validating inputs and outputs of language models, with guard invocations traced through an OpenInference instrumentor. `OTel` `OpenInference` `OSS`
+- [IBM watsonx.governance](https://www.ibm.com/products/watsonx-governance) - Product page for continuous monitoring and governance of AI systems for compliance and operational risk. `Proprietary` `SaaS`
+- [Langfuse security and guardrails](https://langfuse.com/docs/security-and-guardrails) - Guide to monitoring and evaluating prompt injection, PII leakage and harmful content with Langfuse and guardrail libraries.
+- [NeMo Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) - Toolkit for adding guardrails to LLM applications, with OpenTelemetry tracing of guardrail execution. ([Docs](https://docs.nvidia.com/nemo/guardrails/latest/user-guides/tracing/index.html)) `OTel` `GenAI semconv` `OSS`
+- [OpenGuardrails](https://github.com/openguardrails/openguardrails) - Specification and reference integrations for portable agent safety verdicts, with a mapping to OpenTelemetry concepts. `OSS`
+- [OpenLIT guardrails](https://docs.openlit.io/latest/sdk/features/guardrails.md) - Documentation of OpenLIT guardrails for prompt injection, sensitive topics and topic restriction, traced with OpenTelemetry.
+- [Pydantic Logfire agent governance](https://pydantic.dev/logfire/agent-governance) - Product page on spend policies, data loss prevention and audit of agent actions based on traces. `Proprietary` `SaaS`
+
+**[Back to top](#contents)**
+
+<a id="on-chain-agents-and-agent-payments"></a>
+## On-chain agents and payments
+
+Tracing, protocols and infrastructure for agents that send transactions or make payments.
+
+### Transaction tracing
+
+Tools and documentation for tracing, replaying and debugging on-chain transactions, including those sent by agents and services.
+
+- [cast run (Foundry)](https://www.getfoundry.sh/cast/reference/run) - Foundry command that re-executes a mined transaction against forked chain state and shows the resulting call trace, with an optional debugger. `OSS`
+- [Geth EVM tracing](https://geth.ethereum.org/docs/developers/evm-tracing) - Documentation of the go-ethereum tracers that replay a transaction on the node and report each step the EVM ran.
+- [hashspan](https://github.com/selimaytac/hashspan) - OpenTelemetry tracing for on-chain transactions sent by AI agents and other services, with adapters for viem, the CDP SDK, x402 and MPP. `OTel` `OSS`
+- [Tenderly Debugger](https://docs.tenderly.co/debugger/overview) - Hosted tool for inspecting a failed or past EVM transaction: its call trace, contract state at each step and the matching source code. `Proprietary` `SaaS`
+
+### Payment protocols
+
+Protocols and SDKs for payments made by agents, such as x402, MPP, AP2 and ACP.
+
+- [a2a-x402](https://github.com/google-agentic-commerce/a2a-x402) - Extension that combines the A2A protocol with x402 payments. `OSS`
+- [Agent Payments Protocol (AP2) documentation](https://ap2-protocol.org/) - Documentation site of AP2, an open protocol for agent-initiated payments.
+- [Agentic Commerce Protocol](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol) - Specification of how a buyer, the buyer's agent and a merchant exchange checkout requests to complete a purchase. `OSS`
+- [AP2](https://github.com/google-agentic-commerce/AP2) - Agent Payments Protocol specification for payments initiated by agents. `OSS`
+- [Mastercard agentic commerce guide](https://developer.mastercard.com/merchant-cloud/documentation/tutorials-and-guides/agentic-commerce-guide/22/) - Mastercard developer guide on agentic commerce flows and recommended practices.
+- [MPP](https://mpp.dev/) - Machine Payments Protocol for payments between machines and agents. ([Source](https://github.com/tempoxyz/mpp)) `OSS`
+- [mppx](https://github.com/wevm/mppx) - TypeScript SDK for the Machine Payments Protocol. `OSS`
+- [OpenAI commerce developer documentation](https://developers.openai.com/commerce) - Developer documentation for commerce integrations with conversational agents.
+- [Stripe agentic commerce documentation](https://docs.stripe.com/agentic-commerce) - Stripe documentation of agentic commerce flows and protocol support.
+- [Universal Commerce Protocol](https://ucp.dev/) - Specification for interoperable commerce between agents and merchants. ([Source](https://github.com/Universal-Commerce-Protocol/ucp)) `OSS`
+- [Visa Trusted Agent Protocol](https://developer.visa.com/capabilities/trusted-agent-protocol) - Visa developer documentation for establishing trust between agents and merchants. ([Source](https://github.com/visa/trusted-agent-protocol)) `Source-available`
+- [x402](https://github.com/x402-foundation/x402) - Open protocol for payments over HTTP 402 responses. ([Docs](https://docs.x402.org/)) `OSS`
+
+### RPC and node observability
+
+RPC interfaces, proxies and nodes, and the telemetry they expose.
+
+- [Erigon dashboard setup](https://docs.erigon.tech/fundamentals/creating-a-dashboard) - Documentation of Prometheus metrics export and a Grafana dashboard for monitoring an Erigon node. ([Source](https://github.com/erigontech/erigon))
+- [eRPC](https://github.com/erpc/erpc) - Fault-tolerant RPC proxy for EVM chains with caching, a monitoring setup and tracing exported over OTLP. ([Docs](https://docs.erpc.cloud/operation/monitoring)) `OTel` `OSS` `Self-hosted`
+- [Ethereum execution APIs](https://github.com/ethereum/execution-apis) - Specification of the JSON-RPC interface of Ethereum execution clients.
+- [Geth metrics](https://geth.ethereum.org/docs/monitoring/metrics) - Documentation of the metrics of the go-ethereum client, including a Prometheus-formatted endpoint. ([Source](https://github.com/ethereum/go-ethereum))
+- [Reth](https://github.com/paradigmxyz/reth) - Ethereum execution client with Prometheus metrics and OTLP trace export through a command-line flag. ([Docs](https://reth.rs/run/monitoring/)) `OTel` `OSS`
+
+### Wallets and smart accounts
+
+Wallet SDKs, client libraries and smart account infrastructure used by agents.
+
+- [Alto](https://github.com/pimlicolabs/alto) - ERC-4337 bundler that relays user operations sent by smart accounts. `OSS`
+- [Coinbase AgentKit](https://github.com/coinbase/agentkit) - Toolkit that gives AI agents wallets and on-chain actions. `OSS`
+- [Coinbase CDP SDK](https://github.com/coinbase/cdp-sdk) - SDK for Coinbase Developer Platform wallets and APIs. `OSS`
+- [Privy agent wallets](https://docs.privy.io/wallets/overview/solutions/agent-wallets) - Documentation of wallets for agents with a policy engine that limits tokens, chains, transfer values and recipients.
+- [Turnkey agentic wallets](https://docs.turnkey.com/solutions/company-wallets/agentic-wallets) - Documentation of scoped signing authority for agents with policies, spending caps and multi-party approval. ([Source](https://github.com/tkhq/sdk)) `OSS`
+- [viem](https://github.com/wevm/viem) - TypeScript library for Ethereum clients and transactions. `OSS`
+
+### Local and test chains
+
+Local nodes and toolkits for testing transactions without a public network.
+
+- [Anvil](https://book.getfoundry.sh/anvil/) - Local Ethereum node of Foundry for testing transactions without a public network. `OSS`
+- [ethereum-package (Kurtosis)](https://github.com/ethpandaops/ethereum-package) - Kurtosis package that starts a private multi-client Ethereum testnet on Docker or Kubernetes for testing and development. `OSS`
+- [Foundry](https://github.com/foundry-rs/foundry) - Toolkit for Ethereum development that includes Anvil and Cast. `OSS`
+- [Hardhat simulated networks](https://hardhat.org/docs/explanations/edr-simulated-networks) - Documentation of the in-process blockchains that Hardhat starts on the local machine when tests or scripts run. ([Source](https://github.com/NomicFoundation/hardhat)) `OSS`
+
+**[Back to top](#contents)**
+
+## Findings
+
+Compatibility notes and bugs that affect agent telemetry, each with public evidence such as an upstream issue.
+
+- [Anvil gave concurrent transactions from one account the same nonce](https://github.com/foundry-rs/foundry/issues/17354) - Concurrent eth_sendTransaction calls from one unlocked Anvil account got the same nonce, which breaks parallel agent tests. ([Notes](https://github.com/selimaytac/hashspan/blob/main/docs/upstream-findings.md)) `Fixed in Foundry nightly builds after 1.8.5`
+- [EDR OP chain type reports an L1 data fee of 0](https://github.com/NomicFoundation/edr/issues/1829) - The OP chain type of EDR sets the L1Block fee scalars at the wrong storage offsets, so simulated receipts report an L1 data fee of 0. `Open`
+- [eRPC OTLP/HTTP tracing exports nothing when the endpoint has a scheme](https://github.com/erpc/erpc/issues/1276) - With tracing over OTLP/HTTP, eRPC exports no spans when the endpoint includes a scheme, the form its documentation asks for. `Open`
+- [MLflow OTLP trace ingest drops the span kind](https://github.com/mlflow/mlflow/issues/26841) - Spans sent to the OTLP endpoint of MLflow lose their kind, so CLIENT and SERVER spans read back as INTERNAL. `Open`
+- [viem concurrent receipt waits shared the first call options](https://github.com/wevm/viem/issues/5137) - Concurrent viem receipt waits for one hash on one client all ran with the timeout and confirmations of the first call. ([Notes](https://github.com/selimaytac/hashspan/blob/main/docs/upstream-findings.md)) `Fixed in viem 2.57.0`
+- [viem receipt wait missed replacements of already dropped transactions](https://github.com/wevm/viem/issues/5242) - The viem receipt wait never detects a replacement when the original transaction left the pool before its first lookup, and times out. `Open`
+- [viem receipt wait took a transaction for its own replacement](https://github.com/wevm/viem/issues/5161) - The viem receipt wait treated the awaited transaction as its own replacement when the node returned it before its receipt, and failed. ([Notes](https://github.com/selimaytac/hashspan/blob/main/docs/upstream-findings.md)) `Fixed in viem 2.57.3`
+
+**[Back to top](#contents)**
+
+## Benchmarks and datasets
+
+Agent trace datasets and observability benchmarks.
+
+- [AgentErrorBench (AgentDebug)](https://github.com/ulab-uiuc/AgentDebug) - Annotated failure trajectories from ALFWorld, GAIA and WebShop with an error taxonomy and a debugging pipeline. `OSS`
+- [AgentRx dataset (Hugging Face)](https://huggingface.co/datasets/microsoft/AgentRx) - Annotated failed agent trajectories used to evaluate step localization and failure attribution. ([Source](https://github.com/microsoft/AgentRx))
+- [AIOpsLab](https://github.com/microsoft/AIOpsLab) - Framework to design, run and evaluate autonomous AIOps agents on microservice faults with telemetry as input. `OSS`
+- [CatchBench](https://github.com/yzhao062/catchbench) - Benchmark for auditing agent failures from the declared configuration, a growing prefix of a run and the finished trace. `OSS`
+- [MAST-Data (Hugging Face)](https://huggingface.co/datasets/mcemri/MAD) - Annotated traces of multi-agent systems used for failure taxonomy research.
+- [OpenRCA](https://github.com/microsoft/OpenRCA) - Benchmark of root cause localization for software failures from logs, metrics and traces. `OSS`
+- [SWE-smith trajectories (Hugging Face)](https://huggingface.co/datasets/SWE-bench/SWE-smith-trajectories) - Dataset of recorded trajectories of a coding agent solving software engineering tasks. `OSS`
+- [TRAIL dataset (Hugging Face)](https://huggingface.co/datasets/PatronusAI/TRAIL) - Annotated agent execution traces with error labels, stored as OpenTelemetry spans. `OSS`
+- [Who_and_When (Hugging Face)](https://huggingface.co/datasets/Kevin355/Who_and_When) - Dataset of multi-agent logs with annotated failure agents and steps.
+
+**[Back to top](#contents)**
+
+<a id="articles-guides-and-talks"></a>
+## Learning
+
+Articles, books, talks, papers, courses and case studies on observing agents.
+
+### Articles and guides
+
+Blog posts, official guides and demo applications.
+
+- [Agenta guide to LLM observability with OpenTelemetry](https://agenta.ai/blog/the-ai-engineer-s-guide-to-llm-observability-with-opentelemetry) - Vendor guide on instrumenting LLM applications with OpenTelemetry.
+- [Agno tracing](https://docs.agno.com/tracing/overview) - Documentation of OpenTelemetry tracing of Agno agents and teams.
+- [AI Agent Observability - Evolving Standards and Best Practices](https://opentelemetry.io/blog/2025/ai-agent-observability/) - OpenTelemetry blog post on observing agents and the standards in progress.
+- [Amazon Bedrock AgentCore samples](https://github.com/awslabs/agentcore-samples) - Sample agents and notebooks for Amazon Bedrock AgentCore, including observability examples. `OSS`
+- [AutoGen core OpenTelemetry](https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/framework/telemetry.html) - Documentation of the OpenTelemetry support of the AutoGen core runtime.
+- [AutoGen tracing and observability](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/tracing.html) - Documentation of OpenTelemetry tracing for AutoGen AgentChat applications.
+- [AWS blog: build trustworthy agents with AgentCore Observability](https://aws.amazon.com/blogs/machine-learning/build-trustworthy-ai-agents-with-amazon-bedrock-agentcore-observability/) - AWS Machine Learning blog post on using AgentCore Observability to monitor and debug agents.
+- [CrewAI observability](https://docs.crewai.com/en/observability/overview) - Official documentation listing tracing integrations for CrewAI.
+- [Dify: integrate with Alibaba Cloud Monitor](https://docs.dify.ai/en/use-dify/monitor/integrations/integrate-aliyun) - Documents the Dify setting that exports application traces to Alibaba Cloud Monitor through OpenTelemetry.
+- [Dynatrace expands AI coding agent monitoring](https://www.dynatrace.com/news/blog/dynatrace-expands-ai-coding-agent-monitoring/) - Dynatrace announcement of monitoring for several coding agents.
+- [Google ADK observability](https://google.github.io/adk-docs/observability/) - Official documentation on observability for ADK agents.
+- [Google Cloud blog: Google Cloud and OpenTelemetry GenAI conventions](https://cloud.google.com/blog/products/devops-sre/google-cloud-and-otel-genai) - Google Cloud blog post on its work with the OpenTelemetry GenAI conventions.
+- [Govern and redact traces in Unity Catalog](https://docs.databricks.com/aws/en/mlflow3/genai/tracing/govern-redact) - Databricks documentation on governing access to MLflow traces and redacting them in Unity Catalog.
+- [Greptime: how OpenTelemetry traces LLM calls, agent reasoning and MCP tools](https://www.greptime.com/blogs/2026-05-09-opentelemetry-genai-semantic-conventions) - Blog post summarizing the GenAI semantic conventions for LLM, agent and MCP spans.
+- [Hamel Husain: a field guide to rapidly improving AI products](https://hamel.dev/blog/posts/field-guide/) - Practitioner guide on error analysis of logged traces for AI products.
+- [How to redact PII from LLM telemetry](https://openobserve.ai/blog/redact-pii-llm-telemetry/) - Guide to redacting PII from LLM traces with pipelines and an OpenTelemetry Collector while keeping traces debuggable.
+- [How to redact sensitive prompts in GenAI OpenTelemetry traces](https://oneuptime.com/blog/post/2026-02-06-redact-sensitive-prompts-genai-opentelemetry-traces/view) - Guide to removing PII and credentials from GenAI traces before they reach the observability backend.
+- [IONOS: monitor a coding agent with the Monitoring Service](https://docs.ionos.com/cloud/tutorials/observability/monitoring-service/monitor-claude-code-with-monitoring-service.md) - IONOS tutorial for exporting coding agent token and cost metrics to its monitoring service.
+- [LangGraph observability](https://docs.langchain.com/oss/python/langgraph/observability) - Documentation of the tracing options for LangGraph applications, mostly through LangSmith.
+- [LangSmith: trace voice agents](https://langchain.com/blog/trace-voice-agents-in-langsmith) - Vendor blog on tracing voice agent frameworks in LangSmith.
+- [LangWatch OpenClaw integration docs](https://langwatch.ai/docs/integration/openclaw) - Documents sending traces of a personal assistant agent to LangWatch over OpenTelemetry.
+- [LangWatch: instrumenting an OpenClaw assistant with OpenTelemetry](https://langwatch.ai/blog/instrumenting-your-openclaw-agent-with-opentelemetry) - Vendor guide to exporting OpenTelemetry GenAI traces from a self-hosted personal assistant agent.
+- [LlamaIndex observability](https://developers.llamaindex.ai/python/framework/module_guides/observability/) - Documentation of the tracing options of LlamaIndex, including OpenTelemetry-based integrations.
+- [Mastra observability](https://mastra.ai/docs/observability/overview) - Official documentation on tracing Mastra agents and workflows.
+- [Maxim: agent observability guide](https://www.getmaxim.ai/articles/agent-observability-the-definitive-guide-to-monitoring-evaluating-and-perfecting-production-grade-ai-agents) - Vendor guide on monitoring and evaluating production agents.
+- [Microsoft Agent Framework observability](https://learn.microsoft.com/en-us/agent-framework/agents/observability) - Documentation of how Microsoft Agent Framework emits traces, logs and metrics with the OpenTelemetry GenAI conventions.
+- [Microsoft Tech Community: Observability for the Age of Generative AI](https://techcommunity.microsoft.com/blog/azureobservabilityblog/observability-for-the-age-of-generative-ai/4473307) - Azure observability blog post on agent dashboards, AI-aware traces and attribute-based trace search.
+- [Mintive: OpenTelemetry standards for agent monitoring](https://www.mintmcp.com/blog/opentelemetry-standards-agent-monitoring) - Vendor blog on OpenTelemetry standards for agent monitoring.
+- [MLflow tracing integrations](https://mlflow.org/docs/latest/genai/tracing/integrations/) - Official list of libraries that MLflow can trace automatically.
+- [MLflow: tracing OpenClaw](https://mlflow.org/blog/openclaw-tracing) - MLflow blog on tracing a personal assistant agent with a self-hosted MLflow server.
+- [Monitor agent usage with OpenTelemetry (VS Code)](https://code.visualstudio.com/docs/agents/guides/monitoring-agents) - Documentation of the OpenTelemetry traces, metrics and events of agent mode in VS Code, following the GenAI conventions.
+- [Monitoring AI commerce agents (LogicMonitor)](https://www.logicmonitor.com/blog/how-to-monitor-ai-agents-in-commerce-systems) - Vendor guide on monitoring shopping agents, with attention to infrastructure and agent decision paths.
+- [Nango: OpenTelemetry for AI agent observability](https://nango.dev/blog/opentelemetry-ai-agent-observability) - Blog post on tracing agent tool calls and API integrations with OpenTelemetry.
+- [Observability and audit trails for Agent Builder in Elastic](https://www.elastic.co/observability-labs/blog/ai-agent-observability-audit-trail) - Article on reading Agent Builder traces in Elastic and writing an approval record for agent actions.
+- [OpenAI Agents SDK tracing](https://openai.github.io/openai-agents-python/tracing/) - Official documentation on the trace and span model of the SDK.
+- [OpenTelemetry blog: generative AI](https://opentelemetry.io/blog/2024/otel-generative-ai/) - OpenTelemetry blog post introducing the generative AI work.
+- [OpenTelemetry blog: LLM observability](https://opentelemetry.io/blog/2024/llm-observability/) - OpenTelemetry blog post on observing LLM applications.
+- [OpenTelemetry context propagation](https://opentelemetry.io/docs/concepts/context-propagation/) - Explains how trace context moves between services and processes, which applies to multi-agent and tool calls.
+- [OpenTelemetry demo](https://github.com/open-telemetry/opentelemetry-demo) - Multi-service demo application that shows traces, metrics and logs end to end. `OTel` `OSS`
+- [OpenTelemetry GenAI conventions are not stable yet (DEV Community)](https://dev.to/azena-ai/opentelemetrys-genai-semantic-conventions-are-not-stable-yet-heres-what-actually-shipped-in-2026-3mke) - Community post on the stability status of the GenAI conventions in 2026.
+- [OpenTelemetry traces concept](https://opentelemetry.io/docs/concepts/signals/traces/) - Official introduction to spans and traces.
+- [Opik: observability and alerts for OpenClaw](https://www.comet.com/site/blog/openclaw-observability/) - Vendor post on tracing LLM calls, tool runs and memory recall of a personal assistant agent with an Opik plugin.
+- [Opik: Pipecat integration](https://www.comet.com/docs/opik/v1/integrations/pipecat) - Documents conversation and turn level tracing of Pipecat voice agents in Opik.
+- [Pydantic AI with Logfire](https://ai.pydantic.dev/logfire/) - Official documentation on debugging and monitoring Pydantic AI agents.
+- [Semantic Kernel observability](https://learn.microsoft.com/en-us/semantic-kernel/concepts/enterprise-readiness/observability/) - Official documentation on logs, metrics and traces for Semantic Kernel applications.
+- [smolagents: inspecting runs with OpenTelemetry](https://huggingface.co/docs/smolagents/tutorials/inspect_runs) - Tutorial on instrumenting smolagents runs with OpenTelemetry and viewing them.
+- [Splunk blog: what is agentic observability](https://www.splunk.com/en_us/blog/learn/agentic-observability.html) - Vendor explainer on agentic observability and AI-assisted operations.
+- [Traceloop OpenLLMetry blog introduction](https://traceloop.com/blog/openllmetry) - Original announcement of OpenLLMetry, extending OpenTelemetry to LLM applications.
+- [Uptrace: AI agent observability explained](https://uptrace.dev/blog/ai-agent-observability) - Vendor explainer of agent observability concepts and standards.
+- [Uptrace: OpenTelemetry for AI systems](https://uptrace.dev/blog/opentelemetry-ai-systems) - Vendor implementation guide for OpenTelemetry instrumentation of LLM and agent systems.
+- [Vellum: AI observability for agents](https://www.vellum.ai/blog/understanding-your-agents-behavior-in-production) - Vendor practical guide to observing agents in production.
+- [Vercel AI SDK telemetry](https://ai-sdk.dev/docs/ai-sdk-core/telemetry) - Official documentation of the telemetry settings of the AI SDK.
+- [Weights and Biases: AI agent observability guide](https://wandb.ai/site/articles/ai-agent-observability/) - Vendor guide to tracing AI agents.
+
+### Books
+
+Books on agent or LLM observability, and on the observability and OpenTelemetry practice they build on.
+
+- [AI Engineering (book)](https://www.oreilly.com/library/view/ai-engineering/9781098166298/) - Book by Chip Huyen on building applications with foundation models, with chapters on evaluation and on monitoring and observability.
+- [Building Applications with AI Agents (book)](https://www.oreilly.com/library/view/building-applications-with/9781098176495/) - Book by Michael Albada on designing agent systems, with chapters on validation, measurement and monitoring in production.
+- [Learning OpenTelemetry (book)](https://www.oreilly.com/library/view/learning-opentelemetry/9781098147174/) - Book by Ted Young and Austin Parker on adopting OpenTelemetry, the telemetry layer most agent tracing builds on.
+- [Observability Engineering (book)](https://www.oreilly.com/library/view/observability-engineering/9781492076438/) - Book by Charity Majors, Liz Fong-Jones and George Miranda on observability practice for production systems.
+- [Observability for Large Language Models (report)](https://www.oreilly.com/library/view/observability-for-large/9781098159757/) - Short report by Phillip Carter on observability for LLM applications with OpenTelemetry.
+
+### Talks and videos
+
+Conference sessions, videos and podcast episodes with a public page.
+
+- [KubeCon EU 2025: deep dive to AI agent observability](https://kccnceu2025.sched.com/event/1txEC/deep-dive-to-ai-agent-observability-guangya-liu-ibm-karthik-kalyanaraman-langtrace-ai) - Session on tracing and monitoring AI agents with OpenTelemetry, by IBM and Langtrace speakers. ([Docs](https://www.youtube.com/watch?v=1B9WZ6H0cn4))
+- [KubeCon India 2026: what did my agent do?](https://kccncind2026.sched.com/event/2IW20/what-did-my-agent-do-observability-and-accountability-for-ai-agents-ishan-jain-grafana-labs) - Session on observability and accountability for AI agents with OpenTelemetry and GenAI conventions.
+- [KubeCon talk: AI/ML observability with OpenTelemetry and Fluent Bit](https://www.youtube.com/watch?v=DVFQ20OrEFk) - KubeCon session recording by Celalettin Calis on AI and ML observability with OpenTelemetry and Fluent Bit.
+- [KubeCon talk: End-to-end observability for LLM inference: from token to GPU](https://www.youtube.com/watch?v=K6doiHgBabk) - KubeCon session recording by speakers from DaoCloud on observability of LLM inference.
+- [KubeCon talk: Exploring observability with MCP servers](https://www.youtube.com/watch?v=SIg81hkHZXQ) - KubeCon session recording by Tiffany Jernigan of Grafana Labs on observability with MCP servers.
+- [KubeCon talk: GenAI observability: keeping GenAI honest without oversharing](https://www.youtube.com/watch?v=Q4E9GDAslIk) - KubeCon session recording by Liudmila Molkova of Grafana Labs on GenAI observability and sensitive content.
+- [KubeCon talk: LLM observability with Open Data Hub and vLLM](https://www.youtube.com/watch?v=pZRJ783BCDY) - KubeCon lightning talk recording by Twinkll Sisodia on LLM observability with Open Data Hub and vLLM.
+- [KubeCon talk: OpenTelemetry for autonomous AI agents](https://www.youtube.com/watch?v=1GaoQcGk57M) - KubeCon session recording by Abdel Fane on applying OpenTelemetry to autonomous AI agents.
+- [KubeCon talk: Optimizing LLM performance in Kubernetes with OpenTelemetry](https://www.youtube.com/watch?v=6rdeFACyyYg) - KubeCon session recording by Ashok Chandrasekar and Liudmila Molkova on OpenTelemetry for LLM serving on Kubernetes.
+- [KubeCon talk: Sponsored keynote: OpenSearch, open observability for agentic AI](https://www.youtube.com/watch?v=LuKaV3WeNlk) - KubeCon sponsored keynote recording by Anirudha Jadhav on open observability for agentic AI with OpenSearch.
+- [KubeCon talk: Why are your AI's decisions hard to explain: trace every decision](https://www.youtube.com/watch?v=e_u-YMUK-NE) - KubeCon session recording by Dhiraj Kumar Jain and Vikash Agrawal on tracing the decisions of AI systems.
+- [OpenClaw observability and monitoring with OpenTelemetry and SigNoz](https://www.youtube.com/watch?v=2DS1Y-h6GdE) - Video on collecting traces, metrics and logs from OpenClaw with OpenTelemetry and viewing them in SigNoz.
+- [OpenLLMetry is all you need (AI Engineer talk)](https://ai.engineer/talks/KVgbERRPU4M-openllmetry-is-all-you-need) - Conference talk on instrumenting LLM applications with OpenLLMetry.
+- [Watching AI workers: OpenSearch observability for OpenClaw and Hermes-agent](https://www.youtube.com/watch?v=T8dRtBpu2Xg) - Conference talk by Stefano Pampaloni on observing OpenClaw and Hermes-agent runs with OpenSearch.
+
+### Papers
+
+Research papers on agent tracing, evaluation and monitoring.
+
+- [A multi-dataset benchmark for LLM agents in microservice failure diagnosis](https://arxiv.org/abs/2606.29193) - Benchmark of agents diagnosing failures in microservice systems.
+- [A survey on AgentOps](https://arxiv.org/abs/2508.02121) - Survey of categories, challenges and directions of AgentOps.
+- [AEGIS: a pre-execution firewall and audit layer for AI agents](https://arxiv.org/abs/2603.12621) - Proposes a layer that checks tool calls before execution and keeps an audit log.
+- [Agent Flight Recorder: tamper-evident audit trails for tool-using agents](https://arxiv.org/abs/2609.01931) - Proposes tamper-evident audit trails for agents, with on-chain anchoring.
+- [AgentDebugX: toolkit for failure observability, attribution and recovery](https://arxiv.org/abs/2607.18754) - Presents an open-source toolkit for failure observability and attribution in LLM agents.
+- [AgentGuard: execution guardrails from anomalous coding-agent trajectories](https://arxiv.org/abs/2609.16287) - Studies learning guardrails from anomalous trajectories of coding agents.
+- [Agentic observability: automated alert triage for Adobe e-commerce](https://arxiv.org/abs/2602.02585) - Industry paper on agent-based alert triage for an e-commerce platform.
+- [AgentLens: production-assessed trajectory reviews for coding agent evaluation](https://arxiv.org/abs/2607.06624) - Studies reviewing production trajectories of coding agents for evaluation.
+- [AgentOps: enabling observability of LLM agents](https://arxiv.org/abs/2411.05285) - Proposes a taxonomy of artifacts and data to trace across the lifecycle of LLM agents.
+- [AgentTrace: a structured logging framework for agent observability](https://arxiv.org/abs/2602.10133) - Proposes a structured logging framework for agent systems that can integrate with OpenTelemetry.
+- [AIOpsLab: a framework to evaluate AI agents for autonomous clouds](https://arxiv.org/abs/2501.06706) - Framework for evaluating agents that operate cloud systems.
+- [Annotrace: a workbench for step-level annotation of agent traces](https://arxiv.org/abs/2610.23284) - Presents a workbench for annotating individual steps in agent traces.
+- [Beyond the mandate: a security analysis of the Agent Payments Protocol](https://arxiv.org/abs/2608.23858) - Systematic security analysis of AP2.
+- [Detecting safety violations across many agent traces](https://arxiv.org/abs/2604.11806) - Studies detection of safety violations by analyzing many agent traces.
+- [Failure as a process: an anatomy of CLI coding agent trajectories](https://arxiv.org/abs/2607.09510) - Analyzes failure patterns in trajectories of command line coding agents.
+- [Five attacks on the x402 agentic payment protocol](https://arxiv.org/abs/2605.11781) - Describes attacks on the x402 payment protocol.
+- [From agent traces to trust: evidence tracing and execution provenance](https://arxiv.org/abs/2606.04990) - Survey of evidence tracing and execution provenance for LLM agents.
+- [Functionality-grounded benchmark for web agents in e-commerce](https://arxiv.org/abs/2508.15832) - Benchmark of web agents on e-commerce functionality.
+- [Governance-aware agent telemetry for closed-loop enforcement](https://arxiv.org/abs/2604.05119) - Proposes agent telemetry that supports governance enforcement in multi-agent systems.
+- [Observability and fault injection for LLM multi-agent systems](https://arxiv.org/abs/2608.24271) - Studies observability and fault injection for multi-agent systems used in software engineering.
+- [Observability for delegated execution in agentic AI systems](https://arxiv.org/abs/2606.09692) - Discusses observability needs when agents delegate execution to other agents or tools.
+- [Observing, analyzing and optimizing agentic AI systems](https://arxiv.org/abs/2507.11277) - Describes automation for observing, analyzing and optimizing agentic AI systems.
+- [PrefixGuard: online failure warning and trace-grounded diagnosis for LLM agents](https://arxiv.org/abs/2605.06455) - Studies online failure warning from partial agent traces.
+- [ProbGuard: proactive runtime monitoring for LLM agent safety](https://arxiv.org/abs/2508.00500) - Proposes probabilistic runtime monitoring to predict unsafe agent behavior.
+- [ShopGym: simulation and benchmarking of e-commerce web agents](https://arxiv.org/abs/2605.16116) - Framework for simulating and benchmarking e-commerce agents.
+- [SoK: security of autonomous LLM agents in agentic commerce](https://arxiv.org/abs/2604.15367) - Systematization of security issues of agents in commerce settings.
+- [TelemetrySuffBench: is agent telemetry sufficient for failure-origin diagnosis?](https://arxiv.org/abs/2608.07899) - Benchmark that tests whether agent telemetry suffices to find where failures originate.
+- [Traccia: an OpenTelemetry-based governance platform for AI systems](https://arxiv.org/abs/2607.14309) - Describes a governance platform built on OpenTelemetry data.
+- [TRAIL: trace reasoning and agentic issue localization](https://arxiv.org/abs/2505.08638) - Introduces an annotated benchmark of agent traces for locating errors.
+- [WebMall: a multi-shop benchmark for web agents](https://arxiv.org/abs/2508.13024) - Benchmark of web agents performing tasks across several online shops.
+- [Which agent causes task failures and when?](https://arxiv.org/abs/2505.00212) - Studies automated failure attribution in multi-agent systems and releases a dataset.
+- [Whispers of wealth: red-teaming the Agent Payments Protocol via prompt injection](https://arxiv.org/abs/2601.22569) - Security analysis of AP2 flows under prompt injection.
+- [Why do multi-agent LLM systems fail?](https://arxiv.org/abs/2503.13657) - Analyzes failure modes of multi-agent systems and releases annotated traces.
+- [Willful disobedience: automatically detecting failures in agentic traces](https://arxiv.org/abs/2603.23806) - Studies automatic detection of failures in agent traces.
+
+### Courses
+
+Courses and workshops.
+
+- [Evaluating AI Agents (DeepLearning.AI)](https://www.deeplearning.ai/courses/evaluating-ai-agents) - Short course on adding tracing to an agent and evaluating its components, taught with Arize.
+- [Getting Started with OpenTelemetry (LFS148)](https://training.linuxfoundation.org/training/getting-started-with-opentelemetry-lfs148/) - Free online Linux Foundation course covering manual and automatic OpenTelemetry instrumentation and Collector pipelines.
+- [Hugging Face Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction) - Free course on building agents; has a bonus unit on agent observability and evaluation. ([Source](https://github.com/huggingface/agents-course))
+
+### Case studies
+
+Public write-ups of how organizations observe agents in production, by industry.
+
+- [Anthropic engineering: how we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) - Engineering write-up of a multi-agent research system that describes production tracing for debugging.
+- [Elastic: AI agent observability with OTel, OpenLIT and Elastic](https://www.elastic.co/observability-labs/blog/ai-observability-web-agents-openlit) - Elastic blog on monitoring web-browsing agents with OpenTelemetry, OpenLIT and Elastic.
+- [Elastic: GenAI observability for customer support](https://www.elastic.co/search-labs/blog/genai-customer-support-observability) - Engineering account of monitoring a customer support assistant built on Elastic.
+- [Honeycomb for financial services](https://www.honeycomb.io/industries/financial-services) - Vendor page on observability requirements in financial services, including retention for audit.
+- [Pydantic case study: Evergreen.ai](https://pydantic.dev/case-studies/evergreenai) - Case study of a financial planning agent team using tracing and evaluations in production.
+
+### Newsletters and podcasts
+
+Regular publications on the topic.
+
+- [Code RED #31: beyond hype, the real impact of AI on observability](https://www.dash0.com/podcast/31-code-red-live-beyond-hype-the-real-impact-of-ai-on-observability) - Live episode on agentic observability and OpenTelemetry support for AI.
+- [Dash0 Code RED podcast](https://www.dash0.com/podcast) - Podcast about observability and OpenTelemetry, with episodes on AI and observability.
+- [Datadog OpenTelemetry news, May 2026](https://opensource.datadoghq.com/otel-news/2026/05/) - Monthly roundup of OpenTelemetry developments, including GenAI conventions releases.
+- [o11y.news](https://buttondown.com/o11y.news/archive/) - Weekly newsletter linking to observability and OpenTelemetry reading.
+- [O11ycast](https://www.heavybit.com/library/podcasts/o11ycast) - Podcast on observability with episodes on AI systems and OpenTelemetry.
+- [OpenObservability Talks podcast](https://creators.spotify.com/pod/profile/openobservability/) - Podcast on open source observability with an episode on OpenTelemetry for GenAI.
+- [OpenObservability Talks: OpenTelemetry for GenAI and the OpenLLMetry project](https://www.castfox.net/podcast/openobservability-talks-1013852/episode/opentelemetry-for-genai-and-the-openllmetry-project-openobservability-talks-s6e06-211572) - Podcast episode (S6E06) with the creator of OpenLLMetry on GenAI conventions and tracing.
+
+**[Back to top](#contents)**
+
+## Community
+
+Working groups, meetings and channels where agent observability is discussed.
+
+- [A2A protocol discussions](https://github.com/a2aproject/A2A/discussions) - GitHub Discussions forum of the Agent2Agent protocol repository.
+- [CNCF Slack channel otel-genai-instrumentation-wg](https://cloud-native.slack.com/archives/C06KR7ARS3X) - Slack channel of the OpenTelemetry GenAI instrumentation working group in the CNCF workspace.
+- [CNCF: Observability Day at KubeCon North America 2026](https://www.cncf.io/blog/2026/09/24/observability-day-where-the-community-comes-together-at-kubecon-cloudnativecon-north-america-2026/) - CNCF blog post announcing Observability Day on 2026-11-09, with AI and agent observability on the program.
+- [Model Context Protocol discussions](https://github.com/modelcontextprotocol/modelcontextprotocol/discussions) - GitHub Discussions forum of the Model Context Protocol specification repository.
+- [OpenTelemetry community](https://opentelemetry.io/community/) - Page of the OpenTelemetry project on how to join its working groups, meetings and chat channels.
+- [OpenTelemetry GenAI conventions issues](https://github.com/open-telemetry/semantic-conventions-genai/issues) - Issue tracker of the repository that holds the OpenTelemetry GenAI semantic conventions.
+- [OpenTelemetry GenAI project page (community repo)](https://github.com/open-telemetry/community/blob/main/projects/gen-ai.md) - Describes the OpenTelemetry GenAI project, its scope, owners and meeting information.
+- [OpenTelemetry GenAI SIG meeting notes](https://docs.google.com/document/d/1EKIeDgBGXQPGehUigIRLwAUpRGa7-1kXB736EaYuJ2M/edit) - Shared meeting notes of the OpenTelemetry GenAI semantic conventions and instrumentation SIG.
+- [OpenTelemetry YouTube channel](https://www.youtube.com/@otel-official) - Official OpenTelemetry channel with recordings of project meetings and talks.
+
+**[Back to top](#contents)**
+
+## Related lists
+
+Other curated lists that cover parts of this topic.
+
+- [awesome-agent-observability (anhermon)](https://github.com/anhermon/awesome-agent-observability) - Link list on agent observability, grouped into standards, platforms, trace backends, evaluation, guardrails, gateways, MCP and frameworks.
+- [awesome-agent-observability (danielt69)](https://github.com/danielt69/awesome-agent-observability) - Link list on agent observability with hands-on guides, platform comparisons, evaluation, guardrails, red teaming and benchmarks.
+- [awesome-ai-sre](https://github.com/agamm/awesome-ai-sre) - List of AI agents, production debugging, incident management, AIOps and chaos engineering tools for site reliability work.
+- [awesome-harness-engineering](https://github.com/ai-boost/awesome-harness-engineering) - Curated list on AI agent harness engineering with tools, patterns and evaluations.
+- [awesome-llm-observability (ContextJet-ai)](https://github.com/ContextJet-ai/awesome-llm-observability) - Curated list of resources for observability of LLM applications.
+- [Awesome-LLMOps](https://github.com/tensorchord/Awesome-LLMOps) - Curated list of LLMOps tools.
+- [awesome-observability](https://github.com/adriannovegil/awesome-observability) - Curated list of observability resources, covering tools, practices and standards.
+- [awesome-opentelemetry](https://github.com/magsther/awesome-opentelemetry) - List of OpenTelemetry learning material, books, videos, tracing backends and instrumentation by language.
+
+**[Back to top](#contents)**
+
+## Archived and historical
+
+<details>
+<summary>Entries kept for reference: archived upstream, superseded, or historical.</summary>
+
+- [OpenTelemetry contrib Vertex AI instrumentation for Python](https://github.com/open-telemetry/opentelemetry-python-contrib/tree/main/instrumentation-genai/opentelemetry-instrumentation-vertexai) - Deprecated OpenTelemetry instrumentation package for the Vertex AI client library in Python. `OSS` Kept because: Deprecated in the GenAI package migration of opentelemetry-python-contrib, with no replacement package planned (README, 2026-10-20).
+
+</details>
+
+**[Back to top](#contents)**
+
+## Contributing
+
+Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) first: one entry per pull request, a neutral one-sentence description, and public evidence for every OTel claim. Submissions may be prepared with AI tools; a person submits them and answers the review.
+
+## License
+
+[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+To the extent possible under law, the contributors have waived all copyright and related rights to this work.
+
+<!-- Generated by scripts/build.mjs from entries/ and registry/. Do not edit by hand; see CONTRIBUTING.md. -->

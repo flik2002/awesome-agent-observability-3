@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: SWE-smith trajectories (Hugging Face)
+url: https://huggingface.co/datasets/SWE-bench/SWE-smith-trajectories
+description: Dataset of recorded trajectories of a coding agent solving software engineering tasks.
+type: dataset
+category: benchmarks
+added: 2026-10-20
+agent_types:
+  - coding
+license: MIT

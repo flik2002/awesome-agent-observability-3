@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry Java instrumentation
+url: https://github.com/open-telemetry/opentelemetry-java-instrumentation
+description: Java agent and libraries that instrument applications without code changes.
+type: library
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+license: Apache-2.0
+languages:
+  - java
+otlp:
+  - export
+otel_evidence: https://github.com/open-telemetry/opentelemetry-java-instrumentation
+stars: 2652
+archived: false
+pushed_at: 2026-10-19T23:40:16Z
+last_release:
+  tag: v2.32.0
+  published_at: 2026-10-03T15:38:15Z
+last_checked: 2026-10-19

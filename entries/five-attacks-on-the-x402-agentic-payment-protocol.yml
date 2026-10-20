@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Five attacks on the x402 agentic payment protocol
+url: https://arxiv.org/abs/2605.11781
+description: Describes attacks on the x402 payment protocol.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - payments
+agent_types:
+  - transactional

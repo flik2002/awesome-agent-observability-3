@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry Protocol (OTLP)
+url: https://opentelemetry.io/docs/specs/otlp/
+description: Specification of the wire protocol for traces, metrics and logs.
+type: spec
+category: standards
+added: 2026-10-20
+otlp:
+  - ingest
+  - export
+otel_evidence: https://opentelemetry.io/docs/specs/otlp/
+body: OpenTelemetry

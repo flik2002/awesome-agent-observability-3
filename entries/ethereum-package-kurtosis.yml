@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: ethereum-package (Kurtosis)
+url: https://github.com/ethpandaops/ethereum-package
+description: Kurtosis package that starts a private multi-client Ethereum testnet on Docker or Kubernetes for testing and development.
+type: tool
+category: on-chain
+subcategory: local-chains
+added: 2026-10-20
+tags:
+  - on-chain
+license: MIT
+chains:
+  - ethereum
+stars: 483
+archived: false
+pushed_at: 2026-10-19T13:11:28Z
+last_release:
+  tag: 6.1.0
+  published_at: 2026-04-01T21:26:46Z
+last_checked: 2026-10-19

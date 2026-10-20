@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: TRAIL dataset (Hugging Face)
+url: https://huggingface.co/datasets/PatronusAI/TRAIL
+description: Annotated agent execution traces with error labels, stored as OpenTelemetry spans.
+type: dataset
+category: benchmarks
+added: 2026-10-20
+tags:
+  - tracing
+license: MIT

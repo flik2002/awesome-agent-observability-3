@@ -1,0 +1,123 @@
+# The category tree. Order here is the order in the README. Two levels at most.
+# id: stable key used by entries; title: the README heading; scope: one sentence shown under the heading;
+# aliases: old anchors that keep working (rendered as <a id> tags); subcategories: same shape, no aliases needed
+# unless renamed. A category or subcategory with 1 or 2 visible entries fails validation (an empty one is hidden
+# and only warns); a category is split at about 40.
+- id: standards
+  title: Standards and specifications
+  scope: Semantic conventions, wire protocols and context propagation standards that agent telemetry is built on.
+  aliases: []
+- id: instrumentation
+  title: Instrumentation
+  scope: Libraries and SDKs that produce telemetry from LLM clients, agent frameworks and services.
+  aliases: [instrumentation-libraries-and-sdks]
+- id: frameworks
+  title: Agent frameworks
+  scope: Frameworks for building agents, with a note on how each one emits telemetry.
+  aliases: [agent-frameworks-with-built-in-tracing]
+- id: protocols
+  title: Agent protocols and tool servers
+  scope: SDKs and servers for agent protocols such as MCP and A2A, and how they carry traces.
+  aliases: []
+- id: collectors
+  title: Collectors and pipelines
+  scope: Collector distributions and components that receive, process, redact and route agent telemetry.
+  aliases: []
+- id: platforms
+  title: Platforms
+  scope: Products and backends that store, query and visualize agent telemetry.
+  aliases: [observability-and-llm-platforms]
+  subcategories:
+    - id: llm-agent
+      title: LLM and agent observability platforms
+      scope: Platforms built for tracing, evaluating and monitoring LLM applications and agents.
+    - id: apm
+      title: General APM with GenAI support
+      scope: Application performance monitoring products with features for LLM and agent workloads.
+    - id: backends
+      title: Trace backends and UIs
+      scope: General backends and front ends for traces, metrics and logs that accept agent telemetry.
+    - id: cloud
+      title: Cloud provider offerings
+      scope: Observability features of the agent runtimes and AI platforms of cloud providers.
+    - id: model-serving
+      title: Model serving
+      scope: Inference and serving engines and the telemetry they expose, such as Prometheus metrics.
+- id: gateways
+  title: Gateways and proxies
+  scope: Gateways and proxies for model and agent traffic that record or export telemetry.
+  aliases: [gateways-and-proxies-with-telemetry]
+- id: evaluation
+  title: Evaluation and testing
+  scope: Evaluation, testing and simulation tools with a documented link to traces or observability.
+  aliases: [evaluation-and-testing-of-agents]
+- id: cost
+  title: Cost and usage
+  scope: Token accounting, budgets and cost attribution for agents.
+  aliases: []
+- id: safety
+  title: Safety signals
+  scope: Guardrails and runtime monitoring that emit telemetry, limited to their observability side.
+  aliases: []
+- id: on-chain
+  title: On-chain agents and payments
+  scope: Tracing, protocols and infrastructure for agents that send transactions or make payments.
+  aliases: [on-chain-agents-and-agent-payments]
+  subcategories:
+    - id: transaction-tracing
+      title: Transaction tracing
+      scope: Tools and documentation for tracing, replaying and debugging on-chain transactions, including those sent by agents and services.
+    - id: payment-protocols
+      title: Payment protocols
+      scope: Protocols and SDKs for payments made by agents, such as x402, MPP, AP2 and ACP.
+    - id: rpc-and-nodes
+      title: RPC and node observability
+      scope: RPC interfaces, proxies and nodes, and the telemetry they expose.
+    - id: wallets-and-accounts
+      title: Wallets and smart accounts
+      scope: Wallet SDKs, client libraries and smart account infrastructure used by agents.
+    - id: local-chains
+      title: Local and test chains
+      scope: Local nodes and toolkits for testing transactions without a public network.
+- id: findings
+  title: Findings
+  scope: Compatibility notes and bugs that affect agent telemetry, each with public evidence such as an upstream issue.
+  aliases: []
+- id: benchmarks
+  title: Benchmarks and datasets
+  scope: Agent trace datasets and observability benchmarks.
+  aliases: []
+- id: learning
+  title: Learning
+  scope: Articles, books, talks, papers, courses and case studies on observing agents.
+  aliases: [articles-guides-and-talks]
+  subcategories:
+    - id: articles
+      title: Articles and guides
+      scope: Blog posts, official guides and demo applications.
+    - id: books
+      title: Books
+      scope: Books on agent or LLM observability, and on the observability and OpenTelemetry practice they build on.
+    - id: talks
+      title: Talks and videos
+      scope: Conference sessions, videos and podcast episodes with a public page.
+    - id: papers
+      title: Papers
+      scope: Research papers on agent tracing, evaluation and monitoring.
+    - id: courses
+      title: Courses
+      scope: Courses and workshops.
+    - id: case-studies
+      title: Case studies
+      scope: Public write-ups of how organizations observe agents in production, by industry.
+    - id: newsletters-podcasts
+      title: Newsletters and podcasts
+      scope: Regular publications on the topic.
+- id: community
+  title: Community
+  scope: Working groups, meetings and channels where agent observability is discussed.
+  aliases: []
+- id: related-lists
+  title: Related lists
+  scope: Other curated lists that cover parts of this topic.
+  aliases: []

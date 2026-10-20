@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Agent Payments Protocol (AP2) documentation
+url: https://ap2-protocol.org/
+description: Documentation site of AP2, an open protocol for agent-initiated payments.
+type: article
+category: on-chain
+subcategory: payment-protocols
+added: 2026-10-20
+tags:
+  - a2a
+  - payments
+agent_types:
+  - transactional

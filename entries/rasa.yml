@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Rasa
+url: https://github.com/RasaHQ/rasa
+description: Framework for text and voice assistants whose documentation covers OpenTelemetry tracing of messages, actions and LLM calls.
+type: framework
+category: frameworks
+added: 2026-10-20
+docs_url: https://rasa.com/docs/pro/improve/tracing
+agent_types:
+  - customer-support
+license: Apache-2.0
+languages:
+  - python
+otlp:
+  - export
+conventions: []
+otel_evidence: https://rasa.com/docs/pro/improve/tracing
+telemetry: otel
+telemetry_docs: https://rasa.com/docs/pro/improve/tracing
+stars: 21355
+archived: false
+pushed_at: 2026-07-24T07:39:04Z
+last_release:
+  tag: 3.6.21
+  published_at: 2025-01-14T10:40:21Z
+last_checked: 2026-10-19

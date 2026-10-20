@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "SoK: security of autonomous LLM agents in agentic commerce"
+url: https://arxiv.org/abs/2604.15367
+description: Systematization of security issues of agents in commerce settings.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - payments
+  - retail
+agent_types:
+  - commerce

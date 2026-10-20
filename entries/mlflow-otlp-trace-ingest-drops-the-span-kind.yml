@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: MLflow OTLP trace ingest drops the span kind
+url: https://github.com/mlflow/mlflow/issues/26841
+description: Spans sent to the OTLP endpoint of MLflow lose their kind, so CLIENT and SERVER spans read back as INTERNAL.
+type: finding
+category: findings
+added: 2026-10-20
+tags:
+  - tracing
+evidence_url: https://github.com/mlflow/mlflow/issues/26841
+upstream_issue: mlflow/mlflow#26841
+versions: MLflow 3.17.1
+status: open

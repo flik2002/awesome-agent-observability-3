@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Grafana
+url: https://github.com/grafana/grafana
+description: Dashboard and query front end used with Tempo, Prometheus and Loki.
+type: platform
+category: platforms
+subcategory: backends
+added: 2026-10-20
+tags:
+  - metrics
+license: AGPL-3.0
+hosting: both
+stars: 77389
+archived: false
+pushed_at: 2026-10-19T23:25:11Z
+last_release:
+  tag: v13.2.4
+  published_at: 2026-10-13T11:41:03Z
+last_checked: 2026-10-19

@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenLLMetry for JavaScript
+url: https://github.com/traceloop/openllmetry-js
+description: JavaScript and TypeScript counterpart of OpenLLMetry.
+type: library
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+  - tracing
+license: Apache-2.0
+languages:
+  - typescript
+otlp:
+  - export
+otel_evidence: https://github.com/traceloop/openllmetry-js
+stars: 412
+archived: false
+pushed_at: 2026-06-18T14:49:18Z
+last_release:
+  tag: 0.27.0
+  published_at: 2026-05-29T13:06:26Z
+last_checked: 2026-10-19

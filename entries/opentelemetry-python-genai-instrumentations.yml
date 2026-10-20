@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry Python GenAI instrumentations
+url: https://github.com/open-telemetry/opentelemetry-python-genai
+description: Repository of the OpenTelemetry instrumentation packages for generative AI client libraries and agent frameworks in Python.
+type: library
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+license: Apache-2.0
+languages:
+  - python
+conventions:
+  - genai-semconv
+otel_evidence: https://github.com/open-telemetry/opentelemetry-python-genai
+stars: 45
+archived: false
+pushed_at: 2026-10-19T18:49:02Z
+last_release:
+  tag: opentelemetry-instrumentation-genai-llama-index==1.2b0
+  published_at: 2026-09-24T16:46:59Z
+last_checked: 2026-10-19

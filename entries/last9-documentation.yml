@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Last9 documentation
+url: https://last9.io/docs/
+description: Documentation of Last9, an observability platform that ingests OpenTelemetry data.
+type: platform
+category: platforms
+subcategory: apm
+added: 2026-10-20
+license: proprietary
+hosting: saas
+otlp:
+  - ingest
+otel_evidence: https://last9.io/docs/

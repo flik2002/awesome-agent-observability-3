@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Quarkus LangChain4j
+url: https://github.com/quarkiverse/quarkus-langchain4j
+description: Quarkus extension for LangChain4j, with an observability guide that covers tracing and metrics.
+type: framework
+category: frameworks
+added: 2026-10-20
+docs_url: https://docs.quarkiverse.io/quarkus-langchain4j/dev/observability.html
+agent_types:
+  - enterprise-workflow
+license: Apache-2.0
+languages:
+  - java
+otlp:
+  - export
+conventions:
+  - genai-semconv
+otel_evidence: https://docs.quarkiverse.io/quarkus-langchain4j/dev/observability.html
+telemetry: otel
+telemetry_docs: https://docs.quarkiverse.io/quarkus-langchain4j/dev/observability.html
+stars: 325
+archived: false
+pushed_at: 2026-10-19T08:41:08Z
+last_release:
+  tag: 1.14.2
+  published_at: 2026-10-15T10:09:03Z
+last_checked: 2026-10-19

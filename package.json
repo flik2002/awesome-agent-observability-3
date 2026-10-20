@@ -1,0 +1,21 @@
+{
+  "name": "awesome-agent-observability",
+  "private": true,
+  "description": "Data, generator and checks for the Awesome Agent Observability list.",
+  "license": "CC0-1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate.mjs",
+    "refresh": "node scripts/refresh.mjs",
+    "links": "node scripts/check-links.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "ajv": "8.20.0",
+    "yaml": "2.9.1"
+  }
+}

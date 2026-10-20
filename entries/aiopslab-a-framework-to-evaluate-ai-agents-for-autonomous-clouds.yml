@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "AIOpsLab: a framework to evaluate AI agents for autonomous clouds"
+url: https://arxiv.org/abs/2501.06706
+description: Framework for evaluating agents that operate cloud systems.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+agent_types:
+  - devops

@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Tenderly Debugger
+url: https://docs.tenderly.co/debugger/overview
+description: "Hosted tool for inspecting a failed or past EVM transaction: its call trace, contract state at each step and the matching source code."
+type: platform
+category: on-chain
+subcategory: transaction-tracing
+added: 2026-10-20
+tags:
+  - on-chain
+  - tracing
+license: proprietary
+hosting: saas
+chains:
+  - evm

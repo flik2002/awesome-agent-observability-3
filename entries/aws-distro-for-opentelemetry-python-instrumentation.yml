@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: AWS Distro for OpenTelemetry Python instrumentation
+url: https://github.com/aws-observability/aws-otel-python-instrumentation
+description: Python auto-instrumentation distribution from AWS with generative AI instrumentation.
+type: library
+category: instrumentation
+added: 2026-10-20
+tags:
+  - aws
+  - otel-native
+license: Apache-2.0
+languages:
+  - python
+otlp:
+  - export
+conventions:
+  - genai-semconv
+otel_evidence: https://github.com/aws-observability/aws-otel-python-instrumentation
+stars: 13
+archived: false
+pushed_at: 2026-10-19T22:49:09Z
+last_release:
+  tag: v0.21.0
+  published_at: 2026-10-13T06:59:43Z
+last_checked: 2026-10-19

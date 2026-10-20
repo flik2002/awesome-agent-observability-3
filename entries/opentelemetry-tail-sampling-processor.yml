@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry tail sampling processor
+url: https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/tailsamplingprocessor
+description: Collector processor that decides which traces to keep after seeing whole traces, by policies such as errors or latency.
+type: tool
+category: collectors
+added: 2026-10-20
+tags:
+  - tracing
+license: Apache-2.0
+languages:
+  - go

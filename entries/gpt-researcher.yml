@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: GPT Researcher
+url: https://github.com/assafelovic/gpt-researcher
+description: Autonomous research agent whose README documents tracing of its workflows with LangSmith.
+type: framework
+category: frameworks
+added: 2026-10-20
+agent_types:
+  - research
+license: Apache-2.0
+languages:
+  - python
+telemetry: external
+telemetry_docs: https://github.com/assafelovic/gpt-researcher
+stars: 30182
+archived: false
+pushed_at: 2026-10-10T22:03:53Z
+last_release:
+  tag: v3.7.0
+  published_at: 2026-09-26T17:46:25Z
+last_checked: 2026-10-19

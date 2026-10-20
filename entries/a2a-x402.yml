@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: a2a-x402
+url: https://github.com/google-agentic-commerce/a2a-x402
+description: Extension that combines the A2A protocol with x402 payments.
+type: spec
+category: on-chain
+subcategory: payment-protocols
+added: 2026-10-20
+tags:
+  - a2a
+  - payments
+  - on-chain
+agent_types:
+  - transactional
+license: Apache-2.0
+body: google-agentic-commerce
+stars: 564
+archived: false
+pushed_at: 2026-08-04T17:46:39Z
+last_release:
+  tag: v0.1.0
+  published_at: 2025-09-16T12:43:57Z
+last_checked: 2026-10-19

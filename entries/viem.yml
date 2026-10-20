@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: viem
+url: https://github.com/wevm/viem
+description: TypeScript library for Ethereum clients and transactions.
+type: library
+category: on-chain
+subcategory: wallets-and-accounts
+added: 2026-10-20
+tags:
+  - on-chain
+license: MIT
+languages:
+  - typescript
+chains:
+  - evm
+stars: 3589
+archived: false
+pushed_at: 2026-10-19T05:52:20Z
+last_release:
+  tag: viem@2.57.7
+  published_at: 2026-10-14T16:56:29Z
+last_checked: 2026-10-19

@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: ccusage
+url: https://github.com/ccusage/ccusage
+description: Command-line tool that reports token usage and cost of coding agents from local data.
+type: tool
+category: cost
+added: 2026-10-20
+tags:
+  - cost
+  - coding-agents
+agent_types:
+  - coding
+license: MIT
+languages:
+  - typescript
+stars: 19071
+archived: false
+pushed_at: 2026-10-19T20:04:57Z
+last_release:
+  tag: v20.0.37
+  published_at: 2026-10-19T20:01:19Z
+last_checked: 2026-10-19

@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: claude-otel
+url: https://github.com/li0nel/claude-otel
+description: Configuration for sending a coding agent's OpenTelemetry metrics to Grafana Cloud, with a dashboard of cost and tokens per session.
+type: tool
+category: platforms
+subcategory: backends
+added: 2026-10-20
+tags:
+  - coding-agents
+  - metrics
+agent_types:
+  - coding
+license: unknown
+license_note: The repository has no license file.
+otlp:
+  - export
+otel_evidence: https://github.com/li0nel/claude-otel
+stars: 1
+archived: false
+pushed_at: 2026-03-05T03:06:32Z
+last_release: null
+last_checked: 2026-10-19

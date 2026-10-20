@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenAI commerce developer documentation
+url: https://developers.openai.com/commerce
+description: Developer documentation for commerce integrations with conversational agents.
+type: article
+category: on-chain
+subcategory: payment-protocols
+added: 2026-10-20
+tags:
+  - payments
+  - retail
+agent_types:
+  - commerce

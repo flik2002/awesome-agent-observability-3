@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Gemini CLI telemetry
+url: https://geminicli.com/docs/cli/telemetry/
+description: Documentation of the OpenTelemetry traces, metrics and logs of the Gemini CLI terminal agent, with GenAI conventions.
+type: tool
+category: frameworks
+added: 2026-10-20
+repo_url: https://github.com/google-gemini/gemini-cli
+tags:
+  - coding-agents
+  - otel-native
+agent_types:
+  - coding
+license: Apache-2.0
+otlp:
+  - export
+conventions:
+  - genai-semconv
+otel_evidence: https://geminicli.com/docs/cli/telemetry/
+telemetry: otel
+telemetry_docs: https://geminicli.com/docs/cli/telemetry/
+stars: 107458
+archived: false
+pushed_at: 2026-10-19T20:39:26Z
+last_release:
+  tag: v0.64.0
+  published_at: 2026-10-13T20:44:46Z
+last_checked: 2026-10-19

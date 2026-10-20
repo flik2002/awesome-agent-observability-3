@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Azure API Management AI gateway capabilities
+url: https://learn.microsoft.com/en-us/azure/api-management/genai-gateway-capabilities
+description: Lists API Management features for LLM endpoints, including token metrics, logging and monitoring.
+type: tool
+category: gateways
+added: 2026-10-20
+tags:
+  - azure
+  - cost
+agent_types:
+  - enterprise-workflow
+license: proprietary
+hosting: saas

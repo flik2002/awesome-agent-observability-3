@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry GenAI SIG meeting notes
+url: https://docs.google.com/document/d/1EKIeDgBGXQPGehUigIRLwAUpRGa7-1kXB736EaYuJ2M/edit
+description: Shared meeting notes of the OpenTelemetry GenAI semantic conventions and instrumentation SIG.
+type: article
+category: community
+added: 2026-10-20
+tags:
+  - otel-native

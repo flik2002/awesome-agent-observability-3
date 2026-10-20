@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Cloudflare AI Gateway
+url: https://developers.cloudflare.com/ai-gateway/observability/
+description: Hosted gateway whose documentation covers request logging, analytics, costs and an OpenTelemetry integration.
+type: tool
+category: gateways
+added: 2026-10-20
+tags:
+  - cost
+  - logs
+license: proprietary
+hosting: saas
+otlp: unknown
+otel_evidence: https://developers.cloudflare.com/ai-gateway/observability/

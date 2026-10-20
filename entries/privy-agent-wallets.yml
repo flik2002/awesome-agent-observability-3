@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Privy agent wallets
+url: https://docs.privy.io/wallets/overview/solutions/agent-wallets
+description: Documentation of wallets for agents with a policy engine that limits tokens, chains, transfer values and recipients.
+type: article
+category: on-chain
+subcategory: wallets-and-accounts
+added: 2026-10-20
+tags:
+  - on-chain
+  - payments
+agent_types:
+  - transactional

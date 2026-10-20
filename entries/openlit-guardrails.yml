@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenLIT guardrails
+url: https://docs.openlit.io/latest/sdk/features/guardrails.md
+description: Documentation of OpenLIT guardrails for prompt injection, sensitive topics and topic restriction, traced with OpenTelemetry.
+type: article
+category: safety
+added: 2026-10-20
+tags:
+  - tracing

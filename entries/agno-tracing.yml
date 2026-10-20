@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Agno tracing
+url: https://docs.agno.com/tracing/overview
+description: Documentation of OpenTelemetry tracing of Agno agents and teams.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20

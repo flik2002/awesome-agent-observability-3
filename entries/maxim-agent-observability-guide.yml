@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Maxim: agent observability guide"
+url: https://www.getmaxim.ai/articles/agent-observability-the-definitive-guide-to-monitoring-evaluating-and-perfecting-production-grade-ai-agents
+description: Vendor guide on monitoring and evaluating production agents.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - evals
+  - tracing

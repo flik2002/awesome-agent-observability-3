@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: o11y.news
+url: https://buttondown.com/o11y.news/archive/
+description: Weekly newsletter linking to observability and OpenTelemetry reading.
+type: article
+category: learning
+subcategory: newsletters-podcasts
+added: 2026-10-20
+tags:
+  - otel-native

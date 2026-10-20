@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Refinery
+url: https://github.com/honeycombio/refinery
+description: Sampling proxy that buffers all spans of a trace and then keeps or drops the trace as a whole.
+type: tool
+category: collectors
+added: 2026-10-20
+tags:
+  - tracing
+license: Apache-2.0
+languages:
+  - go
+stars: 406
+archived: false
+pushed_at: 2026-10-19T19:09:47Z
+last_release:
+  tag: v3.4.1
+  published_at: 2026-10-13T12:51:57Z
+last_checked: 2026-10-19

@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Microsoft Foundry tracing
+url: https://learn.microsoft.com/en-us/azure/foundry/observability/concepts/trace-agent-concept
+description: Tracing of agents and applications in Microsoft Foundry (formerly Azure AI Foundry), built on OpenTelemetry.
+type: platform
+category: platforms
+subcategory: cloud
+added: 2026-10-20
+tags:
+  - tracing
+license: proprietary
+hosting: saas
+otlp: unknown
+otel_evidence: https://learn.microsoft.com/en-us/azure/foundry/observability/concepts/trace-agent-concept

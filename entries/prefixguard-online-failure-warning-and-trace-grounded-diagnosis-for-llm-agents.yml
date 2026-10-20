@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "PrefixGuard: online failure warning and trace-grounded diagnosis for LLM agents"
+url: https://arxiv.org/abs/2605.06455
+description: Studies online failure warning from partial agent traces.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - tracing

@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenAI Agents SDK tracing
+url: https://openai.github.io/openai-agents-python/tracing/
+description: Official documentation on the trace and span model of the SDK.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20

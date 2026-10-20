@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: How to redact sensitive prompts in GenAI OpenTelemetry traces
+url: https://oneuptime.com/blog/post/2026-02-06-redact-sensitive-prompts-genai-opentelemetry-traces/view
+description: Guide to removing PII and credentials from GenAI traces before they reach the observability backend.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - tracing

@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Salesforce Agentforce Observability
+url: https://www.salesforce.com/agentforce/observability/
+description: Product page for observability of Agentforce agents.
+type: platform
+category: platforms
+subcategory: apm
+added: 2026-10-20
+agent_types:
+  - customer-support
+license: proprietary
+hosting: saas

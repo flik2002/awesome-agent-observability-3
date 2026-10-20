@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: AgentErrorBench (AgentDebug)
+url: https://github.com/ulab-uiuc/AgentDebug
+description: Annotated failure trajectories from ALFWorld, GAIA and WebShop with an error taxonomy and a debugging pipeline.
+type: dataset
+category: benchmarks
+added: 2026-10-20
+license: MIT
+languages:
+  - python
+stars: 107
+archived: false
+pushed_at: 2026-03-30T03:31:41Z
+last_release: null
+last_checked: 2026-10-19

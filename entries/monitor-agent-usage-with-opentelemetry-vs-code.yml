@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Monitor agent usage with OpenTelemetry (VS Code)
+url: https://code.visualstudio.com/docs/agents/guides/monitoring-agents
+description: Documentation of the OpenTelemetry traces, metrics and events of agent mode in VS Code, following the GenAI conventions.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - coding-agents
+agent_types:
+  - coding

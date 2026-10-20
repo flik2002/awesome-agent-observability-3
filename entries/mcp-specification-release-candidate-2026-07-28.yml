@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: MCP specification release candidate 2026-07-28
+url: https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/
+description: Announcement of the MCP release candidate, which includes trace context propagation (SEP-414) and OpenTelemetry-compatible telemetry.
+type: article
+category: standards
+added: 2026-10-20
+tags:
+  - mcp

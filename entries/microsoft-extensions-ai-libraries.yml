@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Microsoft.Extensions.AI libraries
+url: https://learn.microsoft.com/en-us/dotnet/ai/microsoft-extensions-ai
+description: Documents .NET AI abstractions that include OpenTelemetry middleware for chat clients.
+type: library
+category: instrumentation
+added: 2026-10-20
+repo_url: https://github.com/dotnet/extensions
+tags:
+  - otel-native
+license: MIT
+languages:
+  - dotnet
+otlp:
+  - export
+otel_evidence: https://learn.microsoft.com/en-us/dotnet/ai/microsoft-extensions-ai
+stars: 3262
+archived: false
+pushed_at: 2026-10-19T16:07:48Z
+last_release:
+  tag: v10.11.0
+  published_at: 2026-10-15T04:07:03Z
+last_checked: 2026-10-19

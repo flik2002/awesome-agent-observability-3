@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: opentelemetry-hooks
+url: https://github.com/o11y-dev/opentelemetry-hooks
+description: Hooks that record activity of several coding agents as OpenTelemetry data.
+type: tool
+category: instrumentation
+added: 2026-10-20
+tags:
+  - coding-agents
+  - otel-native
+agent_types:
+  - coding
+license: unknown
+license_note: The repository has no license file.
+otlp:
+  - export
+conventions:
+  - genai-semconv
+otel_evidence: https://github.com/o11y-dev/opentelemetry-hooks
+stars: 40
+archived: false
+pushed_at: 2026-10-19T22:56:25Z
+last_release:
+  tag: v0.15.0
+  published_at: 2026-10-12T09:17:24Z
+last_checked: 2026-10-19

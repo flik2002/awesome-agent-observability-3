@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: CatchBench
+url: https://github.com/yzhao062/catchbench
+description: Benchmark for auditing agent failures from the declared configuration, a growing prefix of a run and the finished trace.
+type: dataset
+category: benchmarks
+added: 2026-10-20
+tags:
+  - tracing
+license: MIT
+languages:
+  - python
+stars: 11
+archived: false
+pushed_at: 2026-09-13T23:26:42Z
+last_release:
+  tag: v0.1.2
+  published_at: 2026-09-13T23:26:57Z
+last_checked: 2026-10-19

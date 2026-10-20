@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Lunary
+url: https://lunary.ai/docs
+description: Hosted platform documentation for monitoring LLM applications, with a JavaScript SDK.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+repo_url: https://github.com/lunary-ai/lunary-js
+license: unknown
+hosting: saas
+stars: 9
+archived: false
+pushed_at: 2026-04-08T18:50:12Z
+last_release: null
+last_checked: 2026-10-19

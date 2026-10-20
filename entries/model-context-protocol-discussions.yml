@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Model Context Protocol discussions
+url: https://github.com/modelcontextprotocol/modelcontextprotocol/discussions
+description: GitHub Discussions forum of the Model Context Protocol specification repository.
+type: article
+category: community
+added: 2026-10-20
+tags:
+  - mcp

@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: TruLens
+url: https://github.com/truera/trulens
+description: Library for evaluating and tracking LLM applications with instrumented traces, described as OpenTelemetry-native.
+type: library
+category: evaluation
+added: 2026-10-20
+docs_url: https://www.trulens.org/
+tags:
+  - evals
+  - tracing
+license: MIT
+languages:
+  - python
+otlp: unknown
+otel_evidence: https://www.trulens.org/
+stars: 3602
+archived: false
+pushed_at: 2026-10-19T17:17:18Z
+last_release:
+  tag: trulens-2.16.0
+  published_at: 2026-10-19T17:17:18Z
+last_checked: 2026-10-19

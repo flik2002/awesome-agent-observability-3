@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Geth EVM tracing
+url: https://geth.ethereum.org/docs/developers/evm-tracing
+description: Documentation of the go-ethereum tracers that replay a transaction on the node and report each step the EVM ran.
+type: article
+category: on-chain
+subcategory: transaction-tracing
+added: 2026-10-20
+tags:
+  - on-chain
+  - tracing
+chains:
+  - ethereum

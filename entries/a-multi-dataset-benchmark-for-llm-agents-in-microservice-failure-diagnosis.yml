@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: A multi-dataset benchmark for LLM agents in microservice failure diagnosis
+url: https://arxiv.org/abs/2606.29193
+description: Benchmark of agents diagnosing failures in microservice systems.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+agent_types:
+  - devops

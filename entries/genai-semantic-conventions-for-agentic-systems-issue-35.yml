@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: GenAI semantic conventions for agentic systems (issue 35)
+url: https://github.com/open-telemetry/semantic-conventions-genai/issues/35
+description: Tracking issue for agentic system conventions in OpenTelemetry GenAI.
+type: spec
+category: standards
+added: 2026-10-20
+body: OpenTelemetry
+version: proposal (open issue)

@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: awesome-agent-observability (anhermon)
+url: https://github.com/anhermon/awesome-agent-observability
+description: Link list on agent observability, grouped into standards, platforms, trace backends, evaluation, guardrails, gateways, MCP and frameworks.
+type: list
+category: related-lists
+added: 2026-10-20
+stars: 52
+archived: false
+pushed_at: 2026-10-18T05:44:40Z
+last_release: null
+last_checked: 2026-10-19

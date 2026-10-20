@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Weights and Biases: AI agent observability guide"
+url: https://wandb.ai/site/articles/ai-agent-observability/
+description: Vendor guide to tracing AI agents.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - tracing

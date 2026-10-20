@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Universal Commerce Protocol
+url: https://ucp.dev/
+description: Specification for interoperable commerce between agents and merchants.
+type: spec
+category: on-chain
+subcategory: payment-protocols
+added: 2026-10-20
+repo_url: https://github.com/Universal-Commerce-Protocol/ucp
+tags:
+  - payments
+  - retail
+agent_types:
+  - commerce
+license: Apache-2.0
+body: Universal-Commerce-Protocol organization
+stars: 3433
+archived: false
+pushed_at: 2026-10-19T22:17:57Z
+last_release:
+  tag: v2026-08-25
+  published_at: 2026-08-25T13:53:03Z
+last_checked: 2026-10-19

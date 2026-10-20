@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Splunk AI Agent Monitoring
+url: https://help.splunk.com/en/splunk-observability-cloud/observability-for-ai/splunk-ai-agent-monitoring
+description: Documents Splunk Observability Cloud views for AI agents, built on OpenTelemetry GenAI data.
+type: platform
+category: platforms
+subcategory: apm
+added: 2026-10-20
+tags:
+  - tracing
+license: proprietary
+hosting: saas
+otlp:
+  - ingest
+conventions:
+  - genai-semconv
+otel_evidence: https://help.splunk.com/en/splunk-observability-cloud/observability-for-ai/splunk-ai-agent-monitoring

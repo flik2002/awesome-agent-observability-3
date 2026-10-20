@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Amazon Bedrock AgentCore observability
+url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability.html
+description: Observability of agents run on Amazon Bedrock AgentCore, with telemetry in an OpenTelemetry-compatible format.
+type: platform
+category: platforms
+subcategory: cloud
+added: 2026-10-20
+tags:
+  - tracing
+license: proprietary
+hosting: saas
+otlp: unknown
+otel_evidence: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability.html

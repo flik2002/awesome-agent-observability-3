@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Agenta
+url: https://github.com/Agenta-AI/agenta
+description: Workspace for building, evaluating and observing LLM applications.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+tags:
+  - evals
+  - open-core
+  - tracing
+license: MIT
+license_note: Directories named ee/ use a separate license.
+hosting: self-hosted
+stars: 4845
+archived: false
+pushed_at: 2026-10-19T22:56:06Z
+last_release:
+  tag: v0.122.8
+  published_at: 2026-10-18T10:45:49Z
+last_checked: 2026-10-19

@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Dynatrace AI observability
+url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability
+description: Hosted product documentation for observing AI workloads, with OpenTelemetry ingestion through OpenInference or GenAI conventions.
+type: platform
+category: platforms
+subcategory: apm
+added: 2026-10-20
+license: proprietary
+hosting: saas
+otlp:
+  - ingest
+conventions:
+  - openinference
+  - genai-semconv
+otel_evidence: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability

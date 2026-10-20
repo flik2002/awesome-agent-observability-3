@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Agentic observability: automated alert triage for Adobe e-commerce"
+url: https://arxiv.org/abs/2602.02585
+description: Industry paper on agent-based alert triage for an e-commerce platform.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - retail
+agent_types:
+  - devops

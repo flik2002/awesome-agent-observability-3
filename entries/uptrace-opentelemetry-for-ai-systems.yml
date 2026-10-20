@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Uptrace: OpenTelemetry for AI systems"
+url: https://uptrace.dev/blog/opentelemetry-ai-systems
+description: Vendor implementation guide for OpenTelemetry instrumentation of LLM and agent systems.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - otel-native

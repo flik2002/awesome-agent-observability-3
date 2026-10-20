@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry contrib Vertex AI instrumentation for Python
+url: https://github.com/open-telemetry/opentelemetry-python-contrib/tree/main/instrumentation-genai/opentelemetry-instrumentation-vertexai
+description: Deprecated OpenTelemetry instrumentation package for the Vertex AI client library in Python.
+type: library
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+  - tracing
+license: Apache-2.0
+languages:
+  - python
+historical: Deprecated in the GenAI package migration of opentelemetry-python-contrib, with no replacement package planned (README, 2026-10-20).

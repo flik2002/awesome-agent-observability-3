@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "OpenTelemetry blog: LLM observability"
+url: https://opentelemetry.io/blog/2024/llm-observability/
+description: OpenTelemetry blog post on observing LLM applications.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20

@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenObservability Talks podcast
+url: https://creators.spotify.com/pod/profile/openobservability/
+description: Podcast on open source observability with an episode on OpenTelemetry for GenAI.
+type: talk
+category: learning
+subcategory: newsletters-podcasts
+added: 2026-10-20
+tags:
+  - otel-native

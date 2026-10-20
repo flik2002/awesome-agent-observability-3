@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: agentgateway
+url: https://github.com/agentgateway/agentgateway
+description: Proxy for agent, MCP and LLM traffic, with tracing and metrics documented.
+type: tool
+category: gateways
+added: 2026-10-20
+docs_url: https://agentgateway.dev/docs/standalone/latest/observability/
+tags:
+  - a2a
+  - mcp
+license: Apache-2.0
+otlp:
+  - export
+otel_evidence: https://agentgateway.dev/docs/standalone/latest/observability/
+stars: 5417
+archived: false
+pushed_at: 2026-10-19T23:37:21Z
+last_release:
+  tag: v1.6.0
+  published_at: 2026-10-02T16:26:26Z
+last_checked: 2026-10-19

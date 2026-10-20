@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenInference
+url: https://github.com/Arize-ai/openinference
+description: Instrumentation packages for LLM clients and agent frameworks that follow the OpenInference conventions.
+type: library
+category: instrumentation
+added: 2026-10-20
+tags:
+  - tracing
+license: Apache-2.0
+languages:
+  - python
+  - typescript
+  - java
+otlp:
+  - export
+conventions:
+  - openinference
+otel_evidence: https://github.com/Arize-ai/openinference
+stars: 1271
+archived: false
+pushed_at: 2026-10-19T23:21:36Z
+last_release:
+  tag: python-openinference-instrumentation-google-genai-v1.4.13
+  published_at: 2026-10-10T06:22:04Z
+last_checked: 2026-10-19

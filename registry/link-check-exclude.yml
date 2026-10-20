@@ -1,0 +1,4 @@
+# URLs the link checker skips. One entry per pattern (a JavaScript regular expression), each with a reason.
+# Keep this short; prefer fixing a link over excluding it.
+- pattern: '^https://cloud-native\.slack\.com/'
+  reason: Slack answers 403 to anonymous requests for any channel link; the channel is listed on the OpenTelemetry GenAI project page.

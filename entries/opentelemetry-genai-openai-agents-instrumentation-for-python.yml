@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry GenAI OpenAI Agents instrumentation for Python
+url: https://github.com/open-telemetry/opentelemetry-python-genai/tree/main/instrumentation/opentelemetry-instrumentation-genai-openai-agents
+description: Instrumentation of the OpenAI Agents SDK following the GenAI conventions; replaces the deprecated contrib package openai-agents-v2.
+type: library
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+  - tracing
+license: Apache-2.0
+languages:
+  - python
+otlp:
+  - export
+conventions:
+  - genai-semconv
+otel_evidence: https://github.com/open-telemetry/opentelemetry-python-genai/tree/main/instrumentation/opentelemetry-instrumentation-genai-openai-agents

@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Vellum: AI observability for agents"
+url: https://www.vellum.ai/blog/understanding-your-agents-behavior-in-production
+description: Vendor practical guide to observing agents in production.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - tracing

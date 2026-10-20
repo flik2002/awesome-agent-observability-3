@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Vercel AI Gateway
+url: https://vercel.com/docs/ai-gateway
+description: Hosted gateway for model access with usage and cost reporting.
+type: tool
+category: gateways
+added: 2026-10-20
+tags:
+  - cost
+license: proprietary
+hosting: saas
+otlp: unknown

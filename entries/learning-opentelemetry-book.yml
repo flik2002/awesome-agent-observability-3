@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Learning OpenTelemetry (book)
+url: https://www.oreilly.com/library/view/learning-opentelemetry/9781098147174/
+description: Book by Ted Young and Austin Parker on adopting OpenTelemetry, the telemetry layer most agent tracing builds on.
+type: book
+category: learning
+subcategory: books
+added: 2026-10-20
+tags:
+  - tracing

@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: A2A Python SDK
+url: https://github.com/a2aproject/a2a-python
+description: Python library for building A2A clients and servers, with optional OpenTelemetry tracing.
+type: sdk
+category: protocols
+added: 2026-10-20
+tags:
+  - a2a
+license: Apache-2.0
+languages:
+  - python
+otlp:
+  - export
+otel_evidence: https://github.com/a2aproject/a2a-python
+stars: 2210
+archived: false
+pushed_at: 2026-10-19T12:24:20Z
+last_release:
+  tag: v1.2.3
+  published_at: 2026-10-19T10:10:57Z
+last_checked: 2026-10-19

@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: AgentOps
+url: https://github.com/AgentOps-AI/agentops
+description: Python SDK and platform for session replay, cost and tracing of agents.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+tags:
+  - otel-native
+  - replay
+  - cost
+  - tracing
+license: MIT
+otlp:
+  - export
+otel_evidence: https://github.com/AgentOps-AI/agentops/blob/main/agentops/sdk/exporters.py
+stars: 5897
+archived: false
+pushed_at: 2026-06-25T08:25:03Z
+last_release:
+  tag: 0.4.21
+  published_at: 2025-08-29T06:36:28Z
+last_checked: 2026-10-19

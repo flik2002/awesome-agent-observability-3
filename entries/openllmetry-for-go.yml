@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenLLMetry for Go
+url: https://github.com/traceloop/go-openllmetry
+description: Go counterpart of OpenLLMetry.
+type: library
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+  - tracing
+license: Apache-2.0
+languages:
+  - go
+otlp:
+  - export
+otel_evidence: https://github.com/traceloop/go-openllmetry
+stars: 47
+archived: false
+pushed_at: 2026-01-17T12:13:25Z
+last_release:
+  tag: traceloop-sdk/v0.1.3
+  published_at: 2025-11-12T08:08:56Z
+last_checked: 2026-10-19

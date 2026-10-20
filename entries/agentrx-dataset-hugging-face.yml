@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: AgentRx dataset (Hugging Face)
+url: https://huggingface.co/datasets/microsoft/AgentRx
+description: Annotated failed agent trajectories used to evaluate step localization and failure attribution.
+type: dataset
+category: benchmarks
+added: 2026-10-20
+repo_url: https://github.com/microsoft/AgentRx
+tags:
+  - tracing
+license: CC-BY-4.0
+license_note: The dataset card states CC-BY-4.0; the code repository microsoft/AgentRx is MIT.
+stars: 156
+archived: false
+pushed_at: 2026-09-14T22:22:00Z
+last_release: null
+last_checked: 2026-10-19

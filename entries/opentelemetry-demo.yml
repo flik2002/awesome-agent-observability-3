@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry demo
+url: https://github.com/open-telemetry/opentelemetry-demo
+description: Multi-service demo application that shows traces, metrics and logs end to end.
+type: tool
+category: learning
+subcategory: articles
+added: 2026-10-20
+license: Apache-2.0
+otlp:
+  - export
+otel_evidence: https://github.com/open-telemetry/opentelemetry-demo
+stars: 3411
+archived: false
+pushed_at: 2026-10-17T17:00:01Z
+last_release:
+  tag: 3.1.0
+  published_at: 2026-09-18T18:03:28Z
+last_checked: 2026-10-19

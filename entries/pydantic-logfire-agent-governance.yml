@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Pydantic Logfire agent governance
+url: https://pydantic.dev/logfire/agent-governance
+description: Product page on spend policies, data loss prevention and audit of agent actions based on traces.
+type: platform
+category: safety
+added: 2026-10-20
+tags:
+  - tracing
+  - cost
+license: proprietary
+hosting: saas

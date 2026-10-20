@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: LangWatch OpenClaw integration docs
+url: https://langwatch.ai/docs/integration/openclaw
+description: Documents sending traces of a personal assistant agent to LangWatch over OpenTelemetry.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+agent_types:
+  - personal-assistant

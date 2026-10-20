@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Azure Monitor: enable OpenTelemetry in Application Insights"
+url: https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable
+description: Explains the Azure Monitor OpenTelemetry distro that sends application telemetry to Application Insights.
+type: platform
+category: platforms
+subcategory: cloud
+added: 2026-10-20
+tags:
+  - azure
+  - tracing
+license: proprietary
+hosting: saas
+otlp:
+  - export
+otel_evidence: https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable

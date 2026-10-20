@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Pipecat
+url: https://github.com/pipecat-ai/pipecat
+description: Framework for voice and multimodal agents with OpenTelemetry tracing of conversational pipelines.
+type: framework
+category: frameworks
+added: 2026-10-20
+docs_url: https://docs.pipecat.ai/api-reference/server/utilities/opentelemetry
+tags:
+  - voice
+agent_types:
+  - customer-support
+license: BSD-2-Clause
+languages:
+  - python
+otlp:
+  - export
+conventions: []
+otel_evidence: https://docs.pipecat.ai/api-reference/server/utilities/opentelemetry
+telemetry: otel
+telemetry_docs: https://docs.pipecat.ai/api-reference/server/utilities/opentelemetry
+stars: 16617
+archived: false
+pushed_at: 2026-10-19T20:57:08Z
+last_release:
+  tag: v1.13.0
+  published_at: 2026-10-19T06:35:05Z
+last_checked: 2026-10-19

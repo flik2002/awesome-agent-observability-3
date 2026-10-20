@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: DeepEval
+url: https://github.com/confident-ai/deepeval
+description: Evaluation framework with tracing of LLM applications and an OpenTelemetry integration.
+type: tool
+category: evaluation
+added: 2026-10-20
+docs_url: https://docs.confident-ai.com/
+tags:
+  - evals
+  - tracing
+license: Apache-2.0
+languages:
+  - python
+otlp: unknown
+otel_evidence: https://docs.confident-ai.com/
+stars: 18967
+archived: false
+pushed_at: 2026-10-19T06:25:04Z
+last_release:
+  tag: python-v4.2.4
+  published_at: 2026-09-22T16:36:00Z
+last_checked: 2026-10-19

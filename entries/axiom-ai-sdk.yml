@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Axiom AI SDK
+url: https://github.com/axiomhq/ai
+description: TypeScript SDK from Axiom for instrumenting and evaluating AI applications.
+type: library
+category: instrumentation
+added: 2026-10-20
+license: MIT
+languages:
+  - typescript
+stars: 18
+archived: false
+pushed_at: 2026-10-08T09:57:17Z
+last_release:
+  tag: axiom-v0.52.2
+  published_at: 2026-05-12T19:10:57Z
+last_checked: 2026-10-19

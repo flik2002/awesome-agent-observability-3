@@ -1,0 +1,42 @@
+# Runs on every pull request and push to main: tests, validation (including README drift) and a link check of the
+# entries a pull request touches. All checks here are blocking.
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Validate entries and generated files
+        run: npm run validate -- --quiet
+      - name: One entry per pull request
+        if: github.event_name == 'pull_request'
+        run: |
+          added=$(git diff --name-only --diff-filter=A "origin/${{ github.base_ref }}...HEAD" -- entries/ | wc -l)
+          echo "entries added: $added"
+          if [ "$added" -gt 1 ]; then
+            echo "::error::Add one entry per pull request ($added added)."
+            exit 1
+          fi
+      - name: Link check of changed entries
+        if: github.event_name == 'pull_request'
+        run: |
+          for f in $(git diff --name-only --diff-filter=AM "origin/${{ github.base_ref }}...HEAD" -- 'entries/*.yml'); do
+            node scripts/check-links.mjs --only "$(basename "$f" .yml)"
+          done

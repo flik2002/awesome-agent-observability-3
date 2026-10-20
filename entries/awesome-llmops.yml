@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Awesome-LLMOps
+url: https://github.com/tensorchord/Awesome-LLMOps
+description: Curated list of LLMOps tools.
+type: list
+category: related-lists
+added: 2026-10-20
+stars: 5961
+archived: false
+pushed_at: 2026-10-16T06:34:42Z
+last_release: null
+last_checked: 2026-10-19

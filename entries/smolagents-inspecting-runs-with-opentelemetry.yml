@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "smolagents: inspecting runs with OpenTelemetry"
+url: https://huggingface.co/docs/smolagents/tutorials/inspect_runs
+description: Tutorial on instrumenting smolagents runs with OpenTelemetry and viewing them.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20

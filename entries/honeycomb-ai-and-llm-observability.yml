@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Honeycomb AI and LLM observability
+url: https://www.honeycomb.io/use-cases/ai-llm-observability
+description: Product page for Honeycomb tracing of LLM applications and agents.
+type: platform
+category: platforms
+subcategory: apm
+added: 2026-10-20
+docs_url: https://docs.honeycomb.io/send-data/agents
+license: proprietary
+hosting: saas
+otlp:
+  - ingest
+conventions:
+  - genai-semconv
+otel_evidence: https://docs.honeycomb.io/send-data/agents

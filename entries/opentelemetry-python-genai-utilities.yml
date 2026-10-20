@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry Python GenAI utilities
+url: https://github.com/open-telemetry/opentelemetry-python-genai/tree/main/util/opentelemetry-util-genai
+description: Shared utilities for Python GenAI instrumentations.
+type: library
+category: instrumentation
+added: 2026-10-20
+license: Apache-2.0
+languages:
+  - python

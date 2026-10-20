@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: LMDeploy
+url: https://github.com/InternLM/lmdeploy
+description: Toolkit for deploying and serving language models that exposes Prometheus metrics, with a bundled Grafana setup.
+type: tool
+category: platforms
+subcategory: model-serving
+added: 2026-10-20
+docs_url: https://github.com/InternLM/lmdeploy/blob/main/docs/en/advance/metrics.md
+tags:
+  - metrics
+license: Apache-2.0
+languages:
+  - python
+stars: 8108
+archived: false
+pushed_at: 2026-10-19T08:03:47Z
+last_release:
+  tag: v0.18.0
+  published_at: 2026-09-28T07:04:58Z
+last_checked: 2026-10-19

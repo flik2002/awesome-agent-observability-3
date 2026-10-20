@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenAI Agents SDK for Python
+url: https://github.com/openai/openai-agents-python
+description: OpenAI agent SDK; tracing uses its own trace format, with processors that can export elsewhere.
+type: framework
+category: frameworks
+added: 2026-10-20
+license: MIT
+languages:
+  - python
+telemetry: own
+telemetry_docs: https://openai.github.io/openai-agents-python/tracing/
+stars: 30145
+archived: false
+pushed_at: 2026-10-19T17:31:33Z
+last_release:
+  tag: v0.24.0
+  published_at: 2026-10-15T02:20:12Z
+last_checked: 2026-10-19

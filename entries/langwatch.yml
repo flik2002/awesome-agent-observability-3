@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: LangWatch
+url: https://github.com/langwatch/langwatch
+description: Platform for tracing, evaluating and simulating agents.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+tags:
+  - evals
+  - open-core
+  - tracing
+license: Apache-2.0
+license_note: The enterprise/ directory needs a commercial license in production.
+hosting: both
+otlp:
+  - ingest
+otel_evidence: https://langwatch.ai/docs/integration/opentelemetry/guide
+stars: 4983
+archived: false
+pushed_at: 2026-10-19T23:29:05Z
+last_release:
+  tag: langwatch-3.20.1
+  published_at: 2026-10-02T08:01:44Z
+last_checked: 2026-10-19

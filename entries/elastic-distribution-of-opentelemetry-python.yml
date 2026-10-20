@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Elastic Distribution of OpenTelemetry Python
+url: https://github.com/elastic/elastic-otel-python
+description: Python distribution of OpenTelemetry maintained by Elastic.
+type: library
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+license: Apache-2.0
+languages:
+  - python
+otlp:
+  - export
+otel_evidence: https://github.com/elastic/elastic-otel-python
+stars: 15
+archived: false
+pushed_at: 2026-10-19T02:31:28Z
+last_release:
+  tag: v1.17.0
+  published_at: 2026-10-08T15:10:52Z
+last_checked: 2026-10-19

@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Claude Code Metrics (Prometheus) Grafana dashboard
+url: https://grafana.com/grafana/dashboards/25255-claude-code-metrics-prometheus/
+description: Community Grafana dashboard for coding agent usage metrics on Prometheus-compatible backends.
+type: tool
+category: platforms
+subcategory: backends
+added: 2026-10-20
+tags:
+  - coding-agents
+  - metrics
+agent_types:
+  - coding
+license: unknown
+otlp:
+  - ingest
+otel_evidence: https://grafana.com/grafana/dashboards/25255-claude-code-metrics-prometheus/

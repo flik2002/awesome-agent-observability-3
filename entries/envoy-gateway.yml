@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Envoy Gateway
+url: https://github.com/envoyproxy/gateway
+description: Gateway project that the Envoy AI Gateway builds on.
+type: tool
+category: gateways
+added: 2026-10-20
+license: Apache-2.0
+hosting: self-hosted
+stars: 3088
+archived: false
+pushed_at: 2026-10-19T14:06:17Z
+last_release:
+  tag: v1.9.2
+  published_at: 2026-09-28T17:14:42Z
+last_checked: 2026-10-19

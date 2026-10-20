@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Google Cloud blog: Google Cloud and OpenTelemetry GenAI conventions"
+url: https://cloud.google.com/blog/products/devops-sre/google-cloud-and-otel-genai
+description: Google Cloud blog post on its work with the OpenTelemetry GenAI conventions.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - gcp

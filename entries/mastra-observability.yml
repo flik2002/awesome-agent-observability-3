@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Mastra observability
+url: https://mastra.ai/docs/observability/overview
+description: Official documentation on tracing Mastra agents and workflows.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20

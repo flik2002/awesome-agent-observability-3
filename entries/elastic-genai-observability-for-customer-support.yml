@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Elastic: GenAI observability for customer support"
+url: https://www.elastic.co/search-labs/blog/genai-customer-support-observability
+description: Engineering account of monitoring a customer support assistant built on Elastic.
+type: article
+category: learning
+subcategory: case-studies
+added: 2026-10-20
+tags:
+  - customer-support
+  - logs
+agent_types:
+  - customer-support

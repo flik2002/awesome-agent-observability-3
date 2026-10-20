@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Elastic: AI agent observability with OTel, OpenLIT and Elastic"
+url: https://www.elastic.co/observability-labs/blog/ai-observability-web-agents-openlit
+description: Elastic blog on monitoring web-browsing agents with OpenTelemetry, OpenLIT and Elastic.
+type: article
+category: learning
+subcategory: case-studies
+added: 2026-10-20
+tags:
+  - otel-native
+agent_types:
+  - research

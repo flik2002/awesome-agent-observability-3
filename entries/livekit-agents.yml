@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: LiveKit Agents
+url: https://docs.livekit.io/testing/observability/tracing/
+description: Framework for voice agents whose documentation describes OpenTelemetry traces per session, exportable to any OTLP backend.
+type: framework
+category: frameworks
+added: 2026-10-20
+repo_url: https://github.com/livekit/agents
+tags:
+  - voice
+agent_types:
+  - customer-support
+license: Apache-2.0
+otlp:
+  - export
+otel_evidence: https://docs.livekit.io/testing/observability/tracing/
+telemetry: otel
+telemetry_docs: https://docs.livekit.io/testing/observability/tracing/
+stars: 14849
+archived: false
+pushed_at: 2026-10-19T23:11:39Z
+last_release:
+  tag: livekit-agents@1.8.8
+  published_at: 2026-10-15T06:10:17Z
+last_checked: 2026-10-19

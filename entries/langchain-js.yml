@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: LangChain.js
+url: https://github.com/langchain-ai/langchainjs
+description: JavaScript and TypeScript version of LangChain.
+type: framework
+category: frameworks
+added: 2026-10-20
+license: MIT
+languages:
+  - typescript
+telemetry: own
+telemetry_docs: https://docs.langchain.com/oss/javascript/langchain/observability
+stars: 18282
+archived: false
+pushed_at: 2026-10-19T21:45:57Z
+last_release:
+  tag: "@langchain/neo4j@0.1.25"
+  published_at: 2026-10-16T00:06:27Z
+last_checked: 2026-10-19

@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: viem concurrent receipt waits shared the first call options
+url: https://github.com/wevm/viem/issues/5137
+description: Concurrent viem receipt waits for one hash on one client all ran with the timeout and confirmations of the first call.
+type: finding
+category: findings
+added: 2026-10-20
+docs_url: https://github.com/selimaytac/hashspan/blob/main/docs/upstream-findings.md
+tags:
+  - on-chain
+evidence_url: https://github.com/wevm/viem/issues/5137
+upstream_issue: wevm/viem#5137
+versions: viem before 2.57.0
+status: fixed
+fixed_in: viem 2.57.0

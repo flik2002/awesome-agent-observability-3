@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry Operations for Python (Google Cloud exporters)
+url: https://github.com/GoogleCloudPlatform/opentelemetry-operations-python
+description: OpenTelemetry Python exporters for Cloud Monitoring and Cloud Trace.
+type: library
+category: collectors
+added: 2026-10-20
+tags:
+  - gcp
+license: Apache-2.0
+languages:
+  - python
+otlp:
+  - export
+otel_evidence: https://github.com/GoogleCloudPlatform/opentelemetry-operations-python
+stars: 83
+archived: false
+pushed_at: 2026-10-19T17:07:58Z
+last_release:
+  tag: v1.15.0
+  published_at: 2026-08-19T21:37:42Z
+last_checked: 2026-10-19

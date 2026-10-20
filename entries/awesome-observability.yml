@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: awesome-observability
+url: https://github.com/adriannovegil/awesome-observability
+description: Curated list of observability resources, covering tools, practices and standards.
+type: list
+category: related-lists
+added: 2026-10-20
+stars: 716
+archived: false
+pushed_at: 2026-09-28T19:08:33Z
+last_release: null
+last_checked: 2026-10-19

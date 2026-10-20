@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Datadog OpenTelemetry news, May 2026
+url: https://opensource.datadoghq.com/otel-news/2026/05/
+description: Monthly roundup of OpenTelemetry developments, including GenAI conventions releases.
+type: article
+category: learning
+subcategory: newsletters-podcasts
+added: 2026-10-20
+tags:
+  - otel-native

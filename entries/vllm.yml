@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: vLLM
+url: https://github.com/vllm-project/vllm
+description: Inference and serving engine for language models, with Prometheus production metrics documented.
+type: tool
+category: platforms
+subcategory: model-serving
+added: 2026-10-20
+docs_url: https://docs.vllm.ai/en/latest/usage/metrics/
+tags:
+  - metrics
+license: Apache-2.0
+stars: 94158
+archived: false
+pushed_at: 2026-10-19T23:40:46Z
+last_release:
+  tag: v0.32.0
+  published_at: 2026-10-18T06:50:48Z
+last_checked: 2026-10-19

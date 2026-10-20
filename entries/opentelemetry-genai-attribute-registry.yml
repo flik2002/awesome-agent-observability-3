@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry GenAI attribute registry
+url: https://opentelemetry.io/docs/specs/semconv/registry/attributes/gen-ai/
+description: Reference list of the `gen_ai.*` attribute names and their types.
+type: spec
+category: standards
+added: 2026-10-20
+body: OpenTelemetry
+version: 1.44.0

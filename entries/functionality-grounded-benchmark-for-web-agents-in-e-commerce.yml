@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Functionality-grounded benchmark for web agents in e-commerce
+url: https://arxiv.org/abs/2508.15832
+description: Benchmark of web agents on e-commerce functionality.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - retail
+agent_types:
+  - commerce

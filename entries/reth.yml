@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Reth
+url: https://github.com/paradigmxyz/reth
+description: Ethereum execution client with Prometheus metrics and OTLP trace export through a command-line flag.
+type: tool
+category: on-chain
+subcategory: rpc-and-nodes
+added: 2026-10-20
+docs_url: https://reth.rs/run/monitoring/
+tags:
+  - on-chain
+  - metrics
+  - tracing
+license: Apache-2.0
+languages:
+  - rust
+otlp:
+  - export
+conventions: []
+otel_evidence: https://reth.rs/run/monitoring/
+chains:
+  - ethereum
+stars: 5837
+archived: false
+pushed_at: 2026-10-19T23:38:59Z
+last_release:
+  tag: v2.7.0
+  published_at: 2026-09-28T12:45:27Z
+last_checked: 2026-10-19

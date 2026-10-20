@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry Weaver
+url: https://github.com/open-telemetry/weaver
+description: Tool for defining, validating and evolving telemetry schemas built on semantic conventions, with a live check of OTLP data.
+type: tool
+category: standards
+added: 2026-10-20
+tags:
+  - tracing
+license: Apache-2.0
+languages:
+  - rust
+stars: 514
+archived: false
+pushed_at: 2026-10-19T07:35:41Z
+last_release:
+  tag: v0.28.0
+  published_at: 2026-10-14T17:29:48Z
+last_checked: 2026-10-19

@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: LiteLLM
+url: https://docs.litellm.ai/docs/observability/opentelemetry_integration
+description: Python SDK and proxy server with one API for many model providers, including an OpenTelemetry callback for traces.
+type: tool
+category: gateways
+added: 2026-10-20
+repo_url: https://github.com/BerriAI/litellm
+tags:
+  - cost
+  - open-core
+license: MIT
+license_note: The enterprise/ directory uses a commercial license.
+hosting: both
+languages:
+  - python
+otlp:
+  - export
+otel_evidence: https://docs.litellm.ai/docs/observability/opentelemetry_integration
+stars: 61584
+archived: false
+pushed_at: 2026-10-19T23:39:56Z
+last_release:
+  tag: v1.106.0
+  published_at: 2026-10-18T05:53:32Z
+last_checked: 2026-10-19

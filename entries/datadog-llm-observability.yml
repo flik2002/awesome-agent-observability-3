@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Datadog LLM Observability
+url: https://docs.datadoghq.com/llm_observability/
+description: Hosted product for tracing and monitoring LLM applications and agents, which also accepts OpenTelemetry GenAI instrumentation.
+type: platform
+category: platforms
+subcategory: apm
+added: 2026-10-20
+tags:
+  - tracing
+license: proprietary
+hosting: saas
+otlp:
+  - ingest
+conventions:
+  - genai-semconv
+  - openinference
+otel_evidence: https://docs.datadoghq.com/llm_observability/instrumentation/otel_instrumentation/

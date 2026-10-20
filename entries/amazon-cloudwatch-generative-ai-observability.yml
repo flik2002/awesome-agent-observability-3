@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Amazon CloudWatch generative AI observability
+url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/GenAI-observability.html
+description: Documents CloudWatch views for latency, usage and errors, and prompt tracing across models and agents.
+type: platform
+category: platforms
+subcategory: cloud
+added: 2026-10-20
+tags:
+  - aws
+  - tracing
+license: proprietary
+hosting: saas

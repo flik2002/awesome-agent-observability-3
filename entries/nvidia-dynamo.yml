@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: NVIDIA Dynamo
+url: https://github.com/ai-dynamo/dynamo
+description: Distributed inference serving framework whose Kubernetes guide covers Prometheus metrics and an OTLP collector endpoint for traces.
+type: tool
+category: platforms
+subcategory: model-serving
+added: 2026-10-20
+docs_url: https://github.com/ai-dynamo/dynamo/blob/main/docs/fern/pages/kubernetes/operations/observability.mdx
+tags:
+  - metrics
+  - tracing
+license: Apache-2.0
+otlp:
+  - export
+conventions: []
+otel_evidence: https://github.com/ai-dynamo/dynamo/blob/main/docs/fern/pages/kubernetes/operations/observability.mdx
+stars: 8333
+archived: false
+pushed_at: 2026-10-19T23:42:09Z
+last_release:
+  tag: v1.5.1
+  published_at: 2026-10-07T01:54:13Z
+last_checked: 2026-10-19

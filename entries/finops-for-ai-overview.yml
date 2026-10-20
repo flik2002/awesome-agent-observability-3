@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: FinOps for AI overview
+url: https://www.finops.org/wg/finops-for-ai-overview/
+description: FinOps Foundation guide to managing token costs and resource usage of language models and generative AI.
+type: article
+category: cost
+added: 2026-10-20
+tags:
+  - cost

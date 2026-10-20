@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: LiteLLM budgets and rate limits
+url: https://docs.litellm.ai/docs/proxy/users
+description: Documentation of budgets and rate limits per user, key and team in the LiteLLM proxy.
+type: article
+category: cost
+added: 2026-10-20
+tags:
+  - cost

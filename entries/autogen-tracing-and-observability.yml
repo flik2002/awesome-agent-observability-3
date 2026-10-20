@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: AutoGen tracing and observability
+url: https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/tracing.html
+description: Documentation of OpenTelemetry tracing for AutoGen AgentChat applications.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20

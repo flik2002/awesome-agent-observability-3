@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Turnkey agentic wallets
+url: https://docs.turnkey.com/solutions/company-wallets/agentic-wallets
+description: Documentation of scoped signing authority for agents with policies, spending caps and multi-party approval.
+type: article
+category: on-chain
+subcategory: wallets-and-accounts
+added: 2026-10-20
+repo_url: https://github.com/tkhq/sdk
+tags:
+  - on-chain
+  - payments
+agent_types:
+  - transactional
+license: Apache-2.0
+stars: 102
+archived: false
+pushed_at: 2026-10-19T20:36:33Z
+last_release:
+  tag: v2026.10.3
+  published_at: 2026-10-19T14:51:58Z
+last_checked: 2026-10-19

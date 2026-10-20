@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: AP2
+url: https://github.com/google-agentic-commerce/AP2
+description: Agent Payments Protocol specification for payments initiated by agents.
+type: spec
+category: on-chain
+subcategory: payment-protocols
+added: 2026-10-20
+tags:
+  - payments
+agent_types:
+  - transactional
+  - commerce
+license: Apache-2.0
+body: google-agentic-commerce
+stars: 3237
+archived: false
+pushed_at: 2026-06-17T01:24:46Z
+last_release:
+  tag: v0.2.0
+  published_at: 2026-04-28T12:40:54Z
+last_checked: 2026-10-19

@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Willful disobedience: automatically detecting failures in agentic traces"
+url: https://arxiv.org/abs/2603.23806
+description: Studies automatic detection of failures in agent traces.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - tracing

@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: A2A protocol documentation
+url: https://a2a-protocol.org/latest/
+description: Documentation site of the Agent2Agent protocol.
+type: spec
+category: standards
+added: 2026-10-20
+tags:
+  - a2a
+body: A2A Project (Linux Foundation)

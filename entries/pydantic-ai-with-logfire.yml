@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Pydantic AI with Logfire
+url: https://ai.pydantic.dev/logfire/
+description: Official documentation on debugging and monitoring Pydantic AI agents.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20

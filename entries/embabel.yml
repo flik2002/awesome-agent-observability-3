@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Embabel
+url: https://github.com/embabel/embabel-agent
+description: JVM agent framework whose user guide documents observation of its services through Micrometer.
+type: framework
+category: frameworks
+added: 2026-10-20
+docs_url: https://docs.embabel.com/
+agent_types:
+  - enterprise-workflow
+license: Apache-2.0
+languages:
+  - java
+telemetry: unknown
+telemetry_docs: https://docs.embabel.com/
+stars: 4525
+archived: false
+pushed_at: 2026-10-19T19:53:42Z
+last_release:
+  tag: v1.5.3
+  published_at: 2026-10-05T18:45:52Z
+last_checked: 2026-10-19

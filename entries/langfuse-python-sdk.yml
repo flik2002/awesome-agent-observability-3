@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Langfuse Python SDK
+url: https://github.com/langfuse/langfuse-python
+description: Python client and decorators for sending traces to Langfuse, built on OpenTelemetry.
+type: library
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+  - tracing
+license: MIT
+languages:
+  - python
+otlp:
+  - export
+otel_evidence: https://github.com/langfuse/langfuse-python
+stars: 500
+archived: false
+pushed_at: 2026-10-19T09:15:24Z
+last_release:
+  tag: v5.0.2
+  published_at: 2026-10-16T10:01:43Z
+last_checked: 2026-10-19

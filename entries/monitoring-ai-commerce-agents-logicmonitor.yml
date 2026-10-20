@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Monitoring AI commerce agents (LogicMonitor)
+url: https://www.logicmonitor.com/blog/how-to-monitor-ai-agents-in-commerce-systems
+description: Vendor guide on monitoring shopping agents, with attention to infrastructure and agent decision paths.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - payments
+  - retail
+  - tracing
+agent_types:
+  - commerce

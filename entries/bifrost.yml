@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Bifrost
+url: https://github.com/maximhq/bifrost
+description: AI gateway that also works as an MCP gateway, with Prometheus metrics, distributed tracing and logging.
+type: tool
+category: gateways
+added: 2026-10-20
+tags:
+  - mcp
+license: Apache-2.0
+stars: 8945
+archived: false
+pushed_at: 2026-10-19T20:10:40Z
+last_release:
+  tag: ent-v2.3.1-base
+  published_at: 2026-10-19T14:56:18Z
+last_checked: 2026-10-19

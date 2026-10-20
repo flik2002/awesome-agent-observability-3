@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Model Context Protocol C# SDK
+url: https://github.com/modelcontextprotocol/csharp-sdk
+description: Official C# SDK for MCP clients and servers, with a sample that configures OpenTelemetry for MCP operations.
+type: sdk
+category: protocols
+added: 2026-10-20
+tags:
+  - mcp
+license: Apache-2.0 AND MIT
+license_note: The project is relicensing from MIT to Apache-2.0; older contributions stay under MIT.
+languages:
+  - dotnet
+otlp:
+  - export
+conventions: []
+otel_evidence: https://github.com/modelcontextprotocol/csharp-sdk/blob/main/samples/AspNetCoreMcpServer/README.md
+stars: 4588
+archived: false
+pushed_at: 2026-10-19T06:43:55Z
+last_release:
+  tag: v2.2.0
+  published_at: 2026-08-13T08:45:54Z
+last_checked: 2026-10-19

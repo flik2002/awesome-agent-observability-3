@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: A survey on AgentOps
+url: https://arxiv.org/abs/2508.02121
+description: Survey of categories, challenges and directions of AgentOps.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - tracing

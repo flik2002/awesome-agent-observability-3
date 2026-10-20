@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "AgentLens: production-assessed trajectory reviews for coding agent evaluation"
+url: https://arxiv.org/abs/2607.06624
+description: Studies reviewing production trajectories of coding agents for evaluation.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - tracing
+agent_types:
+  - coding

@@ -1,0 +1,48 @@
+# Weekly: checks every link and updates one standing issue, "Entries to review", with the failures (at most 30
+# lines). Exclusions live in registry/link-check-exclude.yml, one reason each.
+name: links
+
+on:
+  schedule:
+    - cron: '41 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Check links
+        id: check
+        run: |
+          set +e
+          node scripts/check-links.mjs > links.txt
+          echo "status=$?" >> "$GITHUB_OUTPUT"
+          cat links.txt
+      - name: Update the standing issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Entries to review"
+          {
+            echo "Weekly link check of $(date -u +%Y-%m-%d). Fix the entry, add an exclusion with a reason, or remove it."
+            echo
+            grep '^FAIL' links.txt | head -n 30 | sed 's/^FAIL /- [ ] /'
+            echo
+            tail -n 1 links.txt
+          } > body.md
+          number=$(gh issue list --state open --search "in:title \"$title\"" --json number --jq '.[0].number')
+          if [ -n "$number" ]; then
+            gh issue edit "$number" --body-file body.md
+          elif [ "${{ steps.check.outputs.status }}" != "0" ]; then
+            gh issue create --title "$title" --body-file body.md
+          fi

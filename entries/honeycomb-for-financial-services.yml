@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Honeycomb for financial services
+url: https://www.honeycomb.io/industries/financial-services
+description: Vendor page on observability requirements in financial services, including retention for audit.
+type: article
+category: learning
+subcategory: case-studies
+added: 2026-10-20
+tags:
+  - finance
+  - tracing
+agent_types:
+  - enterprise-workflow

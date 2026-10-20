@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Microsoft Copilot Studio analytics overview
+url: https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-overview
+description: Documents analytics and monitoring views for agents built in Copilot Studio.
+type: platform
+category: platforms
+subcategory: cloud
+added: 2026-10-20
+tags:
+  - azure
+agent_types:
+  - enterprise-workflow
+license: proprietary
+hosting: saas

@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry transform processor
+url: https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/transformprocessor
+description: Collector processor that modifies telemetry with OpenTelemetry Transformation Language statements.
+type: tool
+category: collectors
+added: 2026-10-20
+tags:
+  - tracing
+  - metrics
+  - logs
+license: Apache-2.0
+languages:
+  - go

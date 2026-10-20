@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Weights & Biases Weave
+url: https://github.com/wandb/weave
+description: Toolkit for tracing and evaluating LLM applications.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+tags:
+  - tracing
+  - evals
+license: Apache-2.0
+otlp: unknown
+stars: 1142
+archived: false
+pushed_at: 2026-10-19T22:06:58Z
+last_release:
+  tag: v0.52.27
+  published_at: 2026-10-13T18:14:43Z
+last_checked: 2026-10-19

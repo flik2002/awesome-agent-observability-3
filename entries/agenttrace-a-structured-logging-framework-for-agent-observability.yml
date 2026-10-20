@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "AgentTrace: a structured logging framework for agent observability"
+url: https://arxiv.org/abs/2602.10133
+description: Proposes a structured logging framework for agent systems that can integrate with OpenTelemetry.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - tracing

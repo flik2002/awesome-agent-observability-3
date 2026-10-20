@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Amazon Bedrock Guardrails CloudWatch metrics
+url: https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-guardrails-cw-metrics.html
+description: Documentation of CloudWatch metrics for guardrail invocations, interventions, latency and errors.
+type: article
+category: safety
+added: 2026-10-20
+tags:
+  - metrics
+  - aws

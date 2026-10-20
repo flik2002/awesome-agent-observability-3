@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry redaction processor
+url: https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/redactionprocessor
+description: Collector processor that removes attributes not on an allowed list and masks values that match a blocked list.
+type: tool
+category: collectors
+added: 2026-10-20
+tags:
+  - tracing
+  - logs
+license: Apache-2.0
+languages:
+  - go

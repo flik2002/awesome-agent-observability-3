@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: cast run (Foundry)
+url: https://www.getfoundry.sh/cast/reference/run
+description: Foundry command that re-executes a mined transaction against forked chain state and shows the resulting call trace, with an optional debugger.
+type: tool
+category: on-chain
+subcategory: transaction-tracing
+added: 2026-10-20
+tags:
+  - on-chain
+  - tracing
+license: Apache-2.0
+chains:
+  - evm

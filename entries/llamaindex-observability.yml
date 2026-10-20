@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: LlamaIndex observability
+url: https://developers.llamaindex.ai/python/framework/module_guides/observability/
+description: Documentation of the tracing options of LlamaIndex, including OpenTelemetry-based integrations.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20

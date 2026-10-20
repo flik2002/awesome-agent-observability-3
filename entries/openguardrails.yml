@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenGuardrails
+url: https://github.com/openguardrails/openguardrails
+description: Specification and reference integrations for portable agent safety verdicts, with a mapping to OpenTelemetry concepts.
+type: spec
+category: safety
+added: 2026-10-20
+license: Apache-2.0
+body: OpenGuardrails project
+version: unknown
+stars: 58
+archived: false
+pushed_at: 2026-10-19T14:07:37Z
+last_release:
+  tag: v1.9
+  published_at: 2026-09-18T00:22:13Z
+last_checked: 2026-10-19

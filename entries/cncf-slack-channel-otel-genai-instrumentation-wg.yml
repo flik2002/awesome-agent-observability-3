@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: CNCF Slack channel otel-genai-instrumentation-wg
+url: https://cloud-native.slack.com/archives/C06KR7ARS3X
+description: Slack channel of the OpenTelemetry GenAI instrumentation working group in the CNCF workspace.
+type: article
+category: community
+added: 2026-10-20
+tags:
+  - otel-native

@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry traces concept
+url: https://opentelemetry.io/docs/concepts/signals/traces/
+description: Official introduction to spans and traces.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - tracing

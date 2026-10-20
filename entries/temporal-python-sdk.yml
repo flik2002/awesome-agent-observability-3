@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Temporal Python SDK
+url: https://github.com/temporalio/sdk-python
+description: Python SDK for durable workflows, with OpenTelemetry tracing for workflows that often run long-lived agents.
+type: framework
+category: frameworks
+added: 2026-10-20
+docs_url: https://docs.temporal.io/develop/python/platform/observability
+agent_types:
+  - enterprise-workflow
+license: MIT
+languages:
+  - python
+otlp:
+  - export
+otel_evidence: https://docs.temporal.io/develop/python/platform/observability
+telemetry: otel
+telemetry_docs: https://docs.temporal.io/develop/python/platform/observability
+stars: 1227
+archived: false
+pushed_at: 2026-10-19T22:13:59Z
+last_release:
+  tag: 1.34.0
+  published_at: 2026-09-30T20:25:13Z
+last_checked: 2026-10-19

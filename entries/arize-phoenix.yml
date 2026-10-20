@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Arize Phoenix
+url: https://github.com/Arize-ai/phoenix
+description: Self-hostable tracing and evaluation tool that ingests OpenInference traces over OTLP.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+tags:
+  - tracing
+  - evals
+license: Elastic-2.0
+hosting: both
+otlp:
+  - ingest
+conventions:
+  - openinference
+otel_evidence: https://github.com/Arize-ai/phoenix
+stars: 11911
+archived: false
+pushed_at: 2026-10-19T22:49:38Z
+last_release:
+  tag: arize-phoenix-sqlean-v0.2.1
+  published_at: 2026-10-19T16:42:17Z
+last_checked: 2026-10-19

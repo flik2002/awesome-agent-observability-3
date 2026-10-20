@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: kagent
+url: https://github.com/kagent-dev/kagent
+description: Kubernetes-native framework for running agents, with OpenTelemetry tracing of agent, model and tool execution.
+type: framework
+category: frameworks
+added: 2026-10-20
+agent_types:
+  - devops
+license: Apache-2.0
+otlp:
+  - export
+otel_evidence: https://kagent.dev/docs/kagent/1.x/observability/tracing/
+telemetry: otel
+telemetry_docs: https://kagent.dev/docs/kagent/1.x/observability/tracing/
+stars: 4055
+archived: false
+pushed_at: 2026-10-19T21:22:18Z
+last_release:
+  tag: v1.0.0-alpha16
+  published_at: 2026-10-19T19:11:30Z
+last_checked: 2026-10-19

@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: awesome-agent-observability (danielt69)
+url: https://github.com/danielt69/awesome-agent-observability
+description: Link list on agent observability with hands-on guides, platform comparisons, evaluation, guardrails, red teaming and benchmarks.
+type: list
+category: related-lists
+added: 2026-10-20
+stars: 0
+archived: false
+pushed_at: 2026-06-07T10:20:18Z
+last_release: null
+last_checked: 2026-10-19

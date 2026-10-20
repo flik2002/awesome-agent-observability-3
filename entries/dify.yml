@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Dify
+url: https://github.com/langgenius/dify
+description: Platform for agentic workflows with integrations to tracing backends such as Opik, Langfuse and Arize Phoenix.
+type: framework
+category: frameworks
+added: 2026-10-20
+agent_types:
+  - enterprise-workflow
+license: LicenseRef-Dify-Open-Source
+license_note: Modified Apache License 2.0 with additional conditions on multi-tenant use and on the logo.
+hosting: self-hosted
+languages:
+  - python
+telemetry: own
+telemetry_docs: https://github.com/langgenius/dify
+stars: 158931
+archived: false
+pushed_at: 2026-10-19T23:10:27Z
+last_release:
+  tag: 1.17.1
+  published_at: 2026-09-10T10:04:06Z
+last_checked: 2026-10-19

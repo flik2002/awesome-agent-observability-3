@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry JSON-RPC conventions
+url: https://opentelemetry.io/docs/specs/semconv/rpc/json-rpc/
+description: Semantic conventions for JSON-RPC calls, the transport of MCP and of blockchain nodes.
+type: spec
+category: standards
+added: 2026-10-20
+tags:
+  - on-chain
+  - mcp
+body: OpenTelemetry
+version: 1.44.0

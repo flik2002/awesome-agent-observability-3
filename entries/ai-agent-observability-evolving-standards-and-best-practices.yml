@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: AI Agent Observability - Evolving Standards and Best Practices
+url: https://opentelemetry.io/blog/2025/ai-agent-observability/
+description: OpenTelemetry blog post on observing agents and the standards in progress.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20

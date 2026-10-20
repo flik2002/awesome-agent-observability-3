@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Guardrails AI
+url: https://github.com/guardrails-ai/guardrails
+description: Python framework for validating inputs and outputs of language models, with guard invocations traced through an OpenInference instrumentor.
+type: framework
+category: safety
+added: 2026-10-20
+tags:
+  - tracing
+license: Apache-2.0
+languages:
+  - python
+otlp:
+  - export
+conventions:
+  - openinference
+otel_evidence: https://arize.com/docs/ax/integrations/python-agent-frameworks/guardrails-ai/guardrails-ai-tracing
+stars: 7539
+archived: false
+pushed_at: 2026-10-15T02:25:34Z
+last_release:
+  tag: v0.11.0
+  published_at: 2026-08-14T14:22:32Z
+last_checked: 2026-10-19

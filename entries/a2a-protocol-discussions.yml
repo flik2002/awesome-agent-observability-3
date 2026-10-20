@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: A2A protocol discussions
+url: https://github.com/a2aproject/A2A/discussions
+description: GitHub Discussions forum of the Agent2Agent protocol repository.
+type: article
+category: community
+added: 2026-10-20
+tags:
+  - a2a

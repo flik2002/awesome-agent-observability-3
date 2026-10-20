@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Maxim documentation
+url: https://www.getmaxim.ai/docs
+description: Documentation of Maxim, a platform for evaluating and observing agents.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+tags:
+  - evals
+  - tracing
+license: proprietary
+hosting: saas

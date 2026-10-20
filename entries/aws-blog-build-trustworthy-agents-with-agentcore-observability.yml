@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "AWS blog: build trustworthy agents with AgentCore Observability"
+url: https://aws.amazon.com/blogs/machine-learning/build-trustworthy-ai-agents-with-amazon-bedrock-agentcore-observability/
+description: AWS Machine Learning blog post on using AgentCore Observability to monitor and debug agents.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - aws
+  - tracing

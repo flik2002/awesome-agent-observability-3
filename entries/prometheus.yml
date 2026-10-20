@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Prometheus
+url: https://github.com/prometheus/prometheus
+description: Metrics database commonly used for GenAI metrics.
+type: platform
+category: platforms
+subcategory: backends
+added: 2026-10-20
+tags:
+  - metrics
+license: Apache-2.0
+hosting: self-hosted
+stars: 66662
+archived: false
+pushed_at: 2026-10-19T21:14:20Z
+last_release:
+  tag: v3.15.0
+  published_at: 2026-09-25T08:56:22Z
+last_checked: 2026-10-19

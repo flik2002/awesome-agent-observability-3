@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Observability and fault injection for LLM multi-agent systems
+url: https://arxiv.org/abs/2608.24271
+description: Studies observability and fault injection for multi-agent systems used in software engineering.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - tracing
+agent_types:
+  - coding

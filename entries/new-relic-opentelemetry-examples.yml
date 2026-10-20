@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: New Relic OpenTelemetry examples
+url: https://github.com/newrelic/newrelic-opentelemetry-examples
+description: Examples for sending OpenTelemetry data to New Relic.
+type: library
+category: instrumentation
+added: 2026-10-20
+license: Apache-2.0
+otlp:
+  - export
+otel_evidence: https://github.com/newrelic/newrelic-opentelemetry-examples
+stars: 121
+archived: false
+pushed_at: 2026-10-19T20:32:46Z
+last_release: null
+last_checked: 2026-10-19

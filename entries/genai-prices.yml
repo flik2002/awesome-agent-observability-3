@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: genai-prices
+url: https://github.com/pydantic/genai-prices
+description: Library and price data to calculate the price of calls to LLM inference APIs.
+type: library
+category: cost
+added: 2026-10-20
+tags:
+  - cost
+license: MIT
+languages:
+  - python
+  - typescript
+stars: 396
+archived: false
+pushed_at: 2026-10-19T23:26:49Z
+last_release:
+  tag: v0.1.13
+  published_at: 2026-10-15T09:35:05Z
+last_checked: 2026-10-19

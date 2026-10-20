@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry contrib OpenAI instrumentation for JavaScript
+url: https://github.com/open-telemetry/opentelemetry-js-contrib/tree/main/packages/instrumentation-openai
+description: Instrumentation of the OpenAI client library for Node.js.
+type: library
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+  - tracing
+license: Apache-2.0
+languages:
+  - typescript
+otlp:
+  - export
+conventions:
+  - genai-semconv
+otel_evidence: https://github.com/open-telemetry/opentelemetry-js-contrib/tree/main/packages/instrumentation-openai

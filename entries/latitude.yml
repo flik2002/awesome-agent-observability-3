@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Latitude
+url: https://github.com/latitude-dev/latitude-llm
+description: Agent observability platform that groups failing traces into tracked signals and replays fixes against them.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+tags:
+  - tracing
+license: MIT
+hosting: self-hosted
+otlp:
+  - ingest
+otel_evidence: https://github.com/latitude-dev/latitude-llm
+stars: 4728
+archived: false
+pushed_at: 2026-10-19T17:40:50Z
+last_release:
+  tag: cli-4.0.1
+  published_at: 2026-10-09T09:28:25Z
+last_checked: 2026-10-19

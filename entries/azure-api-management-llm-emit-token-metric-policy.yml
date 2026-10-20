@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Azure API Management llm-emit-token-metric policy
+url: https://learn.microsoft.com/en-us/azure/api-management/llm-emit-token-metric-policy
+description: Policy reference for emitting token usage metrics of LLM calls passing through API Management.
+type: article
+category: cost
+added: 2026-10-20
+tags:
+  - azure
+  - cost

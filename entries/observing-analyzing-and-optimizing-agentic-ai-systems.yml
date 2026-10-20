@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Observing, analyzing and optimizing agentic AI systems
+url: https://arxiv.org/abs/2507.11277
+description: Describes automation for observing, analyzing and optimizing agentic AI systems.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - tracing

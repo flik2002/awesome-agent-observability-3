@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry GenAI semantic conventions
+url: https://opentelemetry.io/docs/specs/semconv/gen-ai/
+description: Entry page of the conventions for generative AI spans, metrics and events.
+type: spec
+category: standards
+added: 2026-10-20
+body: OpenTelemetry
+version: 1.44.0

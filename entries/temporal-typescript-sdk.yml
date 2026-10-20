@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Temporal TypeScript SDK
+url: https://github.com/temporalio/sdk-typescript
+description: TypeScript SDK for durable workflows, with OpenTelemetry interceptors for tracing.
+type: framework
+category: frameworks
+added: 2026-10-20
+agent_types:
+  - enterprise-workflow
+license: MIT
+languages:
+  - typescript
+otlp:
+  - export
+otel_evidence: https://github.com/temporalio/sdk-typescript
+telemetry: otel
+telemetry_docs: https://github.com/temporalio/sdk-typescript
+stars: 939
+archived: false
+pushed_at: 2026-10-19T22:13:41Z
+last_release:
+  tag: v1.24.0
+  published_at: 2026-09-15T17:41:57Z
+last_checked: 2026-10-19

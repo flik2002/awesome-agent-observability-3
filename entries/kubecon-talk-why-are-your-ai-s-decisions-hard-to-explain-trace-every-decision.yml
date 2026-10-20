@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "KubeCon talk: Why are your AI's decisions hard to explain: trace every decision"
+url: https://www.youtube.com/watch?v=e_u-YMUK-NE
+description: KubeCon session recording by Dhiraj Kumar Jain and Vikash Agrawal on tracing the decisions of AI systems.
+type: talk
+category: learning
+subcategory: talks
+added: 2026-10-20
+tags:
+  - tracing

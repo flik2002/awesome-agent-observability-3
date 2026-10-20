@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Haystack
+url: https://github.com/deepset-ai/haystack
+description: Framework for pipelines and agents with tracing through OpenTelemetry, Datadog, Langfuse and other backends.
+type: framework
+category: frameworks
+added: 2026-10-20
+docs_url: https://docs.haystack.deepset.ai/docs/tracing
+license: Apache-2.0
+languages:
+  - python
+otlp:
+  - export
+otel_evidence: https://docs.haystack.deepset.ai/docs/tracing
+telemetry: own
+telemetry_docs: https://docs.haystack.deepset.ai/docs/tracing
+stars: 26782
+archived: false
+pushed_at: 2026-10-19T16:53:38Z
+last_release:
+  tag: v3.4.0
+  published_at: 2026-10-15T09:26:37Z
+last_checked: 2026-10-19

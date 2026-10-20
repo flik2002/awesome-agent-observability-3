@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenClaw observability and monitoring with OpenTelemetry and SigNoz
+url: https://www.youtube.com/watch?v=2DS1Y-h6GdE
+description: Video on collecting traces, metrics and logs from OpenClaw with OpenTelemetry and viewing them in SigNoz.
+type: talk
+category: learning
+subcategory: talks
+added: 2026-10-20
+tags:
+  - otel-native
+agent_types:
+  - personal-assistant

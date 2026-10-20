@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: FastMCP
+url: https://github.com/PrefectHQ/fastmcp
+description: Python framework for MCP servers and clients with documented OpenTelemetry tracing.
+type: sdk
+category: protocols
+added: 2026-10-20
+docs_url: https://gofastmcp.com/servers/telemetry
+tags:
+  - mcp
+license: Apache-2.0
+languages:
+  - python
+otlp:
+  - export
+otel_evidence: https://gofastmcp.com/servers/telemetry
+stars: 28138
+archived: false
+pushed_at: 2026-10-19T21:11:24Z
+last_release:
+  tag: v4.1.1
+  published_at: 2026-10-18T02:12:20Z
+last_checked: 2026-10-19

@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: MLflow Tracing
+url: https://mlflow.org/docs/latest/genai/tracing/
+description: Tracing feature of MLflow for LLM applications and agents, compatible with OpenTelemetry and the GenAI conventions.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+repo_url: https://github.com/mlflow/mlflow
+tags:
+  - tracing
+  - evals
+license: Apache-2.0
+hosting: both
+otlp:
+  - ingest
+  - export
+conventions:
+  - genai-semconv
+otel_evidence: https://mlflow.org/docs/latest/genai/tracing/
+stars: 28452
+archived: false
+pushed_at: 2026-10-19T18:48:36Z
+last_release:
+  tag: v3.17.1
+  published_at: 2026-10-13T09:33:43Z
+last_checked: 2026-10-19

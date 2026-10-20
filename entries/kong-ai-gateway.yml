@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Kong AI Gateway
+url: https://docs.konghq.com/gateway/latest/ai-gateway/
+description: AI traffic features of Kong Gateway, with the AI Proxy plugin documented separately.
+type: tool
+category: gateways
+added: 2026-10-20
+docs_url: https://docs.konghq.com/hub/kong-inc/ai-proxy/
+license: unknown
+hosting: both
+otlp: unknown

@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Elastic LLM observability
+url: https://www.elastic.co/observability/llm-monitoring
+description: Elastic Observability features for monitoring LLM applications, with OpenTelemetry support through the Elastic distributions (EDOT).
+type: platform
+category: platforms
+subcategory: apm
+added: 2026-10-20
+tags:
+  - tracing
+license: unknown
+hosting: both
+otlp:
+  - ingest
+otel_evidence: https://www.elastic.co/observability/llm-monitoring

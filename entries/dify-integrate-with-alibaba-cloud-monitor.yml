@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Dify: integrate with Alibaba Cloud Monitor"
+url: https://docs.dify.ai/en/use-dify/monitor/integrations/integrate-aliyun
+description: Documents the Dify setting that exports application traces to Alibaba Cloud Monitor through OpenTelemetry.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+agent_types:
+  - enterprise-workflow

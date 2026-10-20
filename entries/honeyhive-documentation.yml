@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: HoneyHive documentation
+url: https://docs.honeyhive.ai/
+description: Documentation of HoneyHive, a platform for tracing and evaluating agents with OpenTelemetry support.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+tags:
+  - evals
+  - tracing
+license: proprietary
+hosting: saas
+otlp:
+  - ingest
+otel_evidence: https://docs.honeyhive.ai/

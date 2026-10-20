@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Langfuse JS/TS SDK
+url: https://github.com/langfuse/langfuse-js
+description: JavaScript client for sending traces to Langfuse, built on OpenTelemetry.
+type: library
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+  - tracing
+license: MIT
+languages:
+  - typescript
+otlp:
+  - export
+otel_evidence: https://github.com/langfuse/langfuse-js
+stars: 175
+archived: false
+pushed_at: 2026-10-19T09:14:42Z
+last_release:
+  tag: v6.0.1
+  published_at: 2026-10-19T07:10:58Z
+last_checked: 2026-10-19

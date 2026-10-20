@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenLIT LLM cost tracking
+url: https://docs.openlit.io/latest/openlit/costs/overview
+description: Documentation of spend per model, user and agent run in OpenLIT, with managed model pricing and backfill of missing costs.
+type: article
+category: cost
+added: 2026-10-20
+tags:
+  - cost

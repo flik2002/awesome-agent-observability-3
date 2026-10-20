@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: HoneyHive Python SDK
+url: https://github.com/honeyhiveai/python-sdk
+description: Python SDK for HoneyHive tracing built on OpenTelemetry.
+type: library
+category: instrumentation
+added: 2026-10-20
+license: unknown
+license_note: The repository has no license file.
+languages:
+  - python
+otlp:
+  - export
+conventions:
+  - openinference
+otel_evidence: https://github.com/honeyhiveai/python-sdk
+stars: 3
+archived: false
+pushed_at: 2026-10-05T18:09:16Z
+last_release:
+  tag: v1.7.0
+  published_at: 2026-10-05T18:11:21Z
+last_checked: 2026-10-19

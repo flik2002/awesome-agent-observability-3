@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Observability and audit trails for Agent Builder in Elastic"
+url: https://www.elastic.co/observability-labs/blog/ai-agent-observability-audit-trail
+description: Article on reading Agent Builder traces in Elastic and writing an approval record for agent actions.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - tracing
+agent_types:
+  - enterprise-workflow

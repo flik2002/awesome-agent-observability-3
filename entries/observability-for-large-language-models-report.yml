@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Observability for Large Language Models (report)
+url: https://www.oreilly.com/library/view/observability-for-large/9781098159757/
+description: Short report by Phillip Carter on observability for LLM applications with OpenTelemetry.
+type: book
+category: learning
+subcategory: books
+added: 2026-10-20
+tags:
+  - tracing

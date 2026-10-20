@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Claude Code Grafana dashboard (Application Insights)
+url: https://grafana.com/grafana/dashboards/25052-claude-code/
+description: Community Grafana dashboard that reads coding agent telemetry from Azure Application Insights.
+type: tool
+category: platforms
+subcategory: backends
+added: 2026-10-20
+tags:
+  - azure
+  - coding-agents
+  - metrics
+agent_types:
+  - coding
+license: unknown
+otlp:
+  - ingest
+otel_evidence: https://grafana.com/grafana/dashboards/25052-claude-code/

@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry GenAI project page (community repo)
+url: https://github.com/open-telemetry/community/blob/main/projects/gen-ai.md
+description: Describes the OpenTelemetry GenAI project, its scope, owners and meeting information.
+type: article
+category: community
+added: 2026-10-20

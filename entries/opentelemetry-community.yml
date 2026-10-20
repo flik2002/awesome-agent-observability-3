@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry community
+url: https://opentelemetry.io/community/
+description: Page of the OpenTelemetry project on how to join its working groups, meetings and chat channels.
+type: article
+category: community
+added: 2026-10-20
+tags:
+  - otel-native

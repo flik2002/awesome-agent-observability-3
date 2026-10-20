@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Agenta guide to LLM observability with OpenTelemetry
+url: https://agenta.ai/blog/the-ai-engineer-s-guide-to-llm-observability-with-opentelemetry
+description: Vendor guide on instrumenting LLM applications with OpenTelemetry.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - otel-native
+  - tracing

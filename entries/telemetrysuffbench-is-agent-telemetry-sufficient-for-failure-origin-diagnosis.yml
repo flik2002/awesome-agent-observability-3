@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "TelemetrySuffBench: is agent telemetry sufficient for failure-origin diagnosis?"
+url: https://arxiv.org/abs/2608.07899
+description: Benchmark that tests whether agent telemetry suffices to find where failures originate.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - tracing

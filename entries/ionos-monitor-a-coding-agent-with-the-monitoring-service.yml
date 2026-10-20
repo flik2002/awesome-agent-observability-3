@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "IONOS: monitor a coding agent with the Monitoring Service"
+url: https://docs.ionos.com/cloud/tutorials/observability/monitoring-service/monitor-claude-code-with-monitoring-service.md
+description: IONOS tutorial for exporting coding agent token and cost metrics to its monitoring service.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - coding-agents
+  - metrics
+agent_types:
+  - coding

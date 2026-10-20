@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Microsoft Tech Community: Observability for the Age of Generative AI"
+url: https://techcommunity.microsoft.com/blog/azureobservabilityblog/observability-for-the-age-of-generative-ai/4473307
+description: Azure observability blog post on agent dashboards, AI-aware traces and attribute-based trace search.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - azure
+  - tracing

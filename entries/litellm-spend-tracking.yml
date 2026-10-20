@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: LiteLLM spend tracking
+url: https://docs.litellm.ai/docs/proxy/cost_tracking
+description: Documentation of spend tracking by key, user and team in the LiteLLM proxy.
+type: article
+category: cost
+added: 2026-10-20
+tags:
+  - cost

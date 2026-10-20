@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Amazon Bedrock AgentCore Observability, configure
+url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-configure.html
+description: Describes how to configure observability for AgentCore runtimes and for agents hosted outside AgentCore.
+type: platform
+category: platforms
+subcategory: cloud
+added: 2026-10-20
+tags:
+  - aws
+  - tracing
+license: proprietary
+hosting: saas
+otlp:
+  - export
+otel_evidence: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-configure.html

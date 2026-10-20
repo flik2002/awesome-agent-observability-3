@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: A2A enterprise features
+url: https://a2a-protocol.org/latest/topics/enterprise-ready/
+description: Page of the A2A documentation that covers tracing, monitoring and auditing for agents that use the protocol.
+type: article
+category: protocols
+added: 2026-10-20
+tags:
+  - a2a
+  - tracing

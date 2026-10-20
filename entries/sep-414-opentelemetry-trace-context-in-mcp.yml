@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "SEP-414: OpenTelemetry trace context in MCP"
+url: https://modelcontextprotocol.io/seps/414-request-meta
+description: MCP proposal that defines traceparent, tracestate and baggage keys in the request metadata for W3C Trace Context propagation.
+type: spec
+category: standards
+added: 2026-10-20
+tags:
+  - mcp
+  - tracing
+body: Model Context Protocol project
+version: Final

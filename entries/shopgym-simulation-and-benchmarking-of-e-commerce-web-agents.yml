@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "ShopGym: simulation and benchmarking of e-commerce web agents"
+url: https://arxiv.org/abs/2605.16116
+description: Framework for simulating and benchmarking e-commerce agents.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - retail
+agent_types:
+  - commerce

@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: LangGraph
+url: https://github.com/langchain-ai/langgraph
+description: Library for stateful agent graphs; traces go to LangSmith.
+type: framework
+category: frameworks
+added: 2026-10-20
+license: MIT
+languages:
+  - python
+telemetry: own
+telemetry_docs: https://docs.langchain.com/oss/python/langgraph/observability
+stars: 43525
+archived: false
+pushed_at: 2026-10-19T14:06:21Z
+last_release:
+  tag: cli==0.4.37
+  published_at: 2026-10-19T14:06:22Z
+last_checked: 2026-10-19

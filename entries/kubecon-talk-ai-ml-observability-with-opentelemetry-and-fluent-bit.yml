@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "KubeCon talk: AI/ML observability with OpenTelemetry and Fluent Bit"
+url: https://www.youtube.com/watch?v=DVFQ20OrEFk
+description: KubeCon session recording by Celalettin Calis on AI and ML observability with OpenTelemetry and Fluent Bit.
+type: talk
+category: learning
+subcategory: talks
+added: 2026-10-20
+tags:
+  - otel-native

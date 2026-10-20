@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "KubeCon talk: Sponsored keynote: OpenSearch, open observability for agentic AI"
+url: https://www.youtube.com/watch?v=LuKaV3WeNlk
+description: KubeCon sponsored keynote recording by Anirudha Jadhav on open observability for agentic AI with OpenSearch.
+type: talk
+category: learning
+subcategory: talks
+added: 2026-10-20
+tags:
+  - tracing

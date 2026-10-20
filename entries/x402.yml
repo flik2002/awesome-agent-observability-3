@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: x402
+url: https://github.com/x402-foundation/x402
+description: Open protocol for payments over HTTP 402 responses.
+type: spec
+category: on-chain
+subcategory: payment-protocols
+added: 2026-10-20
+docs_url: https://docs.x402.org/
+tags:
+  - payments
+  - on-chain
+agent_types:
+  - transactional
+license: Apache-2.0
+languages:
+  - typescript
+  - python
+  - go
+  - java
+body: x402 Foundation
+chains:
+  - evm
+  - solana
+  - aptos
+  - stellar
+stars: 6738
+archived: false
+pushed_at: 2026-10-15T16:59:00Z
+last_release: null
+last_checked: 2026-10-19

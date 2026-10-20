@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: llm-d
+url: https://github.com/llm-d/llm-d
+description: Kubernetes inference stack whose operations guide covers Prometheus metrics, Grafana dashboards and OpenTelemetry distributed tracing.
+type: tool
+category: platforms
+subcategory: model-serving
+added: 2026-10-20
+docs_url: https://github.com/llm-d/llm-d/tree/main/docs/operations/observability
+tags:
+  - metrics
+  - tracing
+license: Apache-2.0
+stars: 4867
+archived: false
+pushed_at: 2026-10-19T21:20:31Z
+last_release:
+  tag: v0.10.0
+  published_at: 2026-09-29T00:00:25Z
+last_checked: 2026-10-19

@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Logfire
+url: https://github.com/pydantic/logfire
+description: SDK that sends OpenTelemetry traces and metrics, with integrations for LLM clients and agent frameworks.
+type: sdk
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+  - tracing
+  - metrics
+license: MIT
+languages:
+  - python
+otlp:
+  - export
+otel_evidence: https://github.com/pydantic/logfire
+stars: 4518
+archived: false
+pushed_at: 2026-10-19T23:37:27Z
+last_release:
+  tag: v5.2.0
+  published_at: 2026-10-13T17:26:02Z
+last_checked: 2026-10-19

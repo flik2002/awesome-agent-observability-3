@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Opik: Pipecat integration"
+url: https://www.comet.com/docs/opik/v1/integrations/pipecat
+description: Documents conversation and turn level tracing of Pipecat voice agents in Opik.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - tracing
+  - voice
+agent_types:
+  - customer-support

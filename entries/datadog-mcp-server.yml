@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Datadog MCP server
+url: https://docs.datadoghq.com/mcp_server/
+description: Managed MCP server that lets agents query logs, metrics, traces and incidents in Datadog.
+type: tool
+category: protocols
+added: 2026-10-20
+repo_url: https://github.com/datadog-labs/mcp-server
+tags:
+  - mcp
+license: MIT
+hosting: saas
+otlp: []
+stars: 46
+archived: false
+pushed_at: 2026-10-16T22:22:44Z
+last_release: null
+last_checked: 2026-10-19

@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: GitHub Copilot OpenTelemetry monitoring
+url: https://docs.github.com/en/copilot/concepts/enterprise/opentelemetry
+description: GitHub documentation on sending OpenTelemetry data from Copilot clients to an OTLP-compatible backend.
+type: tool
+category: frameworks
+added: 2026-10-20
+tags:
+  - coding-agents
+  - otel-native
+agent_types:
+  - coding
+license: proprietary
+otlp:
+  - export
+otel_evidence: https://docs.github.com/en/copilot/concepts/enterprise/opentelemetry
+telemetry: otel
+telemetry_docs: https://docs.github.com/en/copilot/concepts/enterprise/opentelemetry

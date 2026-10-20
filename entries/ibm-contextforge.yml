@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: IBM ContextForge
+url: https://github.com/IBM/mcp-context-forge
+description: Gateway that fronts MCP, A2A and REST tools, with documented tracing and metrics.
+type: tool
+category: gateways
+added: 2026-10-20
+docs_url: https://ibm.github.io/mcp-context-forge/manage/observability/
+tags:
+  - a2a
+  - mcp
+agent_types:
+  - enterprise-workflow
+license: Apache-2.0
+hosting: self-hosted
+otlp:
+  - export
+otel_evidence: https://ibm.github.io/mcp-context-forge/manage/observability/
+stars: 4656
+archived: false
+pushed_at: 2026-10-19T22:15:46Z
+last_release:
+  tag: v1.0.11
+  published_at: 2026-09-28T15:49:34Z
+last_checked: 2026-10-19

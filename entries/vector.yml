@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Vector
+url: https://github.com/vectordotdev/vector
+description: Observability data pipeline for logs, metrics and traces, with an OpenTelemetry source and sink.
+type: tool
+category: collectors
+added: 2026-10-20
+tags:
+  - logs
+  - metrics
+license: MPL-2.0
+languages:
+  - rust
+otlp:
+  - ingest
+  - export
+conventions: []
+otel_evidence: https://vector.dev/docs/reference/configuration/sources/opentelemetry/
+stars: 22728
+archived: false
+pushed_at: 2026-10-19T22:40:06Z
+last_release:
+  tag: v0.60.0
+  published_at: 2026-10-19T17:55:58Z
+last_checked: 2026-10-19

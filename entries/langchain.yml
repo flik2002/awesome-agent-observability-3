@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: LangChain
+url: https://github.com/langchain-ai/langchain
+description: Framework for LLM applications whose callbacks send traces to LangSmith and other tools.
+type: framework
+category: frameworks
+added: 2026-10-20
+license: MIT
+languages:
+  - python
+telemetry: own
+telemetry_docs: https://docs.langchain.com/oss/python/langchain/observability
+stars: 148094
+archived: false
+pushed_at: 2026-10-19T22:20:27Z
+last_release:
+  tag: langchain-core==1.6.12
+  published_at: 2026-10-16T19:28:44Z
+last_checked: 2026-10-19

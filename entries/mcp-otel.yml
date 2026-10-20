@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: mcp-otel
+url: https://github.com/studiomeyer-io/mcp-otel
+description: Library that reads W3C Trace Context from the MCP request metadata and emits OpenTelemetry spans for MCP servers.
+type: library
+category: protocols
+added: 2026-10-20
+tags:
+  - mcp
+  - tracing
+license: MIT
+languages:
+  - typescript
+otlp:
+  - export
+conventions: []
+otel_evidence: https://github.com/studiomeyer-io/mcp-otel
+stars: 0
+archived: false
+pushed_at: 2026-10-19T04:20:06Z
+last_release:
+  tag: v0.1.1
+  published_at: 2026-08-19T17:51:12Z
+last_checked: 2026-10-19

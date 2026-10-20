@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry span metrics connector
+url: https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/connector/spanmetricsconnector
+description: Collector connector that aggregates spans into request, error and duration metrics.
+type: tool
+category: collectors
+added: 2026-10-20
+tags:
+  - tracing
+  - metrics
+license: Apache-2.0
+languages:
+  - go

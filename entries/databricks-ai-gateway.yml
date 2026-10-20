@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Databricks AI Gateway
+url: https://docs.databricks.com/aws/en/ai-gateway/
+description: Documents the Databricks gateway for governing model, MCP and coding agent traffic.
+type: tool
+category: gateways
+added: 2026-10-20
+tags:
+  - cost
+agent_types:
+  - enterprise-workflow
+license: proprietary
+hosting: saas

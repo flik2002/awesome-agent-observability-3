@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: MPP
+url: https://mpp.dev/
+description: Machine Payments Protocol for payments between machines and agents.
+type: spec
+category: on-chain
+subcategory: payment-protocols
+added: 2026-10-20
+repo_url: https://github.com/tempoxyz/mpp
+tags:
+  - payments
+  - on-chain
+agent_types:
+  - transactional
+license: Apache-2.0 OR MIT
+body: Tempo
+chains:
+  - tempo
+  - evm
+stars: 93
+archived: false
+pushed_at: 2026-10-19T19:05:34Z
+last_release: null
+last_checked: 2026-10-19

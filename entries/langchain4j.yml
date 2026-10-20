@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: LangChain4j
+url: https://github.com/langchain4j/langchain4j
+description: Java library for LLM applications with observability listeners that follow the GenAI conventions, and Micrometer metrics.
+type: framework
+category: frameworks
+added: 2026-10-20
+docs_url: https://docs.langchain4j.dev/tutorials/observability/
+agent_types:
+  - enterprise-workflow
+license: Apache-2.0
+languages:
+  - java
+conventions:
+  - genai-semconv
+otel_evidence: https://docs.langchain4j.dev/tutorials/observability/
+telemetry: own
+telemetry_docs: https://docs.langchain4j.dev/tutorials/observability/
+stars: 13266
+archived: false
+pushed_at: 2026-10-19T14:17:02Z
+last_release:
+  tag: 1.22.0
+  published_at: 2026-10-08T08:16:22Z
+last_checked: 2026-10-19

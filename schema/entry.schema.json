@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "entry.schema.json",
+  "title": "Awesome Agent Observability entry",
+  "description": "One file in entries/<slug>.yml. Controlled values (category, tags, license, agent_types) are checked against registry/ by scripts/validate.mjs.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "url", "description", "type", "category", "added"],
+  "definitions": {
+    "url": { "type": "string", "pattern": "^https://[^\\s]+$" },
+    "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "datetime": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$" },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+  },
+  "properties": {
+    "name": { "type": "string", "minLength": 1, "maxLength": 80 },
+    "url": { "$ref": "#/definitions/url", "description": "Canonical link: the repository, or the official page when there is no repository." },
+    "description": { "type": "string", "minLength": 10, "maxLength": 160, "description": "One factual sentence, at most 160 characters, ending with a dot." },
+    "type": {
+      "enum": ["tool", "platform", "framework", "library", "sdk", "standard", "spec", "finding", "article", "book", "talk", "course", "paper", "dataset", "list"]
+    },
+    "category": { "$ref": "#/definitions/id" },
+    "subcategory": { "$ref": "#/definitions/id" },
+    "added": { "$ref": "#/definitions/date" },
+    "repo_url": { "$ref": "#/definitions/url" },
+    "docs_url": { "$ref": "#/definitions/url" },
+    "tags": { "type": "array", "items": { "$ref": "#/definitions/id" }, "uniqueItems": true },
+    "agent_types": { "type": "array", "items": { "$ref": "#/definitions/id" }, "uniqueItems": true },
+    "license": { "type": "string", "description": "An id from registry/licenses.yml, or unknown." },
+    "license_note": { "type": "string", "maxLength": 200 },
+    "hosting": { "enum": ["self-hosted", "saas", "both", "unknown"] },
+    "languages": {
+      "type": "array",
+      "items": { "enum": ["python", "typescript", "go", "java", "dotnet", "rust", "ruby", "php", "kotlin", "swift"] },
+      "uniqueItems": true
+    },
+    "otlp": {
+      "description": "OTLP support: a list of ingest and export, an empty list for none, or unknown.",
+      "oneOf": [
+        { "type": "array", "items": { "enum": ["ingest", "export"] }, "uniqueItems": true },
+        { "const": "unknown" }
+      ]
+    },
+    "conventions": {
+      "description": "Semantic conventions followed: a list, an empty list for none, or unknown.",
+      "oneOf": [
+        { "type": "array", "items": { "enum": ["genai-semconv", "openinference"] }, "uniqueItems": true },
+        { "const": "unknown" }
+      ]
+    },
+    "otel_evidence": { "$ref": "#/definitions/url", "description": "Public page or file that supports the otlp and conventions values." },
+    "telemetry": {
+      "description": "How a framework emits telemetry. otel: through the OpenTelemetry API; own: its own trace model, callbacks or exporters; external: only through a separate instrumentation library; none; unknown.",
+      "enum": ["otel", "own", "external", "none", "unknown"]
+    },
+    "telemetry_docs": { "$ref": "#/definitions/url", "description": "The documentation page that the telemetry value was read from." },
+    "also_in": { "type": "array", "items": { "$ref": "#/definitions/id" }, "uniqueItems": true },
+    "vendor_affiliation": { "type": "string", "maxLength": 200, "description": "Set when the submitter works on the listed project." },
+    "historical": { "type": "string", "maxLength": 200, "description": "Reason the entry is kept in the collapsed Archived and historical section." },
+    "mature": { "type": "string", "maxLength": 200, "description": "Reason a repository without activity for 12 months is still listed." },
+    "body": { "type": "string", "description": "Standards and specs: the body that publishes it." },
+    "version": { "type": "string", "description": "Standards and specs: version or status, or unknown." },
+    "evidence_url": { "$ref": "#/definitions/url", "description": "Findings: public evidence (an upstream issue, pull request or public documentation)." },
+    "versions": { "type": "string", "description": "Findings: the versions the finding was observed with." },
+    "upstream_issue": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+#\\d+$" },
+    "status": { "enum": ["open", "fixed", "unknown"], "description": "Findings: open, fixed (see fixed_in) or unknown." },
+    "fixed_in": { "type": "string" },
+    "chains": { "type": "array", "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }, "uniqueItems": true },
+    "stars": { "type": "integer", "description": "Bot-filled by scripts/refresh.mjs." },
+    "archived": { "type": "boolean", "description": "Bot-filled by scripts/refresh.mjs." },
+    "pushed_at": { "$ref": "#/definitions/datetime", "description": "Bot-filled by scripts/refresh.mjs." },
+    "last_release": {
+      "description": "Bot-filled by scripts/refresh.mjs; null when the repository has no release.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["tag", "published_at"],
+          "properties": { "tag": { "type": "string" }, "published_at": { "$ref": "#/definitions/datetime" } }
+        }
+      ]
+    },
+    "last_checked": { "$ref": "#/definitions/date", "description": "Bot-filled by scripts/refresh.mjs." }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "type": { "const": "finding" } } },
+      "then": { "required": ["evidence_url", "status", "versions"] }
+    },
+    {
+      "if": { "properties": { "type": { "enum": ["standard", "spec"] } } },
+      "then": { "required": ["body"] }
+    },
+    {
+      "if": { "properties": { "status": { "const": "fixed" } }, "required": ["status"] },
+      "then": { "required": ["fixed_in"] }
+    },
+    {
+      "if": { "properties": { "category": { "const": "frameworks" } } },
+      "then": { "required": ["telemetry"] }
+    }
+  ]
+}

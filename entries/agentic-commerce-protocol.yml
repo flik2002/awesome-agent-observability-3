@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Agentic Commerce Protocol
+url: https://github.com/agentic-commerce-protocol/agentic-commerce-protocol
+description: Specification of how a buyer, the buyer's agent and a merchant exchange checkout requests to complete a purchase.
+type: spec
+category: on-chain
+subcategory: payment-protocols
+added: 2026-10-20
+tags:
+  - payments
+  - retail
+agent_types:
+  - commerce
+license: Apache-2.0
+body: OpenAI and Stripe
+stars: 1579
+archived: false
+pushed_at: 2026-07-18T04:51:51Z
+last_release: null
+last_checked: 2026-10-19

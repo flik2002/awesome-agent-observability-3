@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry Java
+url: https://github.com/open-telemetry/opentelemetry-java
+description: OpenTelemetry SDK and API for Java.
+type: sdk
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+license: Apache-2.0
+languages:
+  - java
+otlp:
+  - export
+otel_evidence: https://github.com/open-telemetry/opentelemetry-java
+stars: 2469
+archived: false
+pushed_at: 2026-10-19T23:38:57Z
+last_release:
+  tag: v1.67.0
+  published_at: 2026-10-09T14:47:06Z
+last_checked: 2026-10-19

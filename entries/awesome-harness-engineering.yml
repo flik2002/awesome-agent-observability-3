@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: awesome-harness-engineering
+url: https://github.com/ai-boost/awesome-harness-engineering
+description: Curated list on AI agent harness engineering with tools, patterns and evaluations.
+type: list
+category: related-lists
+added: 2026-10-20
+stars: 4883
+archived: false
+pushed_at: 2026-10-19T09:13:14Z
+last_release: null
+last_checked: 2026-10-19

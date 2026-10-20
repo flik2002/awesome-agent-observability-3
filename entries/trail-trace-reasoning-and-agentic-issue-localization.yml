@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "TRAIL: trace reasoning and agentic issue localization"
+url: https://arxiv.org/abs/2505.08638
+description: Introduces an annotated benchmark of agent traces for locating errors.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - tracing

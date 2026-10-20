@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Visa Trusted Agent Protocol
+url: https://developer.visa.com/capabilities/trusted-agent-protocol
+description: Visa developer documentation for establishing trust between agents and merchants.
+type: spec
+category: on-chain
+subcategory: payment-protocols
+added: 2026-10-20
+repo_url: https://github.com/visa/trusted-agent-protocol
+tags:
+  - payments
+  - retail
+agent_types:
+  - commerce
+license: LicenseRef-Visa-Developer-Terms
+license_note: Use is governed by the Visa Developer Center Terms of Use.
+body: Visa
+stars: 213
+archived: false
+pushed_at: 2025-10-28T22:43:43Z
+last_release: null
+last_checked: 2026-10-19

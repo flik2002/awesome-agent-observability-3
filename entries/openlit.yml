@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenLIT
+url: https://github.com/openlit/openlit
+description: SDK and tooling that instruments LLM calls and agents and exports OpenTelemetry data.
+type: library
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+  - tracing
+  - cost
+license: Apache-2.0
+languages:
+  - python
+  - typescript
+otlp:
+  - export
+conventions:
+  - genai-semconv
+otel_evidence: https://github.com/openlit/openlit
+stars: 2860
+archived: false
+pushed_at: 2026-10-19T17:12:23Z
+last_release:
+  tag: otel-gpu-collector-1.0.0
+  published_at: 2026-10-13T14:43:07Z
+last_checked: 2026-10-19

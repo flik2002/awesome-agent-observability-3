@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Mastra
+url: https://github.com/mastra-ai/mastra
+description: TypeScript agent framework with its own tracing and exporters for Langfuse, Datadog and OpenTelemetry-compatible platforms.
+type: framework
+category: frameworks
+added: 2026-10-20
+tags:
+  - open-core
+license: Apache-2.0
+license_note: Directories named ee/ use a commercial license.
+languages:
+  - typescript
+otlp:
+  - export
+otel_evidence: https://mastra.ai/docs/observability/tracing/overview
+telemetry: own
+telemetry_docs: https://mastra.ai/docs/observability/tracing/overview
+stars: 28921
+archived: false
+pushed_at: 2026-10-19T23:42:13Z
+last_release:
+  tag: "@mastra/core@1.78.0"
+  published_at: 2026-10-16T08:13:10Z
+last_checked: 2026-10-19

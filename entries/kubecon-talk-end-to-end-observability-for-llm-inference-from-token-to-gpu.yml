@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "KubeCon talk: End-to-end observability for LLM inference: from token to GPU"
+url: https://www.youtube.com/watch?v=K6doiHgBabk
+description: KubeCon session recording by speakers from DaoCloud on observability of LLM inference.
+type: talk
+category: learning
+subcategory: talks
+added: 2026-10-20
+tags:
+  - metrics

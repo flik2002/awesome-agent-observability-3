@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenClaw
+url: https://github.com/openclaw/openclaw
+description: Personal AI assistant whose Gateway exports metrics, traces and logs over OTLP/HTTP through a diagnostics plugin.
+type: framework
+category: frameworks
+added: 2026-10-20
+docs_url: https://github.com/openclaw/openclaw/blob/main/docs/gateway/opentelemetry.md
+agent_types:
+  - personal-assistant
+license: MIT
+languages:
+  - typescript
+otlp:
+  - export
+conventions: []
+otel_evidence: https://github.com/openclaw/openclaw/blob/main/docs/gateway/opentelemetry.md
+telemetry: otel
+telemetry_docs: https://github.com/openclaw/openclaw/blob/main/docs/gateway/opentelemetry.md
+stars: 392576
+archived: false
+pushed_at: 2026-10-19T23:41:36Z
+last_release:
+  tag: v2026.10.5
+  published_at: 2026-10-18T21:47:25Z
+last_checked: 2026-10-19

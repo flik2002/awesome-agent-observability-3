@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "KubeCon India 2026: what did my agent do?"
+url: https://kccncind2026.sched.com/event/2IW20/what-did-my-agent-do-observability-and-accountability-for-ai-agents-ishan-jain-grafana-labs
+description: Session on observability and accountability for AI agents with OpenTelemetry and GenAI conventions.
+type: talk
+category: learning
+subcategory: talks
+added: 2026-10-20
+tags:
+  - otel-native

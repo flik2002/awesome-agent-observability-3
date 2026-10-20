@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: claude-code-metrics-prometheus
+url: https://github.com/rockdarko/claude-code-metrics-prometheus
+description: Grafana dashboard that reads OpenTelemetry metrics of a coding agent from Prometheus-compatible stores.
+type: tool
+category: platforms
+subcategory: backends
+added: 2026-10-20
+tags:
+  - coding-agents
+  - metrics
+agent_types:
+  - coding
+license: MIT
+otlp:
+  - ingest
+otel_evidence: https://github.com/rockdarko/claude-code-metrics-prometheus
+stars: 17
+archived: false
+pushed_at: 2026-05-22T19:30:56Z
+last_release: null
+last_checked: 2026-10-19

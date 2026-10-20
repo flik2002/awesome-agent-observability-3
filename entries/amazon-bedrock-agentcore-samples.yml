@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Amazon Bedrock AgentCore samples
+url: https://github.com/awslabs/agentcore-samples
+description: Sample agents and notebooks for Amazon Bedrock AgentCore, including observability examples.
+type: tool
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - aws
+license: Apache-2.0
+languages:
+  - python
+stars: 3459
+archived: false
+pushed_at: 2026-10-19T21:05:01Z
+last_release: null
+last_checked: 2026-10-19

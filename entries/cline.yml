@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Cline
+url: https://github.com/cline/cline
+description: Open source coding agent for the editor, with telemetry and OpenTelemetry export documented for enterprise setups.
+type: framework
+category: frameworks
+added: 2026-10-20
+docs_url: https://docs.cline.bot/more-info/telemetry
+tags:
+  - coding-agents
+agent_types:
+  - coding
+license: Apache-2.0
+otlp:
+  - export
+otel_evidence: https://docs.cline.bot/more-info/telemetry
+telemetry: otel
+telemetry_docs: https://docs.cline.bot/more-info/telemetry
+stars: 70567
+archived: false
+pushed_at: 2026-10-19T23:41:22Z
+last_release:
+  tag: desktop-v0.0.48
+  published_at: 2026-10-17T04:34:20Z
+last_checked: 2026-10-19

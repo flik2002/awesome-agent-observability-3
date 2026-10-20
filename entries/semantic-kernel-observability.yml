@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Semantic Kernel observability
+url: https://learn.microsoft.com/en-us/semantic-kernel/concepts/enterprise-readiness/observability/
+description: Official documentation on logs, metrics and traces for Semantic Kernel applications.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20

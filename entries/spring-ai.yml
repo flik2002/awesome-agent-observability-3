@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Spring AI
+url: https://github.com/spring-projects/spring-ai
+description: Spring framework for AI applications, with Micrometer observations that follow the GenAI conventions.
+type: framework
+category: frameworks
+added: 2026-10-20
+docs_url: https://docs.spring.io/spring-ai/reference/observability/index.html
+agent_types:
+  - enterprise-workflow
+license: Apache-2.0
+languages:
+  - java
+conventions:
+  - genai-semconv
+otel_evidence: https://docs.spring.io/spring-ai/reference/observability/index.html
+telemetry: own
+telemetry_docs: https://docs.spring.io/spring-ai/reference/observability/index.html
+stars: 9557
+archived: false
+pushed_at: 2026-10-16T17:15:41Z
+last_release:
+  tag: v2.0.1
+  published_at: 2026-08-21T10:23:13Z
+last_checked: 2026-10-19

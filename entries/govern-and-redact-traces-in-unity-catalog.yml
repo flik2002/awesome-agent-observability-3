@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Govern and redact traces in Unity Catalog
+url: https://docs.databricks.com/aws/en/mlflow3/genai/tracing/govern-redact
+description: Databricks documentation on governing access to MLflow traces and redacting them in Unity Catalog.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - tracing

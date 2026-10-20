@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "KubeCon talk: LLM observability with Open Data Hub and vLLM"
+url: https://www.youtube.com/watch?v=pZRJ783BCDY
+description: KubeCon lightning talk recording by Twinkll Sisodia on LLM observability with Open Data Hub and vLLM.
+type: talk
+category: learning
+subcategory: talks
+added: 2026-10-20
+tags:
+  - metrics

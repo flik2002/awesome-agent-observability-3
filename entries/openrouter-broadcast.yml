@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenRouter broadcast
+url: https://openrouter.ai/docs/guides/features/broadcast
+description: Hosted router that can forward traces of requests to observability tools, including an OpenTelemetry Collector.
+type: tool
+category: gateways
+added: 2026-10-20
+tags:
+  - tracing
+license: proprietary
+hosting: saas
+otlp:
+  - export
+otel_evidence: https://openrouter.ai/docs/guides/features/broadcast

@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Amazon Bedrock AgentCore Observability, get started
+url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-get-started.html
+description: Explains how to enable AgentCore observability for agents and send their telemetry to CloudWatch.
+type: platform
+category: platforms
+subcategory: cloud
+added: 2026-10-20
+tags:
+  - aws
+  - tracing
+license: proprietary
+hosting: saas
+otlp:
+  - export
+otel_evidence: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-get-started.html

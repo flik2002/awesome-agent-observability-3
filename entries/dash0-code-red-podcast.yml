@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Dash0 Code RED podcast
+url: https://www.dash0.com/podcast
+description: Podcast about observability and OpenTelemetry, with episodes on AI and observability.
+type: talk
+category: learning
+subcategory: newsletters-podcasts
+added: 2026-10-20
+tags:
+  - otel-native

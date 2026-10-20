@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: AgentScope
+url: https://github.com/agentscope-ai/agentscope
+description: Multi-agent framework in Python with OpenTelemetry-based tracing sent to a collector or compatible backend.
+type: framework
+category: frameworks
+added: 2026-10-20
+license: Apache-2.0
+languages:
+  - python
+otlp:
+  - export
+otel_evidence: https://doc.agentscope.io/tutorial/task_tracing.html
+telemetry: otel
+telemetry_docs: https://doc.agentscope.io/tutorial/task_tracing.html
+stars: 33510
+archived: false
+pushed_at: 2026-10-19T09:29:53Z
+last_release:
+  tag: v2.0.10
+  published_at: 2026-10-12T08:15:09Z
+last_checked: 2026-10-19

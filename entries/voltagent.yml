@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: VoltAgent
+url: https://github.com/VoltAgent/voltagent
+description: TypeScript agent framework with tracing in its own VoltOps observability platform.
+type: framework
+category: frameworks
+added: 2026-10-20
+license: MIT
+languages:
+  - typescript
+telemetry: own
+telemetry_docs: https://voltagent.dev/observability-docs/
+stars: 10839
+archived: false
+pushed_at: 2026-10-15T17:38:41Z
+last_release:
+  tag: "@voltagent/core@2.11.0"
+  published_at: 2026-09-28T02:04:53Z
+last_checked: 2026-10-19

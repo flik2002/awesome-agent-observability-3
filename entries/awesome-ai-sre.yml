@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: awesome-ai-sre
+url: https://github.com/agamm/awesome-ai-sre
+description: List of AI agents, production debugging, incident management, AIOps and chaos engineering tools for site reliability work.
+type: list
+category: related-lists
+added: 2026-10-20
+agent_types:
+  - devops
+stars: 120
+archived: false
+pushed_at: 2026-09-23T13:47:22Z
+last_release: null
+last_checked: 2026-10-19

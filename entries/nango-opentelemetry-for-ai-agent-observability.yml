@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Nango: OpenTelemetry for AI agent observability"
+url: https://nango.dev/blog/opentelemetry-ai-agent-observability
+description: Blog post on tracing agent tool calls and API integrations with OpenTelemetry.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - otel-native

@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Snowflake AI Observability with Cortex
+url: https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-observability
+description: Documents Snowflake tracing and evaluation of generative AI applications.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+tags:
+  - evals
+  - tracing
+license: proprietary
+hosting: saas

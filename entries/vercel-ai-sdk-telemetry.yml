@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Vercel AI SDK telemetry
+url: https://ai-sdk.dev/docs/ai-sdk-core/telemetry
+description: Official documentation of the telemetry settings of the AI SDK.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20

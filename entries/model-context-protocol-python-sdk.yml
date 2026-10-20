@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Model Context Protocol Python SDK
+url: https://github.com/modelcontextprotocol/python-sdk
+description: Python SDK for MCP servers and clients.
+type: sdk
+category: protocols
+added: 2026-10-20
+tags:
+  - mcp
+license: MIT
+languages:
+  - python
+stars: 24622
+archived: false
+pushed_at: 2026-10-17T13:54:39Z
+last_release:
+  tag: v2.3.0
+  published_at: 2026-10-02T22:02:27Z
+last_checked: 2026-10-19

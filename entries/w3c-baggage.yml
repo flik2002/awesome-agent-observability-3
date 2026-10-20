@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: W3C Baggage
+url: https://www.w3.org/TR/baggage/
+description: Specification for propagating application key-value pairs across service boundaries.
+type: spec
+category: standards
+added: 2026-10-20
+body: W3C
+version: Candidate Recommendation Snapshot, 30 May 2024

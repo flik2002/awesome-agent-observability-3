@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "ProbGuard: proactive runtime monitoring for LLM agent safety"
+url: https://arxiv.org/abs/2508.00500
+description: Proposes probabilistic runtime monitoring to predict unsafe agent behavior.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20

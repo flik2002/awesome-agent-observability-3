@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Langfuse token and cost tracking
+url: https://langfuse.com/docs/observability/features/token-and-cost-tracking
+description: Documentation of how Langfuse records usage and cost of generations, with model prices that can be overridden.
+type: article
+category: cost
+added: 2026-10-20
+tags:
+  - cost
+  - tracing

@@ -1,0 +1,17 @@
+# Kinds of agents an entry is specific to (optional field `agent_types`). General-purpose tools leave it empty.
+- id: coding
+  description: Coding agents and assistants that read and change code.
+- id: transactional
+  description: Agents that send transactions or make payments.
+- id: commerce
+  description: Shopping and commerce agents that browse, compare and buy.
+- id: personal-assistant
+  description: Personal assistants that act for one user.
+- id: customer-support
+  description: Customer support and service agents.
+- id: enterprise-workflow
+  description: Agents that run business workflows inside an organization.
+- id: research
+  description: Research agents that search, read and summarize sources.
+- id: devops
+  description: Agents that build, deploy and operate software and infrastructure.

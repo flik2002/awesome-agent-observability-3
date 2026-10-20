@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: LangGraph observability
+url: https://docs.langchain.com/oss/python/langgraph/observability
+description: Documentation of the tracing options for LangGraph applications, mostly through LangSmith.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - tracing

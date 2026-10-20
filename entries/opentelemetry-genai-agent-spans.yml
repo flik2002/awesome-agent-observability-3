@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry GenAI agent spans
+url: https://opentelemetry.io/docs/specs/semconv/gen-ai/gen-ai-agent-spans/
+description: Semantic conventions for spans that describe agent creation and invocation.
+type: spec
+category: standards
+added: 2026-10-20
+tags:
+  - tracing
+body: OpenTelemetry
+version: 1.44.0

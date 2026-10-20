@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenAI Agents SDK for JavaScript
+url: https://github.com/openai/openai-agents-js
+description: OpenAI agent SDK for TypeScript with built-in tracing in its own trace format and processors for other destinations.
+type: framework
+category: frameworks
+added: 2026-10-20
+license: MIT
+languages:
+  - typescript
+telemetry: own
+telemetry_docs: https://openai.github.io/openai-agents-js/guides/tracing/
+stars: 3930
+archived: false
+pushed_at: 2026-10-19T22:13:31Z
+last_release:
+  tag: "@openai/agents-extensions@0.20.0"
+  published_at: 2026-10-08T23:04:28Z
+last_checked: 2026-10-19

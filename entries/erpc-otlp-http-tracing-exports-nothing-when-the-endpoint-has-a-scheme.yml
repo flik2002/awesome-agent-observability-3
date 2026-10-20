@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: eRPC OTLP/HTTP tracing exports nothing when the endpoint has a scheme
+url: https://github.com/erpc/erpc/issues/1276
+description: With tracing over OTLP/HTTP, eRPC exports no spans when the endpoint includes a scheme, the form its documentation asks for.
+type: finding
+category: findings
+added: 2026-10-20
+tags:
+  - on-chain
+  - tracing
+evidence_url: https://github.com/erpc/erpc/issues/1276
+upstream_issue: erpc/erpc#1276
+versions: eRPC 0.4.0
+status: open

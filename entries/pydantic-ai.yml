@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Pydantic AI
+url: https://github.com/pydantic/pydantic-ai
+description: Python agent framework that emits OpenTelemetry data per the GenAI conventions and documents Logfire as one backend.
+type: framework
+category: frameworks
+added: 2026-10-20
+license: MIT
+languages:
+  - python
+otlp:
+  - export
+conventions:
+  - genai-semconv
+otel_evidence: https://ai.pydantic.dev/logfire/
+telemetry: otel
+telemetry_docs: https://ai.pydantic.dev/logfire/
+stars: 20736
+archived: false
+pushed_at: 2026-10-19T23:42:13Z
+last_release:
+  tag: v2.57.0
+  published_at: 2026-10-16T03:35:35Z
+last_checked: 2026-10-19

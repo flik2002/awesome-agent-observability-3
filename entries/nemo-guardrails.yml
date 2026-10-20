@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: NeMo Guardrails
+url: https://github.com/NVIDIA-NeMo/Guardrails
+description: Toolkit for adding guardrails to LLM applications, with OpenTelemetry tracing of guardrail execution.
+type: tool
+category: safety
+added: 2026-10-20
+docs_url: https://docs.nvidia.com/nemo/guardrails/latest/user-guides/tracing/index.html
+license: Apache-2.0
+languages:
+  - python
+otlp:
+  - export
+conventions:
+  - genai-semconv
+otel_evidence: https://docs.nvidia.com/nemo/guardrails/latest/user-guides/tracing/index.html
+stars: 7331
+archived: false
+pushed_at: 2026-10-19T23:13:59Z
+last_release:
+  tag: v0.24.1
+  published_at: 2026-09-16T17:15:59Z
+last_checked: 2026-10-19

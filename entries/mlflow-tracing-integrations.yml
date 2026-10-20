@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: MLflow tracing integrations
+url: https://mlflow.org/docs/latest/genai/tracing/integrations/
+description: Official list of libraries that MLflow can trace automatically.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20

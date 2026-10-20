@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Google Cloud Observability for AI agent developers
+url: https://docs.cloud.google.com/stackdriver/docs/instrumentation/ai-agent-overview
+description: Overview of instrumenting agents built with frameworks such as ADK and LangGraph and viewing them in Cloud Observability.
+type: platform
+category: platforms
+subcategory: cloud
+added: 2026-10-20
+tags:
+  - gcp
+  - tracing
+license: proprietary
+hosting: saas
+otlp:
+  - export
+otel_evidence: https://docs.cloud.google.com/stackdriver/docs/instrumentation/ai-agent-overview

@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry eBPF instrumentation
+url: https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation
+description: Zero-code instrumentation of HTTP and gRPC services through eBPF.
+type: tool
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+  - tracing
+license: Apache-2.0
+otlp:
+  - export
+otel_evidence: https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation
+stars: 596
+archived: false
+pushed_at: 2026-10-19T17:18:53Z
+last_release:
+  tag: v0.15.2
+  published_at: 2026-10-16T13:35:02Z
+last_checked: 2026-10-19

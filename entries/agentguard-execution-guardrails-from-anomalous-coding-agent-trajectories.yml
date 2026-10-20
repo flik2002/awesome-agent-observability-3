@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "AgentGuard: execution guardrails from anomalous coding-agent trajectories"
+url: https://arxiv.org/abs/2609.16287
+description: Studies learning guardrails from anomalous trajectories of coding agents.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+agent_types:
+  - coding

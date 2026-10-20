@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry semantic conventions repository
+url: https://github.com/open-telemetry/semantic-conventions
+description: Source repository of all semantic conventions, including the GenAI ones.
+type: spec
+category: standards
+added: 2026-10-20
+license: Apache-2.0
+body: OpenTelemetry
+version: 1.44.0
+stars: 672
+archived: false
+pushed_at: 2026-10-19T16:42:23Z
+last_release:
+  tag: v1.44.0
+  published_at: 2026-08-04T20:00:58Z
+last_checked: 2026-10-19

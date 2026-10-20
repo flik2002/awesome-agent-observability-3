@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Ethereum execution APIs
+url: https://github.com/ethereum/execution-apis
+description: Specification of the JSON-RPC interface of Ethereum execution clients.
+type: spec
+category: on-chain
+subcategory: rpc-and-nodes
+added: 2026-10-20
+tags:
+  - on-chain
+license: CC0-1.0
+body: Ethereum
+chains:
+  - ethereum
+stars: 1140
+archived: false
+pushed_at: 2026-10-19T15:42:46Z
+last_release: null
+last_checked: 2026-10-19

@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: W3C Trace Context
+url: https://www.w3.org/TR/trace-context/
+description: Specification of the `traceparent` and `tracestate` headers used to correlate distributed traces.
+type: spec
+category: standards
+added: 2026-10-20
+tags:
+  - tracing
+body: W3C
+version: Recommendation, 23 November 2021

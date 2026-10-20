@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Laminar
+url: https://github.com/lmnr-ai/lmnr
+description: Self-hostable agent observability platform with an OpenTelemetry-native SDK that instruments common LLM frameworks.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+tags:
+  - otel-native
+  - tracing
+  - evals
+license: Apache-2.0
+hosting: both
+otlp:
+  - ingest
+otel_evidence: https://github.com/lmnr-ai/lmnr
+stars: 3413
+archived: false
+pushed_at: 2026-10-19T22:21:34Z
+last_release:
+  tag: v0.3.2
+  published_at: 2026-10-16T15:30:47Z
+last_checked: 2026-10-19

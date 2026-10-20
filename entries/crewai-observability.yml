@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: CrewAI observability
+url: https://docs.crewai.com/en/observability/overview
+description: Official documentation listing tracing integrations for CrewAI.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20

@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Mintive: OpenTelemetry standards for agent monitoring"
+url: https://www.mintmcp.com/blog/opentelemetry-standards-agent-monitoring
+description: Vendor blog on OpenTelemetry standards for agent monitoring.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - otel-native

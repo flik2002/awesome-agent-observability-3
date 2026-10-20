@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: AIOpsLab
+url: https://github.com/microsoft/AIOpsLab
+description: Framework to design, run and evaluate autonomous AIOps agents on microservice faults with telemetry as input.
+type: framework
+category: benchmarks
+added: 2026-10-20
+tags:
+  - tracing
+  - metrics
+  - logs
+agent_types:
+  - devops
+license: MIT
+languages:
+  - python
+stars: 1014
+archived: false
+pushed_at: 2026-10-14T21:15:02Z
+last_release: null
+last_checked: 2026-10-19

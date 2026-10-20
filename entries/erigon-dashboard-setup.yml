@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Erigon dashboard setup
+url: https://docs.erigon.tech/fundamentals/creating-a-dashboard
+description: Documentation of Prometheus metrics export and a Grafana dashboard for monitoring an Erigon node.
+type: article
+category: on-chain
+subcategory: rpc-and-nodes
+added: 2026-10-20
+repo_url: https://github.com/erigontech/erigon
+tags:
+  - on-chain
+  - metrics
+chains:
+  - ethereum
+stars: 3589
+archived: false
+pushed_at: 2026-10-19T21:53:16Z
+last_release:
+  tag: v3.7.1
+  published_at: 2026-10-02T08:12:41Z
+last_checked: 2026-10-19

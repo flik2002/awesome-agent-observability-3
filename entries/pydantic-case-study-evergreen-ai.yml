@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Pydantic case study: Evergreen.ai"
+url: https://pydantic.dev/case-studies/evergreenai
+description: Case study of a financial planning agent team using tracing and evaluations in production.
+type: article
+category: learning
+subcategory: case-studies
+added: 2026-10-20
+tags:
+  - evals
+  - finance
+  - tracing
+agent_types:
+  - enterprise-workflow

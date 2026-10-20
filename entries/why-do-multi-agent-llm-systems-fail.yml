@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Why do multi-agent LLM systems fail?
+url: https://arxiv.org/abs/2503.13657
+description: Analyzes failure modes of multi-agent systems and releases annotated traces.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - tracing

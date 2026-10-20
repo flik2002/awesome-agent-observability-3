@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Google ADK observability
+url: https://google.github.io/adk-docs/observability/
+description: Official documentation on observability for ADK agents.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20

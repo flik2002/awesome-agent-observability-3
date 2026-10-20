@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Dynatrace expands AI coding agent monitoring
+url: https://www.dynatrace.com/news/blog/dynatrace-expands-ai-coding-agent-monitoring/
+description: Dynatrace announcement of monitoring for several coding agents.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - coding-agents
+agent_types:
+  - coding

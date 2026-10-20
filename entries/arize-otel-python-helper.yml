@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Arize OTel Python helper
+url: https://github.com/Arize-ai/arize-otel-python
+description: Python helper that registers OpenTelemetry export to Arize with OpenInference.
+type: library
+category: instrumentation
+added: 2026-10-20
+license: BSD-3-Clause
+languages:
+  - python
+otlp:
+  - export
+conventions:
+  - openinference
+otel_evidence: https://github.com/Arize-ai/arize-otel-python
+stars: 4
+archived: false
+pushed_at: 2026-09-28T23:13:58Z
+last_release:
+  tag: v0.14.1
+  published_at: 2026-09-28T23:14:02Z
+last_checked: 2026-10-19

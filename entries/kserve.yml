@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: KServe
+url: https://github.com/kserve/kserve
+description: Kubernetes inference platform with a Prometheus monitoring guide and an OpenTelemetry-based JSON log profile.
+type: platform
+category: platforms
+subcategory: model-serving
+added: 2026-10-20
+docs_url: https://github.com/kserve/kserve/blob/master/docs/samples/metrics-and-monitoring/README.md
+tags:
+  - metrics
+  - logs
+license: Apache-2.0
+stars: 6133
+archived: false
+pushed_at: 2026-10-19T19:09:36Z
+last_release:
+  tag: v0.21.0
+  published_at: 2026-09-25T17:04:20Z
+last_checked: 2026-10-19

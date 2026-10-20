@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: hashspan
+url: https://github.com/selimaytac/hashspan
+description: OpenTelemetry tracing for on-chain transactions sent by AI agents and other services, with adapters for viem, the CDP SDK, x402 and MPP.
+type: library
+category: on-chain
+subcategory: transaction-tracing
+added: 2026-10-20
+tags:
+  - otel-native
+  - tracing
+  - metrics
+  - on-chain
+  - payments
+agent_types:
+  - transactional
+license: Apache-2.0
+languages:
+  - typescript
+otlp:
+  - export
+otel_evidence: https://github.com/selimaytac/hashspan
+chains:
+  - evm
+vendor_affiliation: Maintained by the maintainer of this list.
+stars: 5
+archived: false
+pushed_at: 2026-10-19T23:39:14Z
+last_release:
+  tag: "@hashspan/viem@1.3.0"
+  published_at: 2026-10-19T11:39:08Z
+last_checked: 2026-10-19

@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry GenAI MCP conventions
+url: https://opentelemetry.io/docs/specs/semconv/gen-ai/mcp/
+description: Semantic conventions for Model Context Protocol operations.
+type: spec
+category: standards
+added: 2026-10-20
+tags:
+  - mcp
+  - tracing
+body: OpenTelemetry
+version: 1.44.0

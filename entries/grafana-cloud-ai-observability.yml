@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Grafana Cloud AI Observability
+url: https://grafana.com/docs/grafana-cloud/monitor-applications/ai-observability/
+description: Documents Grafana Cloud AI observability dashboards built on OpenLIT instrumentation and OpenTelemetry data.
+type: platform
+category: platforms
+subcategory: apm
+added: 2026-10-20
+tags:
+  - tracing
+license: proprietary
+hosting: saas
+otlp:
+  - ingest
+conventions: unknown
+otel_evidence: https://grafana.com/docs/grafana-cloud/monitor-applications/ai-observability/

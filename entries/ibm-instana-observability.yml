@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: IBM Instana Observability
+url: https://www.ibm.com/products/instana
+description: Product page of IBM Instana, an APM platform with OpenTelemetry ingest and generative AI monitoring.
+type: platform
+category: platforms
+subcategory: apm
+added: 2026-10-20
+tags:
+  - tracing
+license: proprietary
+hosting: both
+otlp:
+  - ingest
+otel_evidence: https://www.ibm.com/products/instana

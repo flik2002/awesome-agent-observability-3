@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "KubeCon talk: Optimizing LLM performance in Kubernetes with OpenTelemetry"
+url: https://www.youtube.com/watch?v=6rdeFACyyYg
+description: KubeCon session recording by Ashok Chandrasekar and Liudmila Molkova on OpenTelemetry for LLM serving on Kubernetes.
+type: talk
+category: learning
+subcategory: talks
+added: 2026-10-20
+tags:
+  - otel-native
+  - metrics

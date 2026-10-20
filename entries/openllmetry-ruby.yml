@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenLLMetry Ruby
+url: https://github.com/traceloop/openllmetry-ruby
+description: Ruby sibling of OpenLLMetry for tracing LLM applications.
+type: library
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+license: Apache-2.0
+languages:
+  - ruby
+otlp:
+  - export
+otel_evidence: https://github.com/traceloop/openllmetry-ruby
+stars: 15
+archived: false
+pushed_at: 2026-04-06T11:00:46Z
+last_release: null
+last_checked: 2026-10-19

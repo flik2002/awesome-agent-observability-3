@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Claude Code monitoring
+url: https://code.claude.com/docs/en/monitoring-usage
+description: Documentation of the OpenTelemetry metrics and events that the Claude Code terminal agent exports.
+type: framework
+category: frameworks
+added: 2026-10-20
+tags:
+  - coding-agents
+  - metrics
+  - otel-native
+agent_types:
+  - coding
+license: proprietary
+otlp:
+  - export
+otel_evidence: https://code.claude.com/docs/en/monitoring-usage
+telemetry: otel
+telemetry_docs: https://code.claude.com/docs/en/monitoring-usage

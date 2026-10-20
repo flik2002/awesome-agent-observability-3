@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Galileo documentation
+url: https://docs.galileo.ai/
+description: Documentation of Galileo, a platform for evaluating and monitoring agents, with OpenTelemetry ingest.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+tags:
+  - evals
+  - tracing
+license: proprietary
+hosting: saas
+otlp:
+  - ingest
+otel_evidence: https://docs.galileo.ai/sdk-api/third-party-integrations/opentelemetry-and-openinference

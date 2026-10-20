@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Langfuse
+url: https://github.com/langfuse/langfuse
+description: Self-hostable platform for traces, prompts and evaluations, with an OpenTelemetry endpoint.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+tags:
+  - evals
+  - open-core
+  - tracing
+license: MIT
+license_note: Directories named ee/ (including web/src/ee and worker/src/ee) use a commercial license.
+hosting: both
+otlp:
+  - ingest
+otel_evidence: https://langfuse.com/docs/opentelemetry/get-started
+stars: 36040
+archived: false
+pushed_at: 2026-10-19T22:26:24Z
+last_release:
+  tag: v4.64.0
+  published_at: 2026-10-19T17:34:15Z
+last_checked: 2026-10-19

@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry YouTube channel
+url: https://www.youtube.com/@otel-official
+description: Official OpenTelemetry channel with recordings of project meetings and talks.
+type: article
+category: community
+added: 2026-10-20
+tags:
+  - otel-native

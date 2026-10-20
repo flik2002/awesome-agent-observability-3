@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Langfuse security and guardrails
+url: https://langfuse.com/docs/security-and-guardrails
+description: Guide to monitoring and evaluating prompt injection, PII leakage and harmful content with Langfuse and guardrail libraries.
+type: article
+category: safety
+added: 2026-10-20
+tags:
+  - tracing
+  - evals

@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Failure as a process: an anatomy of CLI coding agent trajectories"
+url: https://arxiv.org/abs/2607.09510
+description: Analyzes failure patterns in trajectories of command line coding agents.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - tracing
+agent_types:
+  - coding

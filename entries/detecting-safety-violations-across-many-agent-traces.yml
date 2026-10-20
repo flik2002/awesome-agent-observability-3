@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Detecting safety violations across many agent traces
+url: https://arxiv.org/abs/2604.11806
+description: Studies detection of safety violations by analyzing many agent traces.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - tracing

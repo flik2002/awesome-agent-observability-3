@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: GenAI Observability for Splunk
+url: https://splunkbase.splunk.com/app/8308
+description: Splunkbase app with dashboards for tokens, latency, cost and errors of generative AI workloads.
+type: platform
+category: platforms
+subcategory: apm
+added: 2026-10-20
+license: proprietary
+hosting: both
+otlp: unknown

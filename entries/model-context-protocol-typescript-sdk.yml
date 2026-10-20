@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Model Context Protocol TypeScript SDK
+url: https://github.com/modelcontextprotocol/typescript-sdk
+description: TypeScript SDK for MCP servers and clients.
+type: sdk
+category: protocols
+added: 2026-10-20
+tags:
+  - mcp
+license: Apache-2.0 AND MIT
+license_note: Relicensing from MIT to Apache-2.0 is in progress; older contributions remain MIT.
+languages:
+  - typescript
+stars: 13617
+archived: false
+pushed_at: 2026-10-18T15:11:33Z
+last_release:
+  tag: v2.3.1
+  published_at: 2026-10-05T11:54:56Z
+last_checked: 2026-10-19

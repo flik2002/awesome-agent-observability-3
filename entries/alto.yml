@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Alto
+url: https://github.com/pimlicolabs/alto
+description: ERC-4337 bundler that relays user operations sent by smart accounts.
+type: tool
+category: on-chain
+subcategory: wallets-and-accounts
+added: 2026-10-20
+tags:
+  - on-chain
+license: GPL-3.0
+languages:
+  - typescript
+otlp: unknown
+chains:
+  - evm
+stars: 233
+archived: false
+pushed_at: 2026-10-19T17:26:30Z
+last_release:
+  tag: "@pimlico/alto@0.0.19"
+  published_at: 2025-07-14T16:26:14Z
+last_checked: 2026-10-19

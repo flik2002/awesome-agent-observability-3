@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: awesome-opentelemetry
+url: https://github.com/magsther/awesome-opentelemetry
+description: List of OpenTelemetry learning material, books, videos, tracing backends and instrumentation by language.
+type: list
+category: related-lists
+added: 2026-10-20
+stars: 986
+archived: false
+pushed_at: 2026-06-09T14:29:04Z
+last_release: null
+last_checked: 2026-10-19

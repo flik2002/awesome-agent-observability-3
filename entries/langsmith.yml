@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: LangSmith
+url: https://docs.langchain.com/langsmith/home
+description: Hosted platform from LangChain for tracing and evaluating LLM applications, with OpenTelemetry trace ingestion.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+tags:
+  - tracing
+  - evals
+license: proprietary
+hosting: saas
+otlp:
+  - ingest
+otel_evidence: https://docs.langchain.com/langsmith/trace-with-opentelemetry

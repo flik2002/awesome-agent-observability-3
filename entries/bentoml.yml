@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: BentoML
+url: https://github.com/bentoml/BentoML
+description: Python framework for serving models and AI services, with documented OpenTelemetry tracing and OTLP export.
+type: framework
+category: platforms
+subcategory: model-serving
+added: 2026-10-20
+docs_url: https://docs.bentoml.com/en/latest/build-with-bentoml/observability/tracing.html
+tags:
+  - tracing
+  - metrics
+license: Apache-2.0
+languages:
+  - python
+otlp:
+  - export
+conventions: []
+otel_evidence: https://docs.bentoml.com/en/latest/build-with-bentoml/observability/tracing.html
+stars: 8909
+archived: false
+pushed_at: 2026-10-05T17:17:22Z
+last_release:
+  tag: v1.4.39
+  published_at: 2026-05-07T10:37:29Z
+last_checked: 2026-10-19

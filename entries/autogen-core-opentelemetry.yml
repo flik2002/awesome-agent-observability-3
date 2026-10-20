@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: AutoGen core OpenTelemetry
+url: https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/framework/telemetry.html
+description: Documentation of the OpenTelemetry support of the AutoGen core runtime.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20

@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Coralogix AI observability
+url: https://coralogix.com/platform/ai-observability/
+description: Product page for Coralogix monitoring of AI applications and agents.
+type: platform
+category: platforms
+subcategory: apm
+added: 2026-10-20
+docs_url: https://coralogix.com/docs/user-guides/ai/getting_started/
+license: proprietary
+hosting: saas
+otlp:
+  - ingest
+conventions:
+  - genai-semconv
+otel_evidence: https://coralogix.com/docs/user-guides/ai/getting_started/

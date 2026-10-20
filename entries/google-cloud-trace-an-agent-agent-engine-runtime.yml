@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Google Cloud: trace an agent (Agent Engine runtime)"
+url: https://docs.cloud.google.com/agent-builder/agent-engine/manage/tracing
+description: Explains how to enable Cloud Trace on deployed agents and read traces of tool calls and model requests.
+type: platform
+category: platforms
+subcategory: cloud
+added: 2026-10-20
+tags:
+  - gcp
+  - tracing
+license: proprietary
+hosting: saas
+otlp:
+  - export
+otel_evidence: https://docs.cloud.google.com/agent-builder/agent-engine/manage/tracing

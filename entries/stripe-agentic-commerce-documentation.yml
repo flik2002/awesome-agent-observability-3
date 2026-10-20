@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Stripe agentic commerce documentation
+url: https://docs.stripe.com/agentic-commerce
+description: Stripe documentation of agentic commerce flows and protocol support.
+type: article
+category: on-chain
+subcategory: payment-protocols
+added: 2026-10-20
+tags:
+  - payments
+  - retail
+agent_types:
+  - commerce

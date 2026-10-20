@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: AWS Distro for OpenTelemetry
+url: https://aws-otel.github.io/docs/introduction/
+description: AWS-supported distribution of OpenTelemetry components that sends traces and metrics to AWS services and other backends.
+type: tool
+category: platforms
+subcategory: cloud
+added: 2026-10-20
+repo_url: https://github.com/aws-observability/aws-otel-collector
+tags:
+  - aws
+  - otel-native
+  - tracing
+license: Apache-2.0
+otlp:
+  - ingest
+  - export
+otel_evidence: https://aws-otel.github.io/docs/introduction/
+stars: 757
+archived: false
+pushed_at: 2026-10-19T13:20:33Z
+last_release:
+  tag: v0.50.0
+  published_at: 2026-08-31T10:47:41Z
+last_checked: 2026-10-19

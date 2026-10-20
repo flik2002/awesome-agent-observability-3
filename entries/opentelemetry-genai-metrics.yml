@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry GenAI metrics
+url: https://opentelemetry.io/docs/specs/semconv/gen-ai/gen-ai-metrics/
+description: Semantic conventions for token usage and operation duration metrics.
+type: spec
+category: standards
+added: 2026-10-20
+tags:
+  - metrics
+body: OpenTelemetry
+version: 1.44.0

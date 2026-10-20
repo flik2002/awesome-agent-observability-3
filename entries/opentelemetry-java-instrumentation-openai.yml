@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "OpenTelemetry Java instrumentation: OpenAI"
+url: https://github.com/open-telemetry/opentelemetry-java-instrumentation/tree/main/instrumentation/openai
+description: Java instrumentation folder for OpenAI client libraries.
+type: library
+category: instrumentation
+added: 2026-10-20
+license: Apache-2.0
+languages:
+  - java

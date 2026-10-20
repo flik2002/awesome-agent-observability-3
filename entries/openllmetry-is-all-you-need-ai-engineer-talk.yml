@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenLLMetry is all you need (AI Engineer talk)
+url: https://ai.engineer/talks/KVgbERRPU4M-openllmetry-is-all-you-need
+description: Conference talk on instrumenting LLM applications with OpenLLMetry.
+type: talk
+category: learning
+subcategory: talks
+added: 2026-10-20
+tags:
+  - otel-native

@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Maxim Python SDK
+url: https://github.com/maximhq/maxim-py
+description: Python SDK for Maxim tracing and evaluation.
+type: library
+category: instrumentation
+added: 2026-10-20
+tags:
+  - tracing
+license: Apache-2.0
+languages:
+  - python
+stars: 11
+archived: false
+pushed_at: 2026-10-05T06:04:51Z
+last_release:
+  tag: v3.14.20
+  published_at: 2026-07-23T08:28:34Z
+last_checked: 2026-10-19

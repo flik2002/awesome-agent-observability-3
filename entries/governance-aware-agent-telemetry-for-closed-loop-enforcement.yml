@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Governance-aware agent telemetry for closed-loop enforcement
+url: https://arxiv.org/abs/2604.05119
+description: Proposes agent telemetry that supports governance enforcement in multi-agent systems.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - tracing
+agent_types:
+  - enterprise-workflow

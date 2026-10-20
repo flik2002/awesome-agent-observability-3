@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Opik evaluation
+url: https://www.comet.com/docs/opik/
+description: Documentation of the evaluation features that run on traced data in Opik.
+type: article
+category: evaluation
+added: 2026-10-20
+tags:
+  - evals

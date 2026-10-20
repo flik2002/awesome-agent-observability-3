@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Uptrace: AI agent observability explained"
+url: https://uptrace.dev/blog/ai-agent-observability
+description: Vendor explainer of agent observability concepts and standards.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - otel-native

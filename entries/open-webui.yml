@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Open WebUI
+url: https://github.com/open-webui/open-webui
+description: Self-hosted chat interface for language models with documented OpenTelemetry trace and metric export over OTLP.
+type: platform
+category: frameworks
+added: 2026-10-20
+docs_url: https://docs.openwebui.com/reference/monitoring/otel/
+agent_types:
+  - personal-assistant
+license: LicenseRef-Open-WebUI
+license_note: BSD-3-Clause based license with a clause that forbids removing Open WebUI branding above 50 users.
+hosting: self-hosted
+languages:
+  - python
+otlp:
+  - export
+conventions: []
+otel_evidence: https://docs.openwebui.com/reference/monitoring/otel/
+telemetry: otel
+telemetry_docs: https://docs.openwebui.com/reference/monitoring/otel/
+stars: 156203
+archived: false
+pushed_at: 2026-10-19T14:13:24Z
+last_release:
+  tag: v0.12.3
+  published_at: 2026-10-16T11:46:21Z
+last_checked: 2026-10-19

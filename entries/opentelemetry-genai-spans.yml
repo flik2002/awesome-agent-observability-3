@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry GenAI spans
+url: https://opentelemetry.io/docs/specs/semconv/gen-ai/gen-ai-spans/
+description: Semantic conventions for spans that describe model calls.
+type: spec
+category: standards
+added: 2026-10-20
+tags:
+  - tracing
+body: OpenTelemetry
+version: 1.44.0

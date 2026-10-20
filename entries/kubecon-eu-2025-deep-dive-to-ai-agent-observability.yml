@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "KubeCon EU 2025: deep dive to AI agent observability"
+url: https://kccnceu2025.sched.com/event/1txEC/deep-dive-to-ai-agent-observability-guangya-liu-ibm-karthik-kalyanaraman-langtrace-ai
+description: Session on tracing and monitoring AI agents with OpenTelemetry, by IBM and Langtrace speakers.
+type: talk
+category: learning
+subcategory: talks
+added: 2026-10-20
+docs_url: https://www.youtube.com/watch?v=1B9WZ6H0cn4
+tags:
+  - otel-native

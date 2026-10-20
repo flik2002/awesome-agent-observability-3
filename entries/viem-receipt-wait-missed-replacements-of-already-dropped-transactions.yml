@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: viem receipt wait missed replacements of already dropped transactions
+url: https://github.com/wevm/viem/issues/5242
+description: The viem receipt wait never detects a replacement when the original transaction left the pool before its first lookup, and times out.
+type: finding
+category: findings
+added: 2026-10-20
+tags:
+  - on-chain
+evidence_url: https://github.com/wevm/viem/issues/5242
+upstream_issue: wevm/viem#5242
+versions: viem 2.57.2 and 2.57.7
+status: open

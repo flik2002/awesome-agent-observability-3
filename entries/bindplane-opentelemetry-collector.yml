@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Bindplane OpenTelemetry Collector
+url: https://github.com/observIQ/bindplane-otel-collector
+description: Bindplane build of the OpenTelemetry Collector that can be managed remotely through the OpAMP protocol.
+type: tool
+category: collectors
+added: 2026-10-20
+tags:
+  - tracing
+  - metrics
+  - logs
+license: Apache-2.0
+languages:
+  - go
+otlp:
+  - ingest
+  - export
+conventions: []
+otel_evidence: https://github.com/observIQ/bindplane-otel-collector
+stars: 201
+archived: false
+pushed_at: 2026-10-19T21:34:15Z
+last_release:
+  tag: v1.110.1
+  published_at: 2026-10-15T16:06:56Z
+last_checked: 2026-10-19

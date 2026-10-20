@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Beyond the mandate: a security analysis of the Agent Payments Protocol"
+url: https://arxiv.org/abs/2608.23858
+description: Systematic security analysis of AP2.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - payments
+agent_types:
+  - transactional

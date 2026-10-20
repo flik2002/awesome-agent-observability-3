@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Splunk blog: what is agentic observability"
+url: https://www.splunk.com/en_us/blog/learn/agentic-observability.html
+description: Vendor explainer on agentic observability and AI-assisted operations.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+agent_types:
+  - devops

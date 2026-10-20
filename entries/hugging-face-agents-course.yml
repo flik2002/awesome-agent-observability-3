@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Hugging Face Agents Course
+url: https://huggingface.co/learn/agents-course/unit0/introduction
+description: Free course on building agents; has a bonus unit on agent observability and evaluation.
+type: course
+category: learning
+subcategory: courses
+added: 2026-10-20
+repo_url: https://github.com/huggingface/agents-course
+stars: 33768
+archived: false
+pushed_at: 2026-10-14T11:34:52Z
+last_release: null
+last_checked: 2026-10-19

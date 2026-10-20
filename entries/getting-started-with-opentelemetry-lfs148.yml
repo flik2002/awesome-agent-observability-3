@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Getting Started with OpenTelemetry (LFS148)
+url: https://training.linuxfoundation.org/training/getting-started-with-opentelemetry-lfs148/
+description: Free online Linux Foundation course covering manual and automatic OpenTelemetry instrumentation and Collector pipelines.
+type: course
+category: learning
+subcategory: courses
+added: 2026-10-20
+tags:
+  - tracing
+  - metrics
+  - logs

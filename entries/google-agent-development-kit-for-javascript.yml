@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Google Agent Development Kit for JavaScript
+url: https://github.com/google/adk-js
+description: Agent framework for JavaScript and TypeScript with an OpenTelemetry telemetry setup in its core package.
+type: framework
+category: frameworks
+added: 2026-10-20
+license: Apache-2.0
+languages:
+  - typescript
+otlp: unknown
+otel_evidence: https://github.com/google/adk-js/blob/main/core/src/telemetry/setup.ts
+telemetry: otel
+telemetry_docs: https://github.com/google/adk-js/blob/main/core/src/telemetry/setup.ts
+stars: 1442
+archived: false
+pushed_at: 2026-10-19T23:41:12Z
+last_release:
+  tag: integrations-v2.3.0
+  published_at: 2026-10-13T20:04:44Z
+last_checked: 2026-10-19

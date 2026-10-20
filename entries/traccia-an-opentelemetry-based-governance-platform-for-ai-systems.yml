@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Traccia: an OpenTelemetry-based governance platform for AI systems"
+url: https://arxiv.org/abs/2607.14309
+description: Describes a governance platform built on OpenTelemetry data.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - otel-native
+agent_types:
+  - enterprise-workflow

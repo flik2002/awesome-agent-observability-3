@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Anthropic engineering: how we built our multi-agent research system"
+url: https://www.anthropic.com/engineering/multi-agent-research-system
+description: Engineering write-up of a multi-agent research system that describes production tracing for debugging.
+type: article
+category: learning
+subcategory: case-studies
+added: 2026-10-20
+tags:
+  - tracing
+agent_types:
+  - research

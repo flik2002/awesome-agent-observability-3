@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: promptfoo
+url: https://github.com/promptfoo/promptfoo
+description: Test and red-team tool for prompts and agents that reads OpenTelemetry (OTLP) traces of the application under test.
+type: tool
+category: evaluation
+added: 2026-10-20
+docs_url: https://www.promptfoo.dev/docs/tracing/
+tags:
+  - evals
+  - tracing
+license: MIT
+otlp:
+  - ingest
+otel_evidence: https://www.promptfoo.dev/docs/tracing/
+stars: 26154
+archived: false
+pushed_at: 2026-10-19T23:18:54Z
+last_release:
+  tag: code-scan-action-0.2.2
+  published_at: 2026-10-08T15:46:03Z
+last_checked: 2026-10-19

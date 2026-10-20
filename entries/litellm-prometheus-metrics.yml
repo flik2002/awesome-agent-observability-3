@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: LiteLLM Prometheus metrics
+url: https://docs.litellm.ai/docs/proxy/prometheus
+description: Documents Prometheus metrics for spend, tokens and latency exposed by the LiteLLM proxy.
+type: article
+category: cost
+added: 2026-10-20
+tags:
+  - cost
+  - metrics

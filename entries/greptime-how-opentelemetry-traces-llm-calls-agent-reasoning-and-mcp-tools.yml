@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Greptime: how OpenTelemetry traces LLM calls, agent reasoning and MCP tools"
+url: https://www.greptime.com/blogs/2026-05-09-opentelemetry-genai-semantic-conventions
+description: Blog post summarizing the GenAI semantic conventions for LLM, agent and MCP spans.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20

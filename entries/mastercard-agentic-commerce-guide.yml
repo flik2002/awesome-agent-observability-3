@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Mastercard agentic commerce guide
+url: https://developer.mastercard.com/merchant-cloud/documentation/tutorials-and-guides/agentic-commerce-guide/22/
+description: Mastercard developer guide on agentic commerce flows and recommended practices.
+type: article
+category: on-chain
+subcategory: payment-protocols
+added: 2026-10-20
+tags:
+  - payments
+  - retail
+agent_types:
+  - commerce

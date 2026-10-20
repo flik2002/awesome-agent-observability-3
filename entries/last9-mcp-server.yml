@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Last9 MCP server
+url: https://github.com/last9/last9-mcp-server
+description: MCP server that lets agents query Last9 telemetry such as logs, traces and metrics.
+type: tool
+category: protocols
+added: 2026-10-20
+tags:
+  - mcp
+agent_types:
+  - devops
+license: Apache-2.0
+stars: 63
+archived: false
+pushed_at: 2026-10-19T21:55:18Z
+last_release:
+  tag: v0.19.4
+  published_at: 2026-10-06T04:40:05Z
+last_checked: 2026-10-19

@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: MAST-Data (Hugging Face)
+url: https://huggingface.co/datasets/mcemri/MAD
+description: Annotated traces of multi-agent systems used for failure taxonomy research.
+type: dataset
+category: benchmarks
+added: 2026-10-20
+tags:
+  - tracing
+license: CC-BY-4.0

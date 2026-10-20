@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: A2A Java SDK
+url: https://github.com/a2aproject/a2a-java
+description: Official Java SDK for the A2A protocol, with an OpenTelemetry module for tracing and context propagation in servers and clients.
+type: sdk
+category: protocols
+added: 2026-10-20
+tags:
+  - a2a
+license: Apache-2.0
+languages:
+  - java
+otlp:
+  - export
+conventions: []
+otel_evidence: https://github.com/a2aproject/a2a-java/blob/main/docs/content/dev/extra/opentelemetry.md
+stars: 505
+archived: false
+pushed_at: 2026-10-18T09:18:16Z
+last_release:
+  tag: v1.4.0.Final
+  published_at: 2026-09-28T17:07:49Z
+last_checked: 2026-10-19

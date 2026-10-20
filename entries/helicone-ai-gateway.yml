@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Helicone AI Gateway
+url: https://github.com/Helicone/ai-gateway
+description: Open source gateway for routing LLM requests, with OpenTelemetry support for logs, metrics and traces.
+type: tool
+category: gateways
+added: 2026-10-20
+license: GPL-3.0
+hosting: both
+otlp:
+  - export
+otel_evidence: https://github.com/Helicone/ai-gateway
+stars: 637
+archived: false
+pushed_at: 2025-11-21T01:25:55Z
+last_release: null
+last_checked: 2026-10-19

@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "LangSmith: trace voice agents"
+url: https://langchain.com/blog/trace-voice-agents-in-langsmith
+description: Vendor blog on tracing voice agent frameworks in LangSmith.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - tracing
+  - voice
+agent_types:
+  - customer-support

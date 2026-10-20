@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Hamel Husain: a field guide to rapidly improving AI products"
+url: https://hamel.dev/blog/posts/field-guide/
+description: Practitioner guide on error analysis of logged traces for AI products.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - evals
+  - logs

@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: A2A distributed tracing proposal
+url: https://github.com/a2aproject/A2A/issues/2103
+description: Open proposal in the A2A repository for semantic conventions and W3C Trace Context propagation between delegating agents.
+type: article
+category: standards
+added: 2026-10-20
+tags:
+  - a2a
+  - tracing

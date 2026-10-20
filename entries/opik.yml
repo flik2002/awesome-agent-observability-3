@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Opik
+url: https://github.com/comet-ml/opik
+description: Platform for tracing, evaluating and monitoring LLM applications and agents.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+tags:
+  - tracing
+  - evals
+license: Apache-2.0
+hosting: both
+otlp:
+  - ingest
+otel_evidence: https://github.com/comet-ml/opik
+stars: 22748
+archived: false
+pushed_at: 2026-10-19T20:31:25Z
+last_release:
+  tag: 2.2.105
+  published_at: 2026-10-19T14:30:39Z
+last_checked: 2026-10-19

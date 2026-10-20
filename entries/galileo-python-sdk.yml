@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Galileo Python SDK
+url: https://github.com/rungalileo/galileo-python
+description: Python package that sends traces of LLM applications and agents to a Galileo log stream.
+type: library
+category: instrumentation
+added: 2026-10-20
+tags:
+  - evals
+license: Apache-2.0
+languages:
+  - python
+stars: 22
+archived: false
+pushed_at: 2026-10-16T13:19:28Z
+last_release:
+  tag: v2.7.0
+  published_at: 2026-10-14T15:56:28Z
+last_checked: 2026-10-19

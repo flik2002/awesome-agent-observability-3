@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: CrewAI
+url: https://github.com/crewAIInc/crewAI
+description: Multi-agent framework in Python whose built-in tracing exports OpenTelemetry spans, with integrations for other tracing tools.
+type: framework
+category: frameworks
+added: 2026-10-20
+license: MIT
+languages:
+  - python
+otlp:
+  - export
+otel_evidence: https://docs.crewai.com/en/observability/tracing
+telemetry: otel
+telemetry_docs: https://docs.crewai.com/en/observability/tracing
+stars: 59885
+archived: false
+pushed_at: 2026-10-19T21:45:30Z
+last_release:
+  tag: 1.15.28
+  published_at: 2026-10-14T04:47:00Z
+last_checked: 2026-10-19

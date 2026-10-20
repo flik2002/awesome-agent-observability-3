@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Google Cloud Trace overview
+url: https://docs.cloud.google.com/trace/docs/overview
+description: Describes Cloud Trace, the distributed tracing backend that accepts OpenTelemetry data from agents on Google Cloud.
+type: platform
+category: platforms
+subcategory: cloud
+added: 2026-10-20
+tags:
+  - gcp
+  - tracing
+license: proprietary
+hosting: saas
+otlp:
+  - ingest
+otel_evidence: https://docs.cloud.google.com/trace/docs/overview

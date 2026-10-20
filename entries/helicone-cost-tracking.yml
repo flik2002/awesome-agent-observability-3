@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Helicone cost tracking
+url: https://docs.helicone.ai/guides/cookbooks/cost-tracking
+description: Guide to monitoring LLM spend and unit economics with Helicone.
+type: article
+category: cost
+added: 2026-10-20
+tags:
+  - cost

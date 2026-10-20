@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Portkey AI Gateway
+url: https://github.com/Portkey-AI/gateway
+description: Gateway that routes requests to many providers, with request logging in the hosted product.
+type: tool
+category: gateways
+added: 2026-10-20
+docs_url: https://portkey.ai/docs
+tags:
+  - cost
+license: MIT
+hosting: both
+otlp: unknown
+stars: 13221
+archived: false
+pushed_at: 2026-05-25T13:54:51Z
+last_release:
+  tag: v1.15.2
+  published_at: 2026-01-12T08:46:07Z
+last_checked: 2026-10-19

@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Databricks: MLflow tracing overview"
+url: https://docs.databricks.com/aws/en/mlflow3/genai/tracing/
+description: Documents MLflow tracing on Databricks for generative AI applications and agents.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+tags:
+  - tracing
+license: proprietary
+hosting: saas
+otlp:
+  - ingest
+otel_evidence: https://docs.databricks.com/aws/en/mlflow3/genai/tracing/

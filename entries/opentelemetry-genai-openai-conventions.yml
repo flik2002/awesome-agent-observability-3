@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry GenAI OpenAI conventions
+url: https://opentelemetry.io/docs/specs/semconv/gen-ai/openai/
+description: Provider-specific attributes for OpenAI calls within the GenAI conventions.
+type: spec
+category: standards
+added: 2026-10-20
+body: OpenTelemetry
+version: 1.44.0

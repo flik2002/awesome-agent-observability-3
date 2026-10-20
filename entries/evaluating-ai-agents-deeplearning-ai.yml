@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Evaluating AI Agents (DeepLearning.AI)
+url: https://www.deeplearning.ai/courses/evaluating-ai-agents
+description: Short course on adding tracing to an agent and evaluating its components, taught with Arize.
+type: course
+category: learning
+subcategory: courses
+added: 2026-10-20
+tags:
+  - evals
+  - tracing

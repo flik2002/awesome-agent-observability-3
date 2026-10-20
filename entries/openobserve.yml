@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenObserve
+url: https://github.com/openobserve/openobserve
+description: Self-hostable backend that stores and queries logs, metrics and traces, with native OTLP ingestion.
+type: platform
+category: platforms
+subcategory: backends
+added: 2026-10-20
+tags:
+  - logs
+  - metrics
+  - tracing
+license: AGPL-3.0
+hosting: both
+otlp:
+  - ingest
+otel_evidence: https://github.com/openobserve/openobserve
+stars: 22436
+archived: false
+pushed_at: 2026-10-19T23:36:04Z
+last_release:
+  tag: v1.1.1
+  published_at: 2026-10-16T10:17:55Z
+last_checked: 2026-10-19

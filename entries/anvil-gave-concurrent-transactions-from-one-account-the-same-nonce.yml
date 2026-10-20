@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Anvil gave concurrent transactions from one account the same nonce
+url: https://github.com/foundry-rs/foundry/issues/17354
+description: Concurrent eth_sendTransaction calls from one unlocked Anvil account got the same nonce, which breaks parallel agent tests.
+type: finding
+category: findings
+added: 2026-10-20
+docs_url: https://github.com/selimaytac/hashspan/blob/main/docs/upstream-findings.md
+tags:
+  - on-chain
+evidence_url: https://github.com/foundry-rs/foundry/issues/17354
+upstream_issue: foundry-rs/foundry#17354
+versions: Foundry 1.8.5
+status: fixed
+fixed_in: Foundry nightly builds after 1.8.5

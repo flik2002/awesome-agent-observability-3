@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry semantic-conventions-genai repository
+url: https://github.com/open-telemetry/semantic-conventions-genai
+description: "Repository of the OpenTelemetry semantic conventions for generative AI: spans, metrics, events, MCP and provider conventions."
+type: spec
+category: standards
+added: 2026-10-20
+body: OpenTelemetry
+version: development
+stars: 457
+archived: false
+pushed_at: 2026-10-19T20:03:34Z
+last_release: null
+last_checked: 2026-10-19

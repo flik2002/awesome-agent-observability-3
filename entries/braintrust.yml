@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Braintrust
+url: https://www.braintrust.dev/docs/guides/traces
+description: Hosted platform for logging traces, evaluating and monitoring LLM applications, with an open source JavaScript SDK.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+repo_url: https://github.com/braintrustdata/braintrust-sdk-javascript
+tags:
+  - tracing
+  - evals
+license: proprietary
+license_note: The JavaScript SDK is Apache-2.0.
+hosting: saas
+otlp: unknown
+stars: 29
+archived: false
+pushed_at: 2026-10-19T21:54:51Z
+last_release:
+  tag: "@braintrust/otel@1.1.0"
+  published_at: 2026-10-19T18:44:12Z
+last_checked: 2026-10-19

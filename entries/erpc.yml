@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: eRPC
+url: https://github.com/erpc/erpc
+description: Fault-tolerant RPC proxy for EVM chains with caching, a monitoring setup and tracing exported over OTLP.
+type: tool
+category: on-chain
+subcategory: rpc-and-nodes
+added: 2026-10-20
+docs_url: https://docs.erpc.cloud/operation/monitoring
+tags:
+  - on-chain
+  - metrics
+  - tracing
+license: Apache-2.0
+hosting: self-hosted
+otlp:
+  - export
+otel_evidence: https://docs.erpc.cloud/operation/tracing
+chains:
+  - evm
+stars: 792
+archived: false
+pushed_at: 2026-10-19T17:35:49Z
+last_release:
+  tag: 0.4.0
+  published_at: 2026-10-11T17:11:04Z
+last_checked: 2026-10-19

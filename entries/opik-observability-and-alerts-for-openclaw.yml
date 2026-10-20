@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Opik: observability and alerts for OpenClaw"
+url: https://www.comet.com/site/blog/openclaw-observability/
+description: Vendor post on tracing LLM calls, tool runs and memory recall of a personal assistant agent with an Opik plugin.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - tracing
+agent_types:
+  - personal-assistant

@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Google Cloud Model Armor
+url: https://docs.cloud.google.com/model-armor/overview
+description: Google Cloud service that screens prompts and responses of AI applications, with a monitoring dashboard.
+type: platform
+category: safety
+added: 2026-10-20
+tags:
+  - gcp
+  - metrics
+license: proprietary
+hosting: saas

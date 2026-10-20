@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: mcp-grafana
+url: https://github.com/grafana/mcp-grafana
+description: MCP server that gives agents access to Grafana dashboards, data sources and alerts.
+type: tool
+category: protocols
+added: 2026-10-20
+tags:
+  - mcp
+agent_types:
+  - devops
+license: Apache-2.0
+stars: 3577
+archived: false
+pushed_at: 2026-10-19T21:23:49Z
+last_release:
+  tag: v2.0.2
+  published_at: 2026-10-07T20:18:40Z
+last_checked: 2026-10-19

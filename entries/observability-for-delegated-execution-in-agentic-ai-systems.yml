@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Observability for delegated execution in agentic AI systems
+url: https://arxiv.org/abs/2606.09692
+description: Discusses observability needs when agents delegate execution to other agents or tools.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - tracing

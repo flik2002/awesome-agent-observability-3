@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry .NET
+url: https://github.com/open-telemetry/opentelemetry-dotnet
+description: OpenTelemetry SDK and API for .NET.
+type: sdk
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+license: Apache-2.0
+languages:
+  - dotnet
+otlp:
+  - export
+otel_evidence: https://github.com/open-telemetry/opentelemetry-dotnet
+stars: 3762
+archived: false
+pushed_at: 2026-10-19T17:52:28Z
+last_release:
+  tag: core-1.20.0
+  published_at: 2026-10-15T13:54:15Z
+last_checked: 2026-10-19

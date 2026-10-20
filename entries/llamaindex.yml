@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: LlamaIndex
+url: https://github.com/run-llama/llama_index
+description: Data and agent framework with its own instrumentation module and integrations that include OpenTelemetry.
+type: framework
+category: frameworks
+added: 2026-10-20
+license: MIT
+languages:
+  - python
+telemetry: own
+telemetry_docs: https://developers.llamaindex.ai/python/framework/module_guides/observability/
+stars: 52570
+archived: false
+pushed_at: 2026-10-19T21:24:48Z
+last_release:
+  tag: v0.14.25
+  published_at: 2026-09-21T16:22:27Z
+last_checked: 2026-10-19

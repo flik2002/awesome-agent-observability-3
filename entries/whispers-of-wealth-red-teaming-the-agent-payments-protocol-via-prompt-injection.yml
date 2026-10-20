@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Whispers of wealth: red-teaming the Agent Payments Protocol via prompt injection"
+url: https://arxiv.org/abs/2601.22569
+description: Security analysis of AP2 flows under prompt injection.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - payments
+agent_types:
+  - transactional

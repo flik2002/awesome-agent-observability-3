@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: awesome-llm-observability (ContextJet-ai)
+url: https://github.com/ContextJet-ai/awesome-llm-observability
+description: Curated list of resources for observability of LLM applications.
+type: list
+category: related-lists
+added: 2026-10-20
+stars: 42
+archived: false
+pushed_at: 2026-10-19T11:26:55Z
+last_release:
+  tag: v1.1.0
+  published_at: 2026-07-05T19:48:41Z
+last_checked: 2026-10-19

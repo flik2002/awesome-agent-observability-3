@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry Go
+url: https://github.com/open-telemetry/opentelemetry-go
+description: OpenTelemetry SDK and API for Go.
+type: sdk
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+license: Apache-2.0
+languages:
+  - go
+otlp:
+  - export
+otel_evidence: https://github.com/open-telemetry/opentelemetry-go
+stars: 6576
+archived: false
+pushed_at: 2026-10-19T22:02:07Z
+last_release:
+  tag: v1.47.0
+  published_at: 2026-10-02T08:18:45Z
+last_checked: 2026-10-19

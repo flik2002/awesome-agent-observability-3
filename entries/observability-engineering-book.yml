@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Observability Engineering (book)
+url: https://www.oreilly.com/library/view/observability-engineering/9781492076438/
+description: Book by Charity Majors, Liz Fong-Jones and George Miranda on observability practice for production systems.
+type: book
+category: learning
+subcategory: books
+added: 2026-10-20
+tags:
+  - tracing

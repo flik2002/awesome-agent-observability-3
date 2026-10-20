@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Honeycomb
+url: https://docs.honeycomb.io/send-data/opentelemetry/
+description: Hosted observability product that ingests OpenTelemetry data.
+type: platform
+category: platforms
+subcategory: apm
+added: 2026-10-20
+tags:
+  - tracing
+license: proprietary
+hosting: saas
+otlp:
+  - ingest
+otel_evidence: https://docs.honeycomb.io/send-data/opentelemetry/

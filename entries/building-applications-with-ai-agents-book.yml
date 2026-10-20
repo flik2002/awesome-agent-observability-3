@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Building Applications with AI Agents (book)
+url: https://www.oreilly.com/library/view/building-applications-with/9781098176495/
+description: Book by Michael Albada on designing agent systems, with chapters on validation, measurement and monitoring in production.
+type: book
+category: learning
+subcategory: books
+added: 2026-10-20
+tags:
+  - evals

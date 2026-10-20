@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Arthur Engine
+url: https://github.com/arthur-ai/arthur-engine
+description: Monitoring and governance engine that ingests OpenInference traces, runs evaluations on live traces and enforces guardrails.
+type: platform
+category: safety
+added: 2026-10-20
+tags:
+  - tracing
+  - evals
+license: MIT
+hosting: self-hosted
+otlp:
+  - ingest
+conventions:
+  - openinference
+otel_evidence: https://github.com/arthur-ai/arthur-engine
+stars: 92
+archived: false
+pushed_at: 2026-10-19T20:59:59Z
+last_release:
+  tag: 2.1.1023
+  published_at: 2026-10-19T04:29:12Z
+last_checked: 2026-10-19

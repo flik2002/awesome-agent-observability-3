@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: LangSmith cost tracking
+url: https://docs.langchain.com/langsmith/cost-tracking
+description: Documentation of token and cost tracking on LangSmith traces.
+type: article
+category: cost
+added: 2026-10-20
+tags:
+  - cost
+  - tracing

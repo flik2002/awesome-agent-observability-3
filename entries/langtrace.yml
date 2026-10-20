@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Langtrace
+url: https://github.com/Scale3-Labs/langtrace
+description: Tool that records OpenTelemetry traces of LLM calls, vector database queries and framework operations in LLM applications.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+docs_url: https://docs.langtrace.ai/
+tags:
+  - otel-native
+  - tracing
+license: AGPL-3.0
+hosting: both
+otlp:
+  - ingest
+  - export
+otel_evidence: https://github.com/Scale3-Labs/langtrace
+stars: 1235
+archived: false
+pushed_at: 2025-11-17T15:08:48Z
+last_release:
+  tag: 4.0.11
+  published_at: 2025-04-17T23:33:28Z
+last_checked: 2026-10-19

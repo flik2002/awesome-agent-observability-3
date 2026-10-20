@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenMeter
+url: https://github.com/openmeterio/openmeter
+description: Metering and usage-based billing infrastructure that aggregates usage events for AI, API and DevOps products.
+type: platform
+category: cost
+added: 2026-10-20
+tags:
+  - cost
+license: Apache-2.0
+hosting: both
+languages:
+  - go
+stars: 2391
+archived: false
+pushed_at: 2026-10-19T20:40:35Z
+last_release:
+  tag: v1.0.0-beta.236
+  published_at: 2026-10-09T14:41:52Z
+last_checked: 2026-10-19

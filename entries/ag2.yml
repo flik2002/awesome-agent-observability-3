@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: AG2
+url: https://github.com/ag2ai/ag2
+description: Multi-agent framework whose classic API derives from AutoGen, with OpenTelemetry tracing that follows the GenAI agent span conventions.
+type: framework
+category: frameworks
+added: 2026-10-20
+license: Apache-2.0
+languages:
+  - python
+otlp:
+  - export
+conventions:
+  - genai-semconv
+otel_evidence: https://docs.ag2.ai/latest/docs/user-guide/tracing/opentelemetry/
+telemetry: otel
+telemetry_docs: https://docs.ag2.ai/latest/docs/user-guide/tracing/opentelemetry/
+stars: 5006
+archived: false
+pushed_at: 2026-10-19T21:53:11Z
+last_release:
+  tag: v1.2.0
+  published_at: 2026-10-11T09:26:22Z
+last_checked: 2026-10-19

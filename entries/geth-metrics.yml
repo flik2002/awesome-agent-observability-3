@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Geth metrics
+url: https://geth.ethereum.org/docs/monitoring/metrics
+description: Documentation of the metrics of the go-ethereum client, including a Prometheus-formatted endpoint.
+type: article
+category: on-chain
+subcategory: rpc-and-nodes
+added: 2026-10-20
+repo_url: https://github.com/ethereum/go-ethereum
+tags:
+  - on-chain
+  - metrics
+chains:
+  - ethereum
+stars: 51420
+archived: false
+pushed_at: 2026-10-19T23:07:28Z
+last_release:
+  tag: v1.17.8
+  published_at: 2026-10-08T16:35:36Z
+last_checked: 2026-10-19

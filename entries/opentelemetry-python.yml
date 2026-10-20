@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry Python
+url: https://github.com/open-telemetry/opentelemetry-python
+description: OpenTelemetry SDK and API for Python.
+type: sdk
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+license: Apache-2.0
+languages:
+  - python
+otlp:
+  - export
+otel_evidence: https://github.com/open-telemetry/opentelemetry-python
+stars: 2680
+archived: false
+pushed_at: 2026-10-19T12:25:21Z
+last_release:
+  tag: v1.45.1
+  published_at: 2026-10-06T17:33:17Z
+last_checked: 2026-10-19

@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: How to redact PII from LLM telemetry
+url: https://openobserve.ai/blog/redact-pii-llm-telemetry/
+description: Guide to redacting PII from LLM traces with pipelines and an OpenTelemetry Collector while keeping traces debuggable.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - tracing

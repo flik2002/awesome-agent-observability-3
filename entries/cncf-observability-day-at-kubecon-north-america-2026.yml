@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "CNCF: Observability Day at KubeCon North America 2026"
+url: https://www.cncf.io/blog/2026/09/24/observability-day-where-the-community-comes-together-at-kubecon-cloudnativecon-north-america-2026/
+description: CNCF blog post announcing Observability Day on 2026-11-09, with AI and agent observability on the program.
+type: article
+category: community
+added: 2026-10-20
+tags:
+  - otel-native

@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: New Relic AI monitoring
+url: https://docs.newrelic.com/docs/ai-monitoring/intro-to-ai-monitoring/
+description: Hosted product documentation for monitoring AI applications.
+type: platform
+category: platforms
+subcategory: apm
+added: 2026-10-20
+license: proprietary
+hosting: saas
+otlp: unknown

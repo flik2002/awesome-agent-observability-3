@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Inspect AI
+url: https://github.com/UKGovernmentBEIS/inspect_ai
+description: Evaluation framework for models and agents, with trace logging for debugging evaluation runs.
+type: tool
+category: evaluation
+added: 2026-10-20
+docs_url: https://inspect.aisi.org.uk/tracing.html
+tags:
+  - evals
+agent_types:
+  - research
+license: MIT
+languages:
+  - python
+stars: 3044
+archived: false
+pushed_at: 2026-10-19T21:33:21Z
+last_release:
+  tag: 0.3.282
+  published_at: 2026-10-19T21:33:21Z
+last_checked: 2026-10-19

@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Rig
+url: https://github.com/0xPlaygrounds/rig
+description: Rust library for LLM applications with tracing that is compatible with OpenTelemetry.
+type: framework
+category: frameworks
+added: 2026-10-20
+license: MIT
+languages:
+  - rust
+otlp:
+  - export
+conventions:
+  - genai-semconv
+otel_evidence: https://github.com/0xPlaygrounds/rig
+telemetry: own
+telemetry_docs: https://github.com/0xPlaygrounds/rig
+stars: 8919
+archived: false
+pushed_at: 2026-10-19T18:07:42Z
+last_release:
+  tag: v0.45.0
+  published_at: 2026-10-19T18:07:57Z
+last_checked: 2026-10-19

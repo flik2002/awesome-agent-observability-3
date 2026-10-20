@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Code RED #31: beyond hype, the real impact of AI on observability"
+url: https://www.dash0.com/podcast/31-code-red-live-beyond-hype-the-real-impact-of-ai-on-observability
+description: Live episode on agentic observability and OpenTelemetry support for AI.
+type: talk
+category: learning
+subcategory: newsletters-podcasts
+added: 2026-10-20
+tags:
+  - otel-native
+agent_types:
+  - devops

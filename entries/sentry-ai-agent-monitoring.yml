@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Sentry AI agent monitoring
+url: https://docs.sentry.io/product/insights/ai/agents/
+description: Hosted product documentation for monitoring agent runs and tool calls.
+type: platform
+category: platforms
+subcategory: apm
+added: 2026-10-20
+tags:
+  - tracing
+license: proprietary
+hosting: saas
+otlp: unknown

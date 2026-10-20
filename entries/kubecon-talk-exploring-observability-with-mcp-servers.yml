@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "KubeCon talk: Exploring observability with MCP servers"
+url: https://www.youtube.com/watch?v=SIg81hkHZXQ
+description: KubeCon session recording by Tiffany Jernigan of Grafana Labs on observability with MCP servers.
+type: talk
+category: learning
+subcategory: talks
+added: 2026-10-20
+tags:
+  - mcp

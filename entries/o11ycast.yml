@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: O11ycast
+url: https://www.heavybit.com/library/podcasts/o11ycast
+description: Podcast on observability with episodes on AI systems and OpenTelemetry.
+type: talk
+category: learning
+subcategory: newsletters-podcasts
+added: 2026-10-20
+tags:
+  - otel-native

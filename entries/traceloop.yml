@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Traceloop
+url: https://www.traceloop.com/docs
+description: Hosted platform from the OpenLLMetry maintainers for monitoring LLM applications.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+tags:
+  - tracing
+license: proprietary
+hosting: saas
+otlp:
+  - ingest
+otel_evidence: https://www.traceloop.com/docs

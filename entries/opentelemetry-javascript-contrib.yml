@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry JavaScript contrib
+url: https://github.com/open-telemetry/opentelemetry-js-contrib
+description: Community instrumentations for the JavaScript SDK.
+type: library
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+license: Apache-2.0
+languages:
+  - typescript
+otlp:
+  - export
+otel_evidence: https://github.com/open-telemetry/opentelemetry-js-contrib
+stars: 936
+archived: false
+pushed_at: 2026-10-19T15:33:10Z
+last_release:
+  tag: instrumentation-winston-v0.68.1
+  published_at: 2026-10-16T20:12:43Z
+last_checked: 2026-10-19

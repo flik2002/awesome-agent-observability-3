@@ -1,0 +1,81 @@
+# Controlled tags. Each needs a description and, once the list is older, at least 3 entries (warning for now).
+# Tags marked `derived` are computed from entry fields by the build and must not be set by hand.
+- id: tracing
+  description: Produces, stores or shows traces and spans.
+- id: metrics
+  description: Produces, stores or shows metrics.
+- id: logs
+  description: Produces, stores or shows logs or events.
+- id: evals
+  description: Evaluates agent or model output, online or offline.
+- id: cost
+  description: Tracks tokens, spend or budgets.
+- id: replay
+  description: Replays or steps through recorded agent sessions.
+- id: otel-native
+  description: Built on the OpenTelemetry API or SDK, according to its documentation.
+- id: mcp
+  description: Concerns the Model Context Protocol.
+- id: a2a
+  description: Concerns the Agent2Agent (A2A) protocol.
+- id: on-chain
+  description: Concerns blockchain transactions or nodes.
+- id: payments
+  description: Concerns payments made or received by agents.
+- id: coding-agents
+  description: Concerns the telemetry of coding agents.
+- id: open-core
+  description: The repository root license is OSI-approved, and the repository also has a source-available or enterprise directory such as ee/ or enterprise/ (see license_note).
+- id: aws
+  description: Concerns Amazon Web Services.
+- id: azure
+  description: Concerns Microsoft Azure.
+- id: gcp
+  description: Concerns Google Cloud.
+- id: voice
+  description: Concerns voice agents.
+- id: finance
+  description: Industry tag for finance and banking.
+- id: healthcare
+  description: Industry tag for healthcare and life sciences.
+- id: customer-support
+  description: Industry tag for customer support and service.
+- id: retail
+  description: Industry tag for retail and e-commerce.
+- id: security
+  description: Industry tag for security operations.
+- id: software-engineering
+  description: Industry tag for software engineering organizations.
+- id: otlp
+  description: Sends or receives OTLP (from the `otlp` field).
+  derived: true
+- id: genai-semconv
+  description: Follows the OpenTelemetry GenAI semantic conventions (from the `conventions` field).
+  derived: true
+- id: openinference
+  description: Follows the OpenInference conventions (from the `conventions` field).
+  derived: true
+- id: oss
+  description: Under an OSI-approved license (from the `license` field and registry/licenses.yml).
+  derived: true
+- id: self-hosted
+  description: Can run on your own infrastructure (from the `hosting` field).
+  derived: true
+- id: saas
+  description: Offered as a hosted service (from the `hosting` field).
+  derived: true
+- id: python
+  description: Has a Python SDK or API (from the `languages` field).
+  derived: true
+- id: typescript
+  description: Has a JavaScript or TypeScript SDK or API (from the `languages` field).
+  derived: true
+- id: go
+  description: Has a Go SDK or API (from the `languages` field).
+  derived: true
+- id: java
+  description: Has a Java SDK or API (from the `languages` field).
+  derived: true
+- id: dotnet
+  description: Has a .NET SDK or API (from the `languages` field).
+  derived: true

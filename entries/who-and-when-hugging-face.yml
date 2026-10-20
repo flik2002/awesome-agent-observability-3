@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Who_and_When (Hugging Face)
+url: https://huggingface.co/datasets/Kevin355/Who_and_When
+description: Dataset of multi-agent logs with annotated failure agents and steps.
+type: dataset
+category: benchmarks
+added: 2026-10-20
+tags:
+  - tracing
+license: unknown

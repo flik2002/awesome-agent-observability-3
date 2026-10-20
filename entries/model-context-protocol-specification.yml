@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Model Context Protocol specification
+url: https://modelcontextprotocol.io/specification/
+description: Specification of the protocol that connects agents to tools and data sources.
+type: spec
+category: standards
+added: 2026-10-20
+tags:
+  - mcp
+body: Model Context Protocol project
+version: 2026-07-28

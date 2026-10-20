@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry GenAI events
+url: https://opentelemetry.io/docs/specs/semconv/gen-ai/gen-ai-events/
+description: Semantic conventions for events that carry prompts and completions.
+type: spec
+category: standards
+added: 2026-10-20
+tags:
+  - logs
+body: OpenTelemetry
+version: 1.44.0

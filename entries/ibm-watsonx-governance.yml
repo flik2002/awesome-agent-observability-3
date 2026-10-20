@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: IBM watsonx.governance
+url: https://www.ibm.com/products/watsonx-governance
+description: Product page for continuous monitoring and governance of AI systems for compliance and operational risk.
+type: platform
+category: safety
+added: 2026-10-20
+agent_types:
+  - enterprise-workflow
+license: proprietary
+hosting: saas

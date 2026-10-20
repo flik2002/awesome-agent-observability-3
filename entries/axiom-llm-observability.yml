@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Axiom LLM observability
+url: https://axiom.co/docs/use-cases/llm-observability
+description: Documents Axiom tracing of LLM and agent applications with OpenTelemetry.
+type: platform
+category: platforms
+subcategory: apm
+added: 2026-10-20
+tags:
+  - tracing
+license: proprietary
+hosting: saas
+otlp:
+  - ingest
+conventions:
+  - genai-semconv
+otel_evidence: https://axiom.co/docs/use-cases/llm-observability

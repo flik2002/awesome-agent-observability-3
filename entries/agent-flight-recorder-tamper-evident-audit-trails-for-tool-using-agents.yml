@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Agent Flight Recorder: tamper-evident audit trails for tool-using agents"
+url: https://arxiv.org/abs/2609.01931
+description: Proposes tamper-evident audit trails for agents, with on-chain anchoring.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - on-chain
+agent_types:
+  - transactional

@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Fiddler documentation
+url: https://docs.fiddler.ai/
+description: Documentation of Fiddler, a platform for monitoring and governing agents and models.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+tags:
+  - evals
+agent_types:
+  - enterprise-workflow
+license: proprietary
+hosting: saas

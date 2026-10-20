@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "KubeCon talk: OpenTelemetry for autonomous AI agents"
+url: https://www.youtube.com/watch?v=1GaoQcGk57M
+description: KubeCon session recording by Abdel Fane on applying OpenTelemetry to autonomous AI agents.
+type: talk
+category: learning
+subcategory: talks
+added: 2026-10-20
+tags:
+  - tracing

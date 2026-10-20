@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "Annotrace: a workbench for step-level annotation of agent traces"
+url: https://arxiv.org/abs/2610.23284
+description: Presents a workbench for annotating individual steps in agent traces.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - tracing

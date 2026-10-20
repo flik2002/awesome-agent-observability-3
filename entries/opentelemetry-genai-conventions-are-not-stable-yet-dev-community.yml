@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry GenAI conventions are not stable yet (DEV Community)
+url: https://dev.to/azena-ai/opentelemetrys-genai-semantic-conventions-are-not-stable-yet-heres-what-actually-shipped-in-2026-3mke
+description: Community post on the stability status of the GenAI conventions in 2026.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20

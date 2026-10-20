@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "LangWatch: instrumenting an OpenClaw assistant with OpenTelemetry"
+url: https://langwatch.ai/blog/instrumenting-your-openclaw-agent-with-opentelemetry
+description: Vendor guide to exporting OpenTelemetry GenAI traces from a self-hosted personal assistant agent.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+agent_types:
+  - personal-assistant

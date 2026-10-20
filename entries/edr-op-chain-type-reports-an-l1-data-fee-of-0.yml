@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: EDR OP chain type reports an L1 data fee of 0
+url: https://github.com/NomicFoundation/edr/issues/1829
+description: The OP chain type of EDR sets the L1Block fee scalars at the wrong storage offsets, so simulated receipts report an L1 data fee of 0.
+type: finding
+category: findings
+added: 2026-10-20
+tags:
+  - on-chain
+  - cost
+evidence_url: https://github.com/NomicFoundation/edr/issues/1829
+upstream_issue: NomicFoundation/edr#1829
+versions: "@nomicfoundation/edr 0.22.2"
+status: open

@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Microsoft Agent Framework observability
+url: https://learn.microsoft.com/en-us/agent-framework/agents/observability
+description: Documentation of how Microsoft Agent Framework emits traces, logs and metrics with the OpenTelemetry GenAI conventions.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - otel-native
+agent_types:
+  - enterprise-workflow

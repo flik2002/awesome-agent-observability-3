@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry GenAI Anthropic conventions
+url: https://opentelemetry.io/docs/specs/semconv/gen-ai/anthropic/
+description: Provider-specific attributes for Anthropic calls within the GenAI conventions.
+type: spec
+category: standards
+added: 2026-10-20
+body: OpenTelemetry
+version: 1.44.0

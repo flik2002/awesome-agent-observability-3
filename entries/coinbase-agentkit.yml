@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Coinbase AgentKit
+url: https://github.com/coinbase/agentkit
+description: Toolkit that gives AI agents wallets and on-chain actions.
+type: sdk
+category: on-chain
+subcategory: wallets-and-accounts
+added: 2026-10-20
+tags:
+  - on-chain
+agent_types:
+  - transactional
+license: Apache-2.0
+languages:
+  - typescript
+  - python
+chains:
+  - evm
+  - solana
+stars: 1336
+archived: false
+pushed_at: 2026-10-14T21:50:54Z
+last_release: null
+last_checked: 2026-10-19

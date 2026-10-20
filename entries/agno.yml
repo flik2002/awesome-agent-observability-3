@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Agno
+url: https://github.com/agno-agi/agno
+description: Python framework for agents and multi-agent teams that traces runs with OpenTelemetry through the OpenInference instrumentation.
+type: framework
+category: frameworks
+added: 2026-10-20
+license: Apache-2.0
+languages:
+  - python
+otlp:
+  - export
+conventions:
+  - openinference
+otel_evidence: https://docs.agno.com/tracing/overview
+telemetry: external
+telemetry_docs: https://docs.agno.com/tracing/overview
+stars: 42819
+archived: false
+pushed_at: 2026-10-19T18:56:41Z
+last_release:
+  tag: v3.1.6
+  published_at: 2026-10-19T13:44:23Z
+last_checked: 2026-10-19

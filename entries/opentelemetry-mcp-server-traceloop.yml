@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry MCP server (Traceloop)
+url: https://github.com/traceloop/opentelemetry-mcp-server
+description: MCP server that lets agents search and read traces stored in Jaeger, Tempo or Traceloop.
+type: tool
+category: protocols
+added: 2026-10-20
+tags:
+  - mcp
+agent_types:
+  - devops
+license: Apache-2.0
+conventions: unknown
+otel_evidence: https://github.com/traceloop/opentelemetry-mcp-server
+stars: 204
+archived: false
+pushed_at: 2026-06-21T13:32:53Z
+last_release:
+  tag: 0.2.2
+  published_at: 2026-02-08T12:38:28Z
+last_checked: 2026-10-19

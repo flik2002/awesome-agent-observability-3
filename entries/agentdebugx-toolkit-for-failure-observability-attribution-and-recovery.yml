@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "AgentDebugX: toolkit for failure observability, attribution and recovery"
+url: https://arxiv.org/abs/2607.18754
+description: Presents an open-source toolkit for failure observability and attribution in LLM agents.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - tracing

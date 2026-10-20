@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: viem receipt wait took a transaction for its own replacement
+url: https://github.com/wevm/viem/issues/5161
+description: The viem receipt wait treated the awaited transaction as its own replacement when the node returned it before its receipt, and failed.
+type: finding
+category: findings
+added: 2026-10-20
+docs_url: https://github.com/selimaytac/hashspan/blob/main/docs/upstream-findings.md
+tags:
+  - on-chain
+evidence_url: https://github.com/wevm/viem/issues/5161
+upstream_issue: wevm/viem#5161
+versions: viem before 2.57.3
+status: fixed
+fixed_in: viem 2.57.3

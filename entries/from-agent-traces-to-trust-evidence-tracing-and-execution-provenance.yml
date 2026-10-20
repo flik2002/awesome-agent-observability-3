@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: "From agent traces to trust: evidence tracing and execution provenance"
+url: https://arxiv.org/abs/2606.04990
+description: Survey of evidence tracing and execution provenance for LLM agents.
+type: paper
+category: learning
+subcategory: papers
+added: 2026-10-20
+tags:
+  - tracing

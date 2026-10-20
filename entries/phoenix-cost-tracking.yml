@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Phoenix cost tracking
+url: https://arize.com/docs/phoenix/tracing/how-to-tracing/cost-tracking
+description: Documentation of cost tracking on traces in Arize Phoenix.
+type: article
+category: cost
+added: 2026-10-20
+tags:
+  - cost
+  - tracing

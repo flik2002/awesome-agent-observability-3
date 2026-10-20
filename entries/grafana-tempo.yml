@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Grafana Tempo
+url: https://grafana.com/docs/tempo/latest/
+description: Distributed tracing backend that accepts OTLP.
+type: platform
+category: platforms
+subcategory: backends
+added: 2026-10-20
+repo_url: https://github.com/grafana/tempo
+tags:
+  - tracing
+license: AGPL-3.0
+hosting: both
+otlp:
+  - ingest
+otel_evidence: https://grafana.com/docs/tempo/latest/
+stars: 5538
+archived: false
+pushed_at: 2026-10-19T20:14:26Z
+last_release:
+  tag: v3.1.0
+  published_at: 2026-09-29T17:06:39Z
+last_checked: 2026-10-19

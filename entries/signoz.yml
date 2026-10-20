@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: SigNoz
+url: https://github.com/SigNoz/signoz
+description: OpenTelemetry-native observability platform with guides for monitoring LLM applications.
+type: platform
+category: platforms
+subcategory: apm
+added: 2026-10-20
+tags:
+  - open-core
+  - otel-native
+  - tracing
+license: MIT
+license_note: Directories ee/ and cmd/enterprise/ use a commercial license.
+hosting: both
+otlp:
+  - ingest
+otel_evidence: https://signoz.io/docs/llm/opentelemetry-openai-monitoring/
+stars: 32392
+archived: false
+pushed_at: 2026-10-19T23:27:53Z
+last_release:
+  tag: v0.146.0
+  published_at: 2026-10-14T06:42:10Z
+last_checked: 2026-10-19

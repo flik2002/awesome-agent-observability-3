@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Splunk OpenTelemetry Python distribution
+url: https://github.com/signalfx/splunk-otel-python
+description: Splunk distribution of OpenTelemetry Python, used to instrument agent applications for Splunk Observability Cloud.
+type: library
+category: instrumentation
+added: 2026-10-20
+tags:
+  - otel-native
+license: Apache-2.0
+languages:
+  - python
+otlp:
+  - export
+otel_evidence: https://github.com/signalfx/splunk-otel-python
+stars: 41
+archived: false
+pushed_at: 2026-10-19T19:35:44Z
+last_release:
+  tag: v2.13.2
+  published_at: 2026-10-13T17:57:45Z
+last_checked: 2026-10-19

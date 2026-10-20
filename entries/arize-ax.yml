@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Arize AX
+url: https://docs.arize.com/ax
+description: Hosted platform from Arize for tracing and evaluating LLM applications.
+type: platform
+category: platforms
+subcategory: llm-agent
+added: 2026-10-20
+tags:
+  - tracing
+  - evals
+license: proprietary
+hosting: saas
+otlp:
+  - ingest
+conventions:
+  - openinference
+otel_evidence: https://github.com/Arize-ai/phoenix

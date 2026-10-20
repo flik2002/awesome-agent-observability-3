@@ -1,0 +1,70 @@
+# License values for the `license` field. `kind` decides the README badge and the derived `oss` tag:
+#   osi: OSI-approved (badge OSS); open-content: open documentation or data license, not OSI (no badge);
+#   source-available: source is public under a license that is not OSI-approved (badge Source-available);
+#   proprietary: closed source or a hosted product (badge Proprietary); unknown: not yet determined (no badge).
+# Rule for open-core repositories: `license` is the license of the root LICENSE file, which covers the core;
+# a `license_note` on the entry names the directories (for example `ee/`) that use another license.
+#   - The root license is OSI-approved: the entry gets the derived `oss` tag; when the repository also has a
+#     source-available or enterprise directory (ee/, enterprise/), set the tag `open-core` as well.
+#   - The root license is not OSI-approved (Elastic License 2.0, BSL, SSPL, a modified Apache license, ...): the
+#     license kind is source-available, so the entry gets no `oss` tag.
+- id: Apache-2.0
+  name: Apache License 2.0
+  kind: osi
+- id: Apache-2.0 AND MIT
+  name: Apache License 2.0 and MIT License (parts of the code under each)
+  kind: osi
+- id: Apache-2.0 OR MIT
+  name: Apache License 2.0 or MIT License, at the user's option
+  kind: osi
+- id: MIT
+  name: MIT License
+  kind: osi
+- id: BSD-2-Clause
+  name: BSD 2-Clause License
+  kind: osi
+- id: BSD-3-Clause
+  name: BSD 3-Clause License
+  kind: osi
+- id: MPL-2.0
+  name: Mozilla Public License 2.0
+  kind: osi
+- id: GPL-3.0
+  name: GNU General Public License v3.0
+  kind: osi
+- id: AGPL-3.0
+  name: GNU Affero General Public License v3.0
+  kind: osi
+- id: LGPL-3.0
+  name: GNU Lesser General Public License v3.0
+  kind: osi
+- id: CC0-1.0
+  name: Creative Commons Zero v1.0 Universal
+  kind: open-content
+- id: CC-BY-4.0
+  name: Creative Commons Attribution 4.0
+  kind: open-content
+- id: Elastic-2.0
+  name: Elastic License 2.0
+  kind: source-available
+- id: BUSL-1.1
+  name: Business Source License 1.1
+  kind: source-available
+- id: SSPL-1.0
+  name: Server Side Public License v1
+  kind: source-available
+- id: LicenseRef-Dify-Open-Source
+  name: Dify Open Source License (modified Apache License 2.0 with additional conditions)
+  kind: source-available
+- id: LicenseRef-Open-WebUI
+  name: Open WebUI License (BSD-3-Clause based, with a branding clause)
+  kind: source-available
+- id: LicenseRef-Visa-Developer-Terms
+  name: Visa Developer Center Terms of Use
+  kind: source-available
+- id: proprietary
+  name: Proprietary or hosted product
+  kind: proprietary
+- id: unknown
+  name: Not yet determined
+  kind: unknown

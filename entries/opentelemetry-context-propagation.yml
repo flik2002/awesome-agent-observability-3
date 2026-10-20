@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry context propagation
+url: https://opentelemetry.io/docs/concepts/context-propagation/
+description: Explains how trace context moves between services and processes, which applies to multi-agent and tool calls.
+type: article
+category: learning
+subcategory: articles
+added: 2026-10-20
+tags:
+  - tracing

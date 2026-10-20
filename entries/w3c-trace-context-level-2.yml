@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: W3C Trace Context Level 2
+url: https://www.w3.org/TR/trace-context-2/
+description: Newer level of the Trace Context specification.
+type: spec
+category: standards
+added: 2026-10-20
+tags:
+  - tracing
+body: W3C
+version: Candidate Recommendation Draft, 28 March 2024

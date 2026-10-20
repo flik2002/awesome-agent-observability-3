@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenRCA
+url: https://github.com/microsoft/OpenRCA
+description: Benchmark of root cause localization for software failures from logs, metrics and traces.
+type: dataset
+category: benchmarks
+added: 2026-10-20
+tags:
+  - tracing
+  - metrics
+  - logs
+agent_types:
+  - devops
+license: MIT
+languages:
+  - python
+stars: 440
+archived: false
+pushed_at: 2026-10-14T09:59:53Z
+last_release: null
+last_checked: 2026-10-19

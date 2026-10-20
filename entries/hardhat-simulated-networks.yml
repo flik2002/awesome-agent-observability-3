@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: Hardhat simulated networks
+url: https://hardhat.org/docs/explanations/edr-simulated-networks
+description: Documentation of the in-process blockchains that Hardhat starts on the local machine when tests or scripts run.
+type: tool
+category: on-chain
+subcategory: local-chains
+added: 2026-10-20
+repo_url: https://github.com/NomicFoundation/hardhat
+tags:
+  - on-chain
+license: MIT
+license_note: Each package of the monorepo has its own LICENSE file; the hardhat package is MIT.
+chains:
+  - evm
+stars: 8518
+archived: false
+pushed_at: 2026-10-19T17:03:13Z
+last_release:
+  tag: hardhat@3.20.0
+  published_at: 2026-10-15T19:21:28Z
+last_checked: 2026-10-19

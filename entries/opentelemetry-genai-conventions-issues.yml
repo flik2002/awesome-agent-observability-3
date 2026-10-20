@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=../schema/entry.schema.json
+name: OpenTelemetry GenAI conventions issues
+url: https://github.com/open-telemetry/semantic-conventions-genai/issues
+description: Issue tracker of the repository that holds the OpenTelemetry GenAI semantic conventions.
+type: article
+category: community
+added: 2026-10-20
+tags:
+  - otel-native

@@ -1,0 +1,39 @@
+# Daily: refreshes repository metadata (stars, archived, last push, last release) through the GitHub API,
+# regenerates the outputs and commits the result as a bot. Moved or archived repositories are printed in the log.
+name: refresh
+
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Refresh metadata
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/refresh.mjs || echo "::warning::refresh reported problems; see the log"
+      - run: npm run build
+      - run: npm run validate -- --quiet
+      - name: Commit
+        run: |
+          if git diff --quiet; then echo "no changes"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "chore: refresh repository metadata"
+          git push
