@@ -5,6 +5,7 @@ description: The OP chain type of EDR set the L1Block fee scalars at the wrong s
 type: finding
 category: findings
 added: 2026-10-20
+docs_url: https://github.com/selimaytac/hashspan/blob/main/docs/upstream-findings.md
 tags:
   - on-chain
   - cost

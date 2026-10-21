@@ -8156,6 +8156,7 @@
       "type": "finding",
       "category": "findings",
       "added": "2026-10-20",
+      "docs_url": "https://github.com/selimaytac/hashspan/blob/main/docs/upstream-findings.md",
       "evidence_url": "https://github.com/NomicFoundation/edr/issues/1829",
       "upstream_issue": "NomicFoundation/edr#1829",
       "versions": "@nomicfoundation/edr before 0.24.0",
