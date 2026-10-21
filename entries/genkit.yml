@@ -15,10 +15,10 @@ otlp:
 otel_evidence: https://genkit.dev/docs/js/observability/advanced-configuration/
 telemetry: otel
 telemetry_docs: https://genkit.dev/docs/js/observability/advanced-configuration/
-stars: 6532
+stars: 6535
 archived: false
-pushed_at: 2026-10-20T20:32:43Z
+pushed_at: 2026-10-21T02:12:54Z
 last_release:
   tag: go/v1.14.0
   published_at: 2026-10-20T18:07:25Z
-last_checked: 2026-10-20
+last_checked: 2026-10-21

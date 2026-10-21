@@ -13,10 +13,10 @@ hosting: self-hosted
 otlp:
   - ingest
 otel_evidence: https://github.com/latitude-dev/latitude-llm
-stars: 4729
+stars: 4730
 archived: false
-pushed_at: 2026-10-20T14:06:04Z
+pushed_at: 2026-10-20T21:48:46Z
 last_release:
   tag: cli-4.0.1
   published_at: 2026-10-09T09:28:25Z
-last_checked: 2026-10-20
+last_checked: 2026-10-21

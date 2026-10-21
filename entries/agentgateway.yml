@@ -13,10 +13,10 @@ license: Apache-2.0
 otlp:
   - export
 otel_evidence: https://agentgateway.dev/docs/standalone/latest/observability/
-stars: 5430
+stars: 5445
 archived: false
-pushed_at: 2026-10-20T20:55:30Z
+pushed_at: 2026-10-20T23:30:23Z
 last_release:
   tag: v1.6.0
   published_at: 2026-10-02T16:26:26Z
-last_checked: 2026-10-20
+last_checked: 2026-10-21

@@ -8,10 +8,10 @@ added: 2026-10-20
 tags:
   - mcp
 license: Apache-2.0
-stars: 8969
+stars: 8982
 archived: false
-pushed_at: 2026-10-20T18:52:39Z
+pushed_at: 2026-10-21T08:11:32Z
 last_release:
-  tag: ent-v2.3.1-base
-  published_at: 2026-10-19T14:56:18Z
-last_checked: 2026-10-20
+  tag: ent-v2.3.2-base
+  published_at: 2026-10-21T01:04:28Z
+last_checked: 2026-10-21

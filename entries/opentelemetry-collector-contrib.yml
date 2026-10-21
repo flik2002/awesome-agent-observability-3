@@ -11,10 +11,10 @@ otlp:
   - ingest
   - export
 otel_evidence: https://github.com/open-telemetry/opentelemetry-collector-contrib
-stars: 5008
+stars: 5011
 archived: false
-pushed_at: 2026-10-20T20:36:30Z
+pushed_at: 2026-10-21T06:07:40Z
 last_release:
   tag: v0.163.0
   published_at: 2026-10-14T06:53:39Z
-last_checked: 2026-10-20
+last_checked: 2026-10-21

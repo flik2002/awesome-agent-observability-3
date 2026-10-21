@@ -13,8 +13,8 @@ otlp:
 otel_evidence: https://github.com/Dynatrace/dynatrace-otel-collector
 stars: 45
 archived: false
-pushed_at: 2026-10-20T13:09:26Z
+pushed_at: 2026-10-21T01:54:30Z
 last_release:
   tag: v0.58.0
   published_at: 2026-10-12T16:15:06Z
-last_checked: 2026-10-20
+last_checked: 2026-10-21

@@ -13,10 +13,10 @@ languages:
 otlp:
   - export
 otel_evidence: https://github.com/open-telemetry/opentelemetry-js-contrib
-stars: 936
+stars: 938
 archived: false
 pushed_at: 2026-10-20T20:55:20Z
 last_release:
   tag: instrumentation-browser-navigation-v0.17.0
   published_at: 2026-10-20T20:53:29Z
-last_checked: 2026-10-20
+last_checked: 2026-10-21

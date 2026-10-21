@@ -14,10 +14,10 @@ otlp:
 otel_evidence: https://docs.haystack.deepset.ai/docs/tracing
 telemetry: own
 telemetry_docs: https://docs.haystack.deepset.ai/docs/tracing
-stars: 26793
+stars: 26800
 archived: false
-pushed_at: 2026-10-20T14:22:40Z
+pushed_at: 2026-10-21T08:36:12Z
 last_release:
   tag: v3.4.0
   published_at: 2026-10-15T09:26:37Z
-last_checked: 2026-10-20
+last_checked: 2026-10-21

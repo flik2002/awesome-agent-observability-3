@@ -11,10 +11,10 @@ tags:
   - metrics
   - logs
 license: Apache-2.0
-stars: 6141
+stars: 6142
 archived: false
 pushed_at: 2026-10-20T18:49:47Z
 last_release:
   tag: v0.21.0
   published_at: 2026-09-25T17:04:20Z
-last_checked: 2026-10-20
+last_checked: 2026-10-21
