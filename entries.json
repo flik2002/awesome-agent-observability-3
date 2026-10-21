@@ -8152,14 +8152,15 @@
       "slug": "edr-op-chain-type-reports-an-l1-data-fee-of-0",
       "name": "EDR OP chain type reports an L1 data fee of 0",
       "url": "https://github.com/NomicFoundation/edr/issues/1829",
-      "description": "The OP chain type of EDR sets the L1Block fee scalars at the wrong storage offsets, so simulated receipts report an L1 data fee of 0.",
+      "description": "The OP chain type of EDR set the L1Block fee scalars at the wrong storage offsets, so simulated receipts reported an L1 data fee of 0.",
       "type": "finding",
       "category": "findings",
       "added": "2026-10-20",
       "evidence_url": "https://github.com/NomicFoundation/edr/issues/1829",
       "upstream_issue": "NomicFoundation/edr#1829",
-      "versions": "@nomicfoundation/edr 0.22.2",
-      "status": "open",
+      "versions": "@nomicfoundation/edr before 0.24.0",
+      "status": "fixed",
+      "fixed_in": "@nomicfoundation/edr 0.24.0",
       "tags": [
         "cost",
         "on-chain"

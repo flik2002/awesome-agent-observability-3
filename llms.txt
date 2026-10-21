@@ -321,7 +321,7 @@ Every entry is one YAML file in entries/; entries.json holds all fields, includi
 ## Findings
 
 - [Anvil gave concurrent transactions from one account the same nonce](https://github.com/foundry-rs/foundry/issues/17354): Concurrent eth_sendTransaction calls from one unlocked Anvil account got the same nonce, which breaks parallel agent tests.
-- [EDR OP chain type reports an L1 data fee of 0](https://github.com/NomicFoundation/edr/issues/1829): The OP chain type of EDR sets the L1Block fee scalars at the wrong storage offsets, so simulated receipts report an L1 data fee of 0.
+- [EDR OP chain type reports an L1 data fee of 0](https://github.com/NomicFoundation/edr/issues/1829): The OP chain type of EDR set the L1Block fee scalars at the wrong storage offsets, so simulated receipts reported an L1 data fee of 0.
 - [eRPC OTLP/HTTP tracing exports nothing when the endpoint has a scheme](https://github.com/erpc/erpc/issues/1276): With tracing over OTLP/HTTP, eRPC exports no spans when the endpoint includes a scheme, the form its documentation asks for.
 - [MLflow OTLP trace ingest drops the span kind](https://github.com/mlflow/mlflow/issues/26841): Spans sent to the OTLP endpoint of MLflow lose their kind, so CLIENT and SERVER spans read back as INTERNAL.
 - [viem concurrent receipt waits shared the first call options](https://github.com/wevm/viem/issues/5137): Concurrent viem receipt waits for one hash on one client all ran with the timeout and confirmations of the first call.
