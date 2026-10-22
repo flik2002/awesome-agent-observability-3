@@ -19,8 +19,8 @@ chains:
   - evm
 stars: 186
 archived: false
-pushed_at: 2026-10-21T03:31:17Z
+pushed_at: 2026-10-22T00:04:22Z
 last_release:
-  tag: mppx@0.14.1
-  published_at: 2026-10-21T03:31:18Z
-last_checked: 2026-10-21
+  tag: mppx@0.15.0
+  published_at: 2026-10-21T20:46:37Z
+last_checked: 2026-10-22

@@ -20,8 +20,8 @@ conventions:
 otel_evidence: https://github.com/openlit/openlit
 stars: 2868
 archived: false
-pushed_at: 2026-10-21T08:05:32Z
+pushed_at: 2026-10-21T15:37:16Z
 last_release:
   tag: otel-gpu-collector-1.0.0
   published_at: 2026-10-13T14:43:07Z
-last_checked: 2026-10-21
+last_checked: 2026-10-22

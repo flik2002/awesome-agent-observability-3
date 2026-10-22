@@ -10,10 +10,10 @@ languages:
   - typescript
 telemetry: own
 telemetry_docs: https://docs.langchain.com/oss/javascript/langchain/observability
-stars: 18285
+stars: 18288
 archived: false
-pushed_at: 2026-10-20T22:03:22Z
+pushed_at: 2026-10-21T23:39:58Z
 last_release:
   tag: "@langchain/neo4j@0.1.26"
   published_at: 2026-10-20T22:03:34Z
-last_checked: 2026-10-21
+last_checked: 2026-10-22

@@ -16,10 +16,10 @@ conventions:
 otel_evidence: https://strandsagents.com/docs/user-guide/sdk/observability-evaluation/traces/
 telemetry: otel
 telemetry_docs: https://strandsagents.com/docs/user-guide/sdk/observability-evaluation/traces/
-stars: 8888
+stars: 8908
 archived: false
-pushed_at: 2026-10-21T08:01:29Z
+pushed_at: 2026-10-22T08:01:16Z
 last_release:
-  tag: python/v1.61.1
-  published_at: 2026-10-15T20:25:38Z
-last_checked: 2026-10-21
+  tag: typescript/v1.22.0
+  published_at: 2026-10-21T21:38:08Z
+last_checked: 2026-10-22

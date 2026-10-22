@@ -13,10 +13,10 @@ languages:
 otlp:
   - export
 otel_evidence: https://github.com/open-telemetry/opentelemetry-java-instrumentation
-stars: 2653
+stars: 2654
 archived: false
-pushed_at: 2026-10-21T08:15:24Z
+pushed_at: 2026-10-22T08:39:56Z
 last_release:
   tag: v2.32.0
   published_at: 2026-10-03T15:38:15Z
-last_checked: 2026-10-21
+last_checked: 2026-10-22

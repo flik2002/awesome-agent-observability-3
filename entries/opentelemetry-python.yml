@@ -15,8 +15,8 @@ otlp:
 otel_evidence: https://github.com/open-telemetry/opentelemetry-python
 stars: 2685
 archived: false
-pushed_at: 2026-10-21T08:03:19Z
+pushed_at: 2026-10-22T05:18:04Z
 last_release:
   tag: v1.45.1
   published_at: 2026-10-06T17:33:17Z
-last_checked: 2026-10-21
+last_checked: 2026-10-22

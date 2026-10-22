@@ -17,8 +17,8 @@ conventions: []
 otel_evidence: https://docs.fluentbit.io/manual/data-pipeline/inputs/opentelemetry
 stars: 8163
 archived: false
-pushed_at: 2026-10-21T07:09:20Z
+pushed_at: 2026-10-22T06:39:03Z
 last_release:
-  tag: v5.1.4
-  published_at: 2026-10-16T11:49:47Z
-last_checked: 2026-10-21
+  tag: v5.1.5
+  published_at: 2026-10-21T14:34:35Z
+last_checked: 2026-10-22
