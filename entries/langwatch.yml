@@ -16,10 +16,10 @@ hosting: both
 otlp:
   - ingest
 otel_evidence: https://langwatch.ai/docs/integration/opentelemetry/guide
-stars: 4986
+stars: 4988
 archived: false
-pushed_at: 2026-10-22T08:39:39Z
+pushed_at: 2026-10-23T08:28:47Z
 last_release:
   tag: langwatch-3.21.0
   published_at: 2026-10-21T22:09:01Z
-last_checked: 2026-10-22
+last_checked: 2026-10-23

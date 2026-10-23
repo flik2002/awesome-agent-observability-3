@@ -16,8 +16,8 @@ otel_evidence: https://arize-ai.github.io/openinference/spec/
 body: Arize AI
 stars: 1278
 archived: false
-pushed_at: 2026-10-22T07:53:55Z
+pushed_at: 2026-10-23T05:40:08Z
 last_release:
   tag: python-openinference-instrumentation-google-genai-v1.4.13
   published_at: 2026-10-10T06:22:04Z
-last_checked: 2026-10-22
+last_checked: 2026-10-23

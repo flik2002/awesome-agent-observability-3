@@ -15,10 +15,10 @@ otlp:
   - export
 conventions: []
 otel_evidence: https://github.com/modelcontextprotocol/csharp-sdk/blob/main/samples/AspNetCoreMcpServer/README.md
-stars: 4595
+stars: 4596
 archived: false
-pushed_at: 2026-10-22T04:05:55Z
+pushed_at: 2026-10-22T22:57:38Z
 last_release:
   tag: v2.3.0
   published_at: 2026-10-20T23:39:03Z
-last_checked: 2026-10-22
+last_checked: 2026-10-23

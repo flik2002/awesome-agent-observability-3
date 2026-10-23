@@ -15,10 +15,10 @@ otlp:
 otel_evidence: https://github.com/temporalio/sdk-typescript
 telemetry: otel
 telemetry_docs: https://github.com/temporalio/sdk-typescript
-stars: 939
+stars: 938
 archived: false
-pushed_at: 2026-10-22T04:16:51Z
+pushed_at: 2026-10-22T22:55:47Z
 last_release:
   tag: v1.24.0
   published_at: 2026-09-15T17:41:57Z
-last_checked: 2026-10-22
+last_checked: 2026-10-23

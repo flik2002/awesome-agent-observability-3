@@ -18,10 +18,10 @@ conventions:
 otel_evidence: https://docs.quarkiverse.io/quarkus-langchain4j/dev/observability.html
 telemetry: otel
 telemetry_docs: https://docs.quarkiverse.io/quarkus-langchain4j/dev/observability.html
-stars: 325
+stars: 326
 archived: false
-pushed_at: 2026-10-21T19:07:43Z
+pushed_at: 2026-10-23T08:32:17Z
 last_release:
   tag: 1.14.2
   published_at: 2026-10-15T10:09:03Z
-last_checked: 2026-10-22
+last_checked: 2026-10-23

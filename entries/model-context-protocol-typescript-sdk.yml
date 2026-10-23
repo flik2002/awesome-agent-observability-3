@@ -11,10 +11,10 @@ license: Apache-2.0 AND MIT
 license_note: Relicensing from MIT to Apache-2.0 is in progress; older contributions remain MIT.
 languages:
   - typescript
-stars: 13638
+stars: 13641
 archived: false
-pushed_at: 2026-10-21T15:14:27Z
+pushed_at: 2026-10-22T16:57:14Z
 last_release:
   tag: v2.3.1
   published_at: 2026-10-05T11:54:56Z
-last_checked: 2026-10-22
+last_checked: 2026-10-23

@@ -23,10 +23,10 @@ otel_evidence: https://github.com/selimaytac/hashspan
 chains:
   - evm
 vendor_affiliation: Maintained by the maintainer of this list.
-stars: 5
+stars: 6
 archived: false
-pushed_at: 2026-10-22T00:26:56Z
+pushed_at: 2026-10-22T09:37:41Z
 last_release:
   tag: "@hashspan/faults@0.2.0"
   published_at: 2026-10-21T09:19:24Z
-last_checked: 2026-10-22
+last_checked: 2026-10-23

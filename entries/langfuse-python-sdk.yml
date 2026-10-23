@@ -14,10 +14,10 @@ languages:
 otlp:
   - export
 otel_evidence: https://github.com/langfuse/langfuse-python
-stars: 502
+stars: 501
 archived: false
-pushed_at: 2026-10-22T08:05:53Z
+pushed_at: 2026-10-23T05:55:02Z
 last_release:
   tag: v5.0.4
   published_at: 2026-10-21T07:36:11Z
-last_checked: 2026-10-22
+last_checked: 2026-10-23
