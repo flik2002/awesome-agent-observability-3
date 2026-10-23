@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=../schema/entry.schema.json
 name: OpenClaw Monitor
 url: https://github.com/flik2002/openclaw-monitor
-description: Open-source dashboard that monitors OpenClaw AI agents, tracking token usage, sessions and 7-day trends across models.
+description: Dashboard that monitors OpenClaw AI agents, tracking token usage, sessions and 7-day trends across models.
 type: tool
 category: cost
 added: 2026-10-22
@@ -13,10 +13,4 @@ agent_types:
 license: MIT
 hosting: self-hosted
 otlp: unknown
-stars: 13
-archived: false
-pushed_at: 2026-05-14T14:08:28Z
-last_release:
-  tag: v1.0.0
-  published_at: 2026-05-14T14:08:29Z
-last_checked: 2026-10-22
+vendor_affiliation: Author of the project.
